@@ -1,0 +1,420 @@
+---
+title: "QTM 151 - Introduction to Statistical Computing II"
+author: "Danilo Freire"
+date: "Fall 2024"
+output:
+  pdf_document:
+    fig_caption: yes
+    latex_engine: pdflatex
+    template: syllabus-template.latex
+  word_document: default
+email: danilo.freire@emory.edu
+fontsize: 12pt
+geometry: margin=1in
+header-includes: \linespread{1.05}
+office: "[36 Eagle Row, 5th Floor, room XXX](https://maps.app.goo.gl/bGHKwasQyp5MnQND6)"
+officehours: Mon-Fri Afternoon
+classroom: XXX 
+classhours: Mon/Wed, 16:00-16:50 
+web: danilofreire.github.io/qtm151
+---
+
+# Course Description
+
+Welcome to [QTM 151](https://danilofreire.github.io/qtm151)! This is an introductory course designed to equip students with essential skills in data analysis and statistical computing using Python and SQL. It is tailored for students with little to no prior programming experience who are eager to develop computational proficiency for data-driven decision making. 
+
+Throughout the term, we will cover key topics for aspiring data analysts and researchers. These include version control for collaborative coding, Quarto and Jupyter Notebooks for reproducible research, fundamental Python operations and functions, data wrangling techniques, database merging, data visualisation, and introductions to linear modelling and time series analysis. 
+
+By working with real-world datasets and problems, students will gain hands-on experience applying these tools and methods to extract meaningful insights from data. The course fosters both technical skills and the critical thinking necessary to tackle complex data challenges. Upon completion, students will be well-prepared for advanced coursework in quantitative methods and data science.
+
+# Learning Objectives
+
+By the end of this course, students will be able to:
+
+1. Understand and apply version control using Git and GitHub.
+2. Perform basic operations and write functions in Python.
+3. Conduct data wrangling and manipulate data using Python libraries such as Pandas.
+4. Merge and manage databases using SQL.
+5. Create visualisations to effectively communicate data insights.
+6. Implement linear models and understand the principles of time series analysis.
+7. Use Quarto and Jupyter Notebooks for reproducible research.
+8. Develop problem-solving skills relevant to data analysis and statistical computing.
+
+# Prerequisites
+
+There are no prerequisites for this course. All students are welcome to join, regardless of their prior experience with programming or data analysis. Please feel free to reach out if you have any questions about the course content or your readiness to take the class.
+
+# Materials
+
+This course is designed to be self-contained, providing all the necessary resources and materials to succeed in mastering the core concepts. However, students are encouraged to explore the following suggested books and online courses to deepen their understanding of Python and SQL.
+
+## Suggested Books
+
+- [Python for Data Analysis](https://wesmckinney.com/book/) by Wes McKinney
+- [Elements of Data Science](https://allendowney.github.io/ElementsOfDataScience/README.html) by Allen Downey
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com) by Al Sweigart
+- [Python for Everybody](https://www.py4e.com/book.php) by Charles Severance
+- [SQL for Data Scientists](https://sqlfordatascientists.com/) by Renee M. P. Teate
+
+## Online Courses
+
+- [Coursera: Python for Everybody Specialisation](https://www.coursera.org/specializations/python)
+- [edX: Python Basics for Data Science](https://www.edx.org/learn/python/ibm-python-basics-for-data-science)
+- [Codecademy: Learn Python](https://www.codecademy.com/learn/learn-python-3)
+- [DataCamp: Introduction to SQL](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
+- [Coursera: SQL for Data Science](https://www.coursera.org/learn/sql-for-data-science)
+
+## Additional Resources
+
+- [Python Documentation](https://docs.python.org/3/)
+- [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
+- [SQL Documentation](https://www.postgresql.org/docs/)
+- [SQLBolt](https://sqlbolt.com/)
+- [DataLemur for SQL interview practice](https://datalemur.com)
+- [Github Guides](https://guides.github.com/)
+- [Quarto Documentation](https://quarto.org/docs/get-started)
+
+# Course Information
+
+We will meet every Monday and Wednesday from 16:00 to 16:50 at [XXXXX](https://quantitative.emory.edu). It is important that you read the materials before class. All information about the course is available at <http://danilofreire.github.io/qtm151> and on the course's GitHub repository <https://github.com/danilofreire/qtm151>. While I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change in the semester. Again, please visit [the course website](https://danilofreire.github.io/qtm151) regularly to check for updates. I will also announce any changes in class and via email.
+
+# Software
+
+We will mainly use [Python](https://www.python.org) in this course. Python is a free, versatile, and powerful programming language that is widely used in data science, machine learning, and scientific computing. You can download Python from the [official website](https://www.python.org/). I recommend using the [Anaconda distribution](https://www.anaconda.com/products/individual) as it comes with all the necessary libraries for data analysis, such as [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/), and [Matplotlib](https://matplotlib.org/).
+
+You can write your Python code in any text editor, but I recommend [VSCode](https://code.visualstudio.com/) with the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python). [Pycharm](https://www.jetbrains.com/pycharm/) is also well-regarded by developers. If you are feeling adventurous, you can also use [Neovim](https://neovim.io/) with the [coc-pyright](https://github.com/fannheyward/coc-pyright) plugin. That is, if [you can exit the editor](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/). :)
+
+We will use [PostgreSQL](https://www.postgresql.org/) for database management. PostgreSQL is a powerful, open-source relational database system that is widely used in data science and software development. You can download PostgreSQL from the [official website](https://www.postgresql.org/). Please install the [VSCode extension](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres) for PostgreSQL to interact with the database.
+
+We will also use [Quarto](https://quarto.org/) and [Jupyter Notebooks](https://jupyter.org/) in class. Quarto is a versatile document format that combines the best features of [Markdown](https://www.markdownguide.org/), [\LaTeX](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes), and [R Markdown](https://rmarkdown.rstudio.com). It allows you to create reports, slides, books, and even websites in a single document.
+
+To help you get started with Quarto and Jupyter, I have prepared [a series of tutorials](http://danilofreire.github.io/qtm151/tutorials). Please review these tutorials and install Quarto along with the necessary VSCode extensions for [Quarto](https://quarto.org/docs/tools/vscode.html) and [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter&ssr=false). Jupyter comes installed with Anaconda. We will have a hands-on session to learn how to use both tools effectively.
+
+# Office Hours
+
+I am very flexible with office hours, but it is easier to contact me via email. Feel free to send me a message any time at [danilo.freire@emory.edu](mailto:danilo.freire@emory.edu), and I will likely reply within a few hours. You can also book an appointment with me on [Calendly](https://calendly.com/danilofreire/office-hours), or just email me your availability. If you prefer, you can meet me in the afternoon at my office. I am in the [Department of Quantitative Theory and Methods](https://qtm.emory.edu) almost every weekday. My office address is in the [Psychology and Interdisciplinary Sciences Building, 36 Eagle Row, 5th Floor, room XXXX](https://maps.app.goo.gl/bGHKwasQyp5MnQND6). If possible, please email me before coming to ensure that no two students book the same time slot.
+
+# Academic Integrity
+
+Upon every individual who is a part of Emory University falls the responsibility for maintaining in the life of Emory a standard of unimpeachable honour in all academic work. The [Honour Code of Emory College](http://catalog.college.emory.edu/academic/policies-regulations/honor-code.html) is based on the fundamental assumption that every loyal person of the University not only will conduct his or her own life according to the dictates of the highest honor, but will also refuse to tolerate in others action which would sully the good name of the institution. Academic misconduct is an offense generally defined as any action or inaction which is offensive to the integrity and honesty of the members of the academic community. Any suspected case of academic misconduct will be referred to the Emory Honour Council.
+
+# Artificial Intelligence
+
+Students have to submit a series of problem sets and complete two group projects. You are encouraged to use AI to assist with your assignments, as learning to use AI is a valuable and emerging skill. I am available to provide support and assistance with these tools during office hours or by appointment. However, please note that any errors or omissions resulting from the use of AI tools are your responsibility. Do not rely solely on AI to complete your assignments; you must always double-check your work. Remember to cite all sources used in your problem sets and projects, including AI tools. Please include a note at the end of any document indicating that AI was used in its development.
+
+# Special Needs and Accessibility Services
+
+I am fully committed to providing the necessary accommodations to ensure that all students have an equal opportunity to succeed in this course. Students with medical/health conditions that might impact academic success should visit the [Department of Accessibility Services (DAS)](http://accessibility.emory.edu/) to determine eligibility for appropriate accommodations. Students who receive accommodations should contact me with an Accommodation Letter from the DAS at the beginning of the semester, or as soon as the accommodation is granted. If you wish to do so, feel free to request an individual meeting to further discuss the specific accommodations. 
+
+# English Language Learners
+
+Emory University welcomes students from around the country and the world, and the unique perspectives international and multilingual students bring enrich the campus community. To empower multilingual learners, an array of support is available including language and culture workshops and individual appointments. For more information about English Language Learning support at Emory, please contact the ELLP Specialists at <https://writingcenter.emory.edu>. No student will be penalised for their command of the English language.
+
+# Assignments and Grading Policy
+
+**Problem Sets (50%).** There will be 6 problem sets throughout the course, each focusing on different aspects of experimental design and analysis. These assignments are designed to reinforce concepts covered in lectures and readings, and to provide hands-on practice with experimental design techniques. Problem sets will include a mix of theoretical questions and practical applications. They will be assigned regularly and must be completed individually. You may discuss your work with other colleagues as long as you do not copy entire sentences, just changing a few words. If you worked with other students, please write down their names on your problem set. Please also acknowledge any sources you used in your work, including textbooks, articles, and AI resources. *Any assignment submitted after the due date/time will automatically be graded for half points*. To accommodate unexpected circumstances, your lowest homework grade will be automatically dropped at the end of the semester. *The same applies to in-class quizzes*. Please submit all assignments in PDF format via Canvas. 
+
+**Class Quizzes (30%).** Students will also take five in-class quizzes throughout the semester. These quizzes will be based on the readings and lectures from the previous weeks. They will be designed to test your understanding of the material and your ability to apply the concepts to new problems. Quizzes will be open-book and open-notes, and students have 50 minutes to complete them. They are individual assessments, and students are not allowed to discuss the questions with their colleagues. 
+
+**Final Project (20%).** The final project will consist of a short report, created using Quarto or Jupyter and using one of the datasets shared on the course [GitHub repository](https://github.com/danilofreire/qtm151/final-project). Further instructions will be provided in class. The final project will be due on the last day of class.
+
+# Grading Scale
+
+Each student's final grade will be based on the following after rounding up to the nearest point:
+
+| Grade | A       | A-      | B+      | B       | B-      | C       | D       | F    |
+|-------|---------|---------|---------|---------|---------|---------|---------|------|
+| Range | 91%–100%| 86%–90% | 81%–85% | 76%–80% | 71%–75% | 66%–70% | 60%–65% | <60% |
+
+# Course Outline and Suggested Readings
+
+The weekly suggested readings are optional and recommended for those who want to deepen their understanding of the course topics. 
+
+## Module 01: Introduction to Python, Jupyter, Quarto, and GitHub
+
+**Week 01: Introduction and Course Overview**
+
+*Wednesday, August 28:*
+
+Required readings:
+
+- Syllabus and course website: <http://danilofreire.github.io/qtm151>.
+- GitHub repository: <https://github.com/danilofreire/qtm151>.
+- Lecture 01: Welcome to QTM 151 - Introduction to Computing Environment. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/01-introduction.html) and [PDF Slides](https://danilofreire.github.io/qtm151/lectures/01-introduction.pdf).
+
+Weekly suggested readings:
+
+- [Course Tutorials: How to Install Python, Jupyter, PostgreSQL, Quarto, and VSCode, and Open a Free Educational Account on GitHub](https://danilofreire.github.io/qtm151/tutorials).
+- [DataCamp: SQL vs Python: Which Should You Learn?](https://www.datacamp.com/blog/sql-vs-python-which-to-learn) (Note: *both!*)
+- Cao, L. (2017). [Data Science: A Comprehensive Overview](https://dl.acm.org/doi/pdf/10.1145/3076253). ACM Computing Surveys (CSUR), 50(3), 1-42.
+- Brady, H. E. (2019). [The Challenge of Big Data and Data Science](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-090216-023229). Annual Review of Political Science, 22(1), 297-323.
+- Zitnik, M., Nguyen, F., Wang, B., Leskovec, J., Goldenberg, A., & Hoffman, M. M. (2019). [Machine Learning for Integrating Data in Biology and Medicine: Principles, Practice, and Opportunities](https://www.sciencedirect.com/science/article/abs/pii/S1566253518304482). Information Fusion, 50, 71-91.
+
+**Week 02: Introduction to Jupyter and Quarto**
+
+*Monday, September 02: Labour Day (no class)*
+
+*Wednesday, September 04:*
+
+Required readings:
+
+- Lecture 02: Introduction to Jupyter Notebooks and Quarto. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/02-introduction-jupyter-quarto.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/02-introduction-jupyter-quarto.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/02-introduction-jupyter-quarto.ipynb).
+- **Assignment 01:** [Problem Set 01](https://danilofreire.github.io/qtm151/problem-sets/problem-set-01.ipynb).
+
+Weekly suggested readings:
+
+- [Microsoft: Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+- VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Chapter 01: IPython: Beyond Normal Python](https://jakevdp.github.io/PythonDataScienceHandbook/index.html).
+- McKinney, W. (2022). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O'Reilly Media. [Chapter 02: Python Language Basics, IPython, and Jupyter Notebooks](https://wesmckinney.com/book/python-basics).
+- [Corey Schafer: Jupyter Notebook Tutorial - Introduction, Setup, and Walkthrough](https://www.youtube.com/watch?v=HW29067qVWk). (Note: Corey Schafer is a great Python instructor on YouTube. Check out his other videos as well.)
+- [Posit: Quarto Guide](https://quarto.org/docs/guide/).
+- [Posit: Get Started with Quarto (Video)](https://www.youtube.com/watch?v=_f3latmOhew).
+- [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
+
+## Module 02: Python Data Types and Controlling Flows
+
+**Week 03: Python Basics**
+
+*Monday, September 09:*
+
+Required readings:
+
+- Lecture 03: Mathematical Operations, Arrays, and Random Numbers. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/03-maths-arrays-random.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/03-maths-arrays-random.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/03-maths-arrays-random.ipynb).
+
+*Wednesday, September 11:*
+
+- Lecture 04: Boolean Variables and If/Else Statements. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/04-boolean-if-else.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/04-boolean-if-else.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/04-boolean-if-else.ipynb).
+- **Assignment 02:** [Problem Set 02](https://danilofreire.github.io/qtm151/problem-sets/problem-set-02.ipynb).
+
+*Friday, September 13:*
+
+- **Assignment 01 due (5%).**
+
+Weekly suggested readings:
+
+- [Real Python: Python Data Types](https://realpython.com/python-data-types/).
+- [Real Python: Conditional Statements in Python](https://realpython.com/python-conditional-statements/).
+- [Python Official Documentation: An Informal introduction to Python and More Control Flow Tools (Chapters 3-4)](https://docs.python.org/3/tutorial/index.html).
+- Matthes, E. (2019). Python Crash Course: A Hands-On, Project-Based Introduction to Programming (2nd ed.). No Starch Press. [Chapter 02](https://nostarch.com/download/PCC3e_ch2sample_8.17.22.pdf).
+- Severance, C. (2016). Python for Everybody: Exploring Data in Python 3. CreateSpace Independent Publishing Platform. [Chapters 3-11](https://www.py4e.com/lessons).
+
+**Week 04: Loops - While, For, Break, Continue**
+
+*Monday, September 16:*
+
+- Lecture 05: While Loops and For Loops. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/05-while-for.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/05-while-for.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/05-while-for.ipynb).
+
+*Wednesday, September 18:*
+
+- Lecture 06: Applications 1: Simulation Studies. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/06-simulation-studies.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/06-simulation-studies.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/06-simulation-studies.ipynb).
+- **Assignment 03:** [Problem Set 03](https://danilofreire.github.io/qtm151/problem-sets/problem-set-03.ipynb).
+
+*Friday, September 20:*
+
+- **Assignment 02 due (5%).**
+
+Weekly suggested readings:
+
+- [Python Official Documentation: Compound Statements](https://docs.python.org/3/reference/compound_stmts.html).
+- [Real Python: Python 'while' Loops (Indefinite Iteration)](https://realpython.com/python-while-loop/). 
+- [Real Python: Python 'for' Loops (Definite Iteration)](https://realpython.com/python-for-loop/).
+- [W3Schools: Python While Loops](https://www.w3schools.com/python/python_while_loops.asp).
+- Programiz: [Python For Loop](https://www.programiz.com/python-programming/for-loop), [Python While Loop](https://www.programiz.com/python-programming/while-loop), and [Python Break and Continue](https://www.programiz.com/python-programming/break-continue).
+- Sweigart, A. (2019). Automate the Boring Stuff with Python: Practical Programming for Total Beginners (2nd ed.). No Starch Press. [Chapter 02: Flow Control](https://automatetheboringstuff.com/2e/chapter2/).
+
+## Module 03: Writing and Running Functions
+
+**Week 05: Functions and Global/Local Variables**
+
+*Monday, September 23:*
+
+- Lecture 07: Functions and Arguments. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/07-functions-arguments.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/07-functions-arguments.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/07-functions-arguments.ipynb).
+
+*Wednesday, September 25:*
+
+- Lecture 08: Global and Local Variables. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/08-global-local.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/08-global-local.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/08-global-local.ipynb).
+- **Assignment 04:** [Problem Set 04](https://danilofreire.github.io/qtm151/problem-sets/problem-set-04.ipynb).
+
+*Friday, September 27:*
+
+- **Assignment 03 due (5%).**
+
+**Week 06: Applications and Subsetting Data**
+
+*Monday, September 30:*
+
+- Lecture 09: **Quiz 01: Application 02 - Operations over Multiple Datasets (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/09-application-operations.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/09-application-operations.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/09-application-operations.ipynb).
+
+*Wednesday, October 02:*
+
+- Lecture 10: Subsetting Data. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/10-subsetting-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/10-subsetting-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/10-subsetting-data.ipynb).
+- **Assignment 05:** [Problem Set 05](https://danilofreire.github.io/qtm151/problem-sets/problem-set-05.ipynb).
+
+*Friday, October 04:*
+
+- **Assignment 04 due (5%).**
+
+Weekly suggested readings:
+
+- [NumPy Documentation: Indexing on `ndarrays`](https://numpy.org/doc/stable/user/basics.indexing.html).
+- [Pandas Documentation: How do I Select a Subset of a `DataFrame`?](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/03_subset_data.html).
+- VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Section 3.2: Data Indexing and Selection](https://jakevdp.github.io/PythonDataScienceHandbook/03.02-data-indexing-and-selection.html).
+- McKinney, W. (2022). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O'Reilly Media. [Chapter 05: Getting Started with Pandas](https://wesmckinney.com/book/pandas-basics).
+
+**Week 07: Application 03 - Linear Models**
+
+*Monday, October 07:*
+
+- Lecture 11: Application 03: Linear Models. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/11-application-linear-models.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/11-application-linear-models.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/11-application-linear-models.ipynb).
+
+Weekly suggested readings:
+
+- [Real Python: Linear Regression in Python](https://realpython.com/linear-regression-in-python/)
+- [Towards Data Science: Linear Regression in Python](https://towardsdatascience.com/linear-regression-using-python-b136c91bf0a2).
+- Sheppard, K. (2023). Introduction to Python for Econometrics, Statistics and Data Analysis (5th ed.). University of Oxford. [Chapter 21: Statistical Analysis with `statsmodels`](https://www.kevinsheppard.com/files/teaching/python/notes/python_introduction_2021.pdf).
+
+## Module 04: Data Manipulation with Pandas
+
+*Wednesday, October 09:*
+
+- Lecture 12: Creating and Replacing Variables. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/12-creating-replacing-variables.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/12-creating-replacing-variables.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/12-creating-replacing-variables.ipynb).
+- **Assignment 06:** [Problem Set 06](https://danilofreire.github.io/qtm151/problem-sets/problem-set-06.ipynb).
+
+*Friday, October 11:*
+
+- **Assignment 05 due (5%).**
+
+*Monday, October 14: Fall Break (no class)*
+
+*Wednesday, October 16:*
+
+- Lecture 13: **Quiz 2: Application 4: Random Assignment (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/13-application-random-assignment.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/13-application-random-assignment.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/13-application-random-assignment.ipynb).
+- **Assignment 07:** [Problem Set 07](https://danilofreire.github.io/qtm151/problem-sets/problem-set-07.ipynb).
+
+*Friday, October 18:*
+
+- **Assignment 06 due (5%).**
+
+*Monday, October 21:*
+
+- Lecture 14: Aggregating Data. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/14-aggregating-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/14-aggregating-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/14-aggregating-data.ipynb).
+
+*Wednesday, October 23:*
+
+- Lecture 15: Merging Data. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/15-merging-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/15-merging-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/15-merging-data.ipynb).
+- **Assignment 08:** [Problem Set 08](https://danilofreire.github.io/qtm151/problem-sets/problem-set-08.ipynb).
+
+*Friday, October 25:*
+
+- **Assignment 07 due (5%).**
+
+Weekly suggested readings:
+
+- VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Chapter 3: Data Manipulation with Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html).
+- McKinney, W. (2022). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O'Reilly Media. [Chapter 07: Data Cleaning and Preparation](https://wesmckinney.com/book/data-cleaning).
+- [DataCamp: Pandas Tutorial: DataFrames in Python](https://www.datacamp.com/tutorial/pandas-tutorial-dataframe-python).
+- [Real Python: Pandas Tutorial: DataFrames in Python](https://realpython.com/pandas-dataframe/).
+
+## Module 05: Data Manipulation with SQL
+
+*Monday, October 28:*
+
+- Lecture 16: Introduction to SQL. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/16-introduction-sql.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/16-introduction-sql.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/16-introduction-sql.ipynb).
+
+*Wednesday, October 30:*
+
+- Lecture 17: **Quiz 3: Application 5: SQL Queries (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/17-application-sql-queries.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/17-application-sql-queries.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/17-application-sql-queries.ipynb).
+- **Assignment 09:** [Problem Set 09](https://danilofreire.github.io/qtm151/problem-sets/problem-set-09.ipynb).
+- **Instructions for the Final Project:** [Final Project](https://danilofreire.github.io/qtm151/final-project).
+
+*Friday, November 01:*
+
+- **Assignment 08 due (5%).**
+
+Weekly suggested readings:
+
+- [Mode Analytics: SQL Tutorial](https://mode.com/sql-tutorial/).
+- [Real Python: SQL Databases and SQLite](https://realpython.com/python-sql-libraries/).
+- [Khan Academy: SQL Basics](https://www.khanacademy.org/computing/computer-programming/sql). (Note: Khan Academy is a great resource for learning SQL and other programming languages).
+- [Coursera: PostgreSQL for Everybody](https://www.coursera.org/specializations/postgresql-for-everybody).
+- [PostgreSQL Tutorial](https://www.postgresqltutorial.com/).
+- [PostgreSQL Exercises](https://pgexercises.com/). 
+- [PostgreSQL Documentation: SQL Commands](https://www.postgresql.org/docs/current/sql-commands.html). (Note: For reference only).
+
+*Monday, November 04:*
+
+- Lecture 18: Merging Tables in SQL. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/18-merging-tables-sql.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/18-merging-tables-sql.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/18-merging-tables-sql.ipynb).
+
+*Wednesday, November 06:*
+
+- Lecture 19: Import SQL Data into Python. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/19-import-sql-python.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/19-import-sql-python.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/19-import-sql-python.ipynb).
+- **Assignment 10:** [Problem Set 10](https://danilofreire.github.io/qtm151/problem-sets/problem-set-10.ipynb).
+
+*Friday, November 08:*
+
+- **Assignment 09 due (5%).**
+
+Weekly suggested readings:
+
+- [Pandas Documentation: SQL Databases](https://pandas.pydata.org/docs/user_guide/io.html#sql-queries).
+- [Real Python: Working with SQLite Databases Using Python and Pandas](https://realpython.com/python-sql-libraries/).
+- [Mode Analytics: SQL Joins](https://mode.com/sql-tutorial/sql-joins/).
+- [PostgreSQL Documentation: Joins Between Tables](https://www.postgresql.org/docs/current/tutorial-join.html).
+
+## Module 06: Time Series and Panel Data
+
+*Monday, November 11:*
+
+- Lecture 20: Time Series Analysis. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/20-time-series-analysis.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/20-time-series-analysis.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/20-time-series-analysis.ipynb).
+
+*Wednesday, November 13:*
+
+- Lecture 21: **Quiz 4: Application 6: Practice SQL Queries (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/21-application-practice-sql.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/21-application-practice-sql.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/21-application-practice-sql.ipynb).
+
+*Friday, November 15:*
+
+- **Assignment 10 due (5%).**
+
+Weekly suggested readings:
+
+- VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Section 3.11: Working with Time Series](https://jakevdp.github.io/PythonDataScienceHandbook/03.11-working-with-time-series.html).
+- McKinney, W. (2022). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O'Reilly Media. [Chapter 11: Time Series](https://wesmckinney.com/book/time-series).
+- [Real Python: Working with Dates and Times in Python](https://realpython.com/python-datetime/).
+- [Pandas Documentation: Time Series / Date functionality](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html).
+- [Real Python: Python String Formatting Best Practices](https://realpython.com/python-string-formatting/).
+
+*Monday, November 18:*
+
+- Lecture 22: Pivot Tables. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/22-pivot-tables.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/22-pivot-tables.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/22-pivot-tables.ipynb).
+
+*Wednesday, November 20:*
+
+- Lecture 23: **Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/23-application-time-panel-plots.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/23-application-time-panel-plots.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/23-application-time-panel-plots.ipynb).
+
+Weekly suggested readings:
+
+- VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Section 3.9: Pivot Tables](https://jakevdp.github.io/PythonDataScienceHandbook/03.09-pivot-tables.html).
+- [Pandas Documentation: Reshaping and Pivot Tables](https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html).
+- [Analytics Vidhya: Create Pivot Table Using Pandas in Python](https://www.analyticsvidhya.com/blog/2020/03/pivot-table-pandas-python/).
+- [Leon Wei - Pandas Pivot Tables and Cross-Tabulation](https://medium.com/@theleonwei/pandas-pivot-tables-and-cross-tabulation-34f61fbbfbf0).
+- [Real Python: How to Create Pivot Tables With `pandas`](https://realpython.com/how-to-pandas-pivot-table/).
+
+## Module 07: Text Data and Advanced Plots
+
+*Monday, November 25:*
+
+- Lecture 24: Manipulating Text Data. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/24-manipulating-text-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/24-manipulating-text-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/24-manipulating-text-data.ipynb).
+
+*Wednesday, November 27: Thanksgiving Break (no class)*
+
+*Monday, December 02:*
+
+- Lecture 25: Advanced Plots I. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/25-advanced-plots-i.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/25-advanced-plots-i.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/25-advanced-plots-i.ipynb).
+
+*Wednesday, December 04:*
+
+- Lecture 26: Advanced Plots II. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/26-advanced-plots-ii.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/26-advanced-plots-ii.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/26-advanced-plots-ii.ipynb).
+
+*Monday, December 09:*
+
+- **Final Project due (20%).**
