@@ -23,7 +23,7 @@ web: danilofreire.github.io/qtm151
 
 Welcome to [QTM 151](https://danilofreire.github.io/qtm151)! This is an introductory course designed to equip students with essential skills in data analysis and statistical computing using Python and SQL. It is tailored for students with little to no prior programming experience who are eager to develop computational proficiency for data-driven decision making. 
 
-Throughout the term, we will cover key topics for aspiring data analysts and researchers. These include version control for collaborative coding, Quarto and Jupyter Notebooks for reproducible research, fundamental Python operations and functions, data wrangling techniques, database merging, data visualisation, and introductions to linear modelling and time series analysis. 
+Throughout the term, we will cover key topics for aspiring data analysts and researchers. These include version control for collaborative coding, Jupyter Notebooks for reproducible research, fundamental Python operations and functions, data wrangling techniques, database merging, data visualisation, and introductions to linear modelling and time series analysis. 
 
 By working with real-world datasets and problems, students will gain hands-on experience applying these tools and methods to extract meaningful insights from data. The course fosters both technical skills and the critical thinking necessary to tackle complex data challenges. Upon completion, students will be well-prepared for advanced coursework in quantitative methods and data science.
 
@@ -31,14 +31,13 @@ By working with real-world datasets and problems, students will gain hands-on ex
 
 By the end of this course, students will be able to:
 
-1. Understand and apply version control using Git and GitHub.
-2. Perform basic operations and write functions in Python.
-3. Conduct data wrangling and manipulate data using Python libraries such as Pandas.
-4. Merge and manage databases using SQL.
-5. Create visualisations to effectively communicate data insights.
-6. Implement linear models and understand the principles of time series analysis.
-7. Use Quarto and Jupyter Notebooks for reproducible research.
-8. Develop problem-solving skills relevant to data analysis and statistical computing.
+1. Perform basic operations and write functions in Python.
+2. Conduct data wrangling and manipulate data using Python libraries such as Pandas.
+3. Merge and manage databases using SQL.
+4. Create visualisations to effectively communicate data insights.
+5. Implement linear models and understand the principles of time series analysis.
+6. Use Jupyter Notebooks for reproducible research.
+7. Develop problem-solving skills relevant to data analysis and statistical computing.
 
 # Prerequisites
 
@@ -72,7 +71,6 @@ This course is designed to be self-contained, providing all the necessary resour
 - [SQLBolt](https://sqlbolt.com/)
 - [DataLemur for SQL interview practice](https://datalemur.com)
 - [Github Guides](https://guides.github.com/)
-- [Quarto Documentation](https://quarto.org/docs/get-started)
 
 # Course Information
 
@@ -86,9 +84,7 @@ You can write your Python code in any text editor, but I recommend [VSCode](http
 
 We will use [PostgreSQL](https://www.postgresql.org/) for database management. PostgreSQL is a powerful, open-source relational database system that is widely used in data science and software development. You can download PostgreSQL from the [official website](https://www.postgresql.org/). Please install the [VSCode extension](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres) for PostgreSQL to interact with the database.
 
-We will also use [Quarto](https://quarto.org/) and [Jupyter Notebooks](https://jupyter.org/) in class. Quarto is a versatile document format that combines the best features of [Markdown](https://www.markdownguide.org/), [\LaTeX](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes), and [R Markdown](https://rmarkdown.rstudio.com). It allows you to create reports, slides, books, and even websites in a single document.
-
-To help you get started with Quarto and Jupyter, I have prepared [a series of tutorials](http://danilofreire.github.io/qtm151/tutorials). Please review these tutorials and install Quarto along with the necessary VSCode extensions for [Quarto](https://quarto.org/docs/tools/vscode.html) and [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter&ssr=false). Jupyter comes installed with Anaconda. We will have a hands-on session to learn how to use both tools effectively.
+We will also use [Jupyter Notebooks](https://jupyter.org/) in class. To help you get started with Jupyter, I have prepared [a tutorial](http://danilofreire.github.io/qtm151/tutorials). Please review the tutorial and install the VSCode [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter&ssr=false). Jupyter itself comes pre-installed with Anaconda. We will have a hands-on session to learn how to use Jupyter effectively.
 
 # Office Hours
 
@@ -116,7 +112,7 @@ Emory University welcomes students from around the country and the world, and th
 
 **Class Quizzes (30%).** Students will also take five in-class quizzes throughout the semester. These quizzes will be based on the readings and lectures from the previous weeks. They will be designed to test your understanding of the material and your ability to apply the concepts to new problems. Quizzes will be open-book and open-notes, and students have 50 minutes to complete them. They are individual assessments, and students are not allowed to discuss the questions with their colleagues. 
 
-**Final Project (20%).** The final project will consist of a short report, created using Quarto or Jupyter and using one of the datasets shared on the course [GitHub repository](https://github.com/danilofreire/qtm151/final-project). Further instructions will be provided in class. The final project will be due on the last day of class.
+**Final Project (20%).** The final project will consist of a short report, created using Jupyter and using one of the datasets shared on the course [GitHub repository](https://github.com/danilofreire/qtm151/final-project). Further instructions will be provided in class. The final project will be due on the last day of class.
 
 # Grading Scale
 
@@ -130,7 +126,7 @@ Each student's final grade will be based on the following after rounding up to t
 
 The weekly suggested readings are optional and recommended for those who want to deepen their understanding of the course topics. 
 
-## Module 01: Introduction to Python, Jupyter, Quarto, and GitHub
+## Module 01: Introduction to Python, Jupyter, and GitHub
 
 **Week 01: Introduction and Course Overview**
 
@@ -140,17 +136,17 @@ Required readings:
 
 - Syllabus and course website: <http://danilofreire.github.io/qtm151>.
 - GitHub repository: <https://github.com/danilofreire/qtm151>.
-- Lecture 01: Welcome to QTM 151 - Introduction to Computing Environment. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/01-introduction.html) and [PDF Slides](https://danilofreire.github.io/qtm151/lectures/01-introduction.pdf).
+- Lecture 01: Welcome to QTM 151 - Introduction to Computing Environment. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-01/01-introduction.html) and [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-01/01-introduction.pdf).
 
 Weekly suggested readings:
 
-- [Course Tutorials: How to Install Python, Jupyter, PostgreSQL, Quarto, and VSCode, and Open a Free Educational Account on GitHub](https://danilofreire.github.io/qtm151/tutorials).
+- [Course Tutorials: How to Install Python, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub](https://danilofreire.github.io/qtm151/tutorials).
 - [DataCamp: SQL vs Python: Which Should You Learn?](https://www.datacamp.com/blog/sql-vs-python-which-to-learn) (Note: *both!*)
 - Cao, L. (2017). [Data Science: A Comprehensive Overview](https://dl.acm.org/doi/pdf/10.1145/3076253). ACM Computing Surveys (CSUR), 50(3), 1-42.
 - Brady, H. E. (2019). [The Challenge of Big Data and Data Science](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-090216-023229). Annual Review of Political Science, 22(1), 297-323.
 - Zitnik, M., Nguyen, F., Wang, B., Leskovec, J., Goldenberg, A., & Hoffman, M. M. (2019). [Machine Learning for Integrating Data in Biology and Medicine: Principles, Practice, and Opportunities](https://www.sciencedirect.com/science/article/abs/pii/S1566253518304482). Information Fusion, 50, 71-91.
 
-**Week 02: Introduction to Jupyter and Quarto**
+**Week 02: Introduction to Jupyter**
 
 *Monday, September 02: Labour Day (no class)*
 
@@ -158,7 +154,7 @@ Weekly suggested readings:
 
 Required readings:
 
-- Lecture 02: Introduction to Jupyter Notebooks and Quarto. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/02-introduction-jupyter-quarto.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/02-introduction-jupyter-quarto.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/02-introduction-jupyter-quarto.ipynb).
+- Lecture 02: Introduction to Jupyter Notebooks. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-02/02-jupyter.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-02/02-jupyter.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-02/02-jupyter.ipynb).
 - **Assignment 01:** [Problem Set 01](https://danilofreire.github.io/qtm151/problem-sets/problem-set-01.ipynb).
 
 Weekly suggested readings:
@@ -167,8 +163,6 @@ Weekly suggested readings:
 - VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Chapter 01: IPython: Beyond Normal Python](https://jakevdp.github.io/PythonDataScienceHandbook/index.html).
 - McKinney, W. (2022). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O'Reilly Media. [Chapter 02: Python Language Basics, IPython, and Jupyter Notebooks](https://wesmckinney.com/book/python-basics).
 - [Corey Schafer: Jupyter Notebook Tutorial - Introduction, Setup, and Walkthrough](https://www.youtube.com/watch?v=HW29067qVWk). (Note: Corey Schafer is a great Python instructor on YouTube. Check out his other videos as well.)
-- [Posit: Quarto Guide](https://quarto.org/docs/guide/).
-- [Posit: Get Started with Quarto (Video)](https://www.youtube.com/watch?v=_f3latmOhew).
 - [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
 
 ## Module 02: Python Data Types and Controlling Flows
@@ -179,11 +173,11 @@ Weekly suggested readings:
 
 Required readings:
 
-- Lecture 03: Mathematical Operations, Arrays, and Random Numbers. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/03-maths-arrays-random.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/03-maths-arrays-random.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/03-maths-arrays-random.ipynb).
+- Lecture 03: Mathematical Operations, Arrays, and Random Numbers. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-03/03-maths-arrays-random.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-03/03-maths-arrays-random.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-03/03-maths-arrays-random.ipynb).
 
 *Wednesday, September 11:*
 
-- Lecture 04: Boolean Variables and If/Else Statements. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/04-boolean-if-else.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/04-boolean-if-else.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/04-boolean-if-else.ipynb).
+- Lecture 04: Boolean Variables and If/Else Statements. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-04/04-boolean-if-else.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-04/04-boolean-if-else.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-04/04-boolean-if-else.ipynb).
 - **Assignment 02:** [Problem Set 02](https://danilofreire.github.io/qtm151/problem-sets/problem-set-02.ipynb).
 
 *Friday, September 13:*
@@ -202,11 +196,11 @@ Weekly suggested readings:
 
 *Monday, September 16:*
 
-- Lecture 05: While Loops and For Loops. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/05-while-for.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/05-while-for.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/05-while-for.ipynb).
+- Lecture 05: While Loops and For Loops. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-05/05-while-for.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-05/05-while-for.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-05/05-while-for.ipynb).
 
 *Wednesday, September 18:*
 
-- Lecture 06: Applications 1: Simulation Studies. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/06-simulation-studies.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/06-simulation-studies.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/06-simulation-studies.ipynb).
+- Lecture 06: Applications 1: Simulation Studies. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-06/06-simulation-studies.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-06/06-simulation-studies.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-06/06-simulation-studies.ipynb).
 - **Assignment 03:** [Problem Set 03](https://danilofreire.github.io/qtm151/problem-sets/problem-set-03.ipynb).
 
 *Friday, September 20:*
@@ -228,11 +222,11 @@ Weekly suggested readings:
 
 *Monday, September 23:*
 
-- Lecture 07: Functions and Arguments. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/07-functions-arguments.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/07-functions-arguments.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/07-functions-arguments.ipynb).
+- Lecture 07: Functions and Arguments. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-07/07-functions-arguments.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-07/07-functions-arguments.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-07/07-functions-arguments.ipynb).
 
 *Wednesday, September 25:*
 
-- Lecture 08: Global and Local Variables. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/08-global-local.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/08-global-local.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/08-global-local.ipynb).
+- Lecture 08: Global and Local Variables. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-08/08-global-local.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-08/08-global-local.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-08/08-global-local.ipynb).
 - **Assignment 04:** [Problem Set 04](https://danilofreire.github.io/qtm151/problem-sets/problem-set-04.ipynb).
 
 *Friday, September 27:*
@@ -243,11 +237,11 @@ Weekly suggested readings:
 
 *Monday, September 30:*
 
-- Lecture 09: **Quiz 01: Application 02 - Operations over Multiple Datasets (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/09-application-operations.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/09-application-operations.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/09-application-operations.ipynb).
+- Lecture 09: **Quiz 01: Application 02 - Operations over Multiple Datasets (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-09/09-application-operations.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-09/09-application-operations.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-09/09-application-operations.ipynb).
 
 *Wednesday, October 02:*
 
-- Lecture 10: Subsetting Data. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/10-subsetting-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/10-subsetting-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/10-subsetting-data.ipynb).
+- Lecture 10: Subsetting Data. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-10/10-subsetting-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-10/10-subsetting-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-10/10-subsetting-data.ipynb).
 - **Assignment 05:** [Problem Set 05](https://danilofreire.github.io/qtm151/problem-sets/problem-set-05.ipynb).
 
 *Friday, October 04:*
@@ -265,7 +259,7 @@ Weekly suggested readings:
 
 *Monday, October 07:*
 
-- Lecture 11: Application 03: Linear Models. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/11-application-linear-models.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/11-application-linear-models.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/11-application-linear-models.ipynb).
+- Lecture 11: Application 03: Linear Models. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-11/11-application-linear-models.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-11/11-application-linear-models.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-11/11-application-linear-models.ipynb). 
 
 Weekly suggested readings:
 
@@ -277,7 +271,7 @@ Weekly suggested readings:
 
 *Wednesday, October 09:*
 
-- Lecture 12: Creating and Replacing Variables. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/12-creating-replacing-variables.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/12-creating-replacing-variables.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/12-creating-replacing-variables.ipynb).
+- Lecture 12: Creating and Replacing Variables. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-12/12-creating-replacing.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-12/12-creating-replacing.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-12/12-creating-replacing.ipynb).
 - **Assignment 06:** [Problem Set 06](https://danilofreire.github.io/qtm151/problem-sets/problem-set-06.ipynb).
 
 *Friday, October 11:*
@@ -288,7 +282,7 @@ Weekly suggested readings:
 
 *Wednesday, October 16:*
 
-- Lecture 13: **Quiz 2: Application 4: Random Assignment (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/13-application-random-assignment.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/13-application-random-assignment.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/13-application-random-assignment.ipynb).
+- Lecture 13: **Quiz 2: Application 4: Random Assignment (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-13/13-application-random-assignment.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-13/13-application-random-assignment.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-13/13-application-random-assignment.ipynb).
 - **Assignment 07:** [Problem Set 07](https://danilofreire.github.io/qtm151/problem-sets/problem-set-07.ipynb).
 
 *Friday, October 18:*
@@ -297,11 +291,11 @@ Weekly suggested readings:
 
 *Monday, October 21:*
 
-- Lecture 14: Aggregating Data. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/14-aggregating-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/14-aggregating-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/14-aggregating-data.ipynb).
+- Lecture 14: Aggregating Data. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-14/14-aggregating-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-14/14-aggregating-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-14/14-aggregating-data.ipynb).
 
 *Wednesday, October 23:*
 
-- Lecture 15: Merging Data. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/15-merging-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/15-merging-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/15-merging-data.ipynb).
+- Lecture 15: Merging Data. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-15/15-merging-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-15/15-merging-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-15/15-merging-data.ipynb).
 - **Assignment 08:** [Problem Set 08](https://danilofreire.github.io/qtm151/problem-sets/problem-set-08.ipynb).
 
 *Friday, October 25:*
@@ -319,11 +313,11 @@ Weekly suggested readings:
 
 *Monday, October 28:*
 
-- Lecture 16: Introduction to SQL. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/16-introduction-sql.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/16-introduction-sql.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/16-introduction-sql.ipynb).
+- Lecture 16: Introduction to SQL. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-16/16-introduction-sql.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-16/16-introduction-sql.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-16/16-introduction-sql.ipynb).
 
 *Wednesday, October 30:*
 
-- Lecture 17: **Quiz 3: Application 5: SQL Queries (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/17-application-sql-queries.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/17-application-sql-queries.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/17-application-sql-queries.ipynb).
+- Lecture 17: **Quiz 3: Application 5: SQL Queries (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-17/17-application-sql-queries.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-17/17-application-sql-queries.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-17/17-application-sql-queries.ipynb).
 - **Assignment 09:** [Problem Set 09](https://danilofreire.github.io/qtm151/problem-sets/problem-set-09.ipynb).
 - **Instructions for the Final Project:** [Final Project](https://danilofreire.github.io/qtm151/final-project).
 
@@ -343,11 +337,11 @@ Weekly suggested readings:
 
 *Monday, November 04:*
 
-- Lecture 18: Merging Tables in SQL. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/18-merging-tables-sql.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/18-merging-tables-sql.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/18-merging-tables-sql.ipynb).
+- Lecture 18: Merging Tables in SQL. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-18/18-merging-tables.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-18/18-merging-tables.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-18/18-merging-tables.ipynb).
 
 *Wednesday, November 06:*
 
-- Lecture 19: Import SQL Data into Python. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/19-import-sql-python.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/19-import-sql-python.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/19-import-sql-python.ipynb).
+- Lecture 19: Import SQL Data into Python. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-19/19-import-sql-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-19/19-import-sql-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-19/19-import-sql-data.ipynb).
 - **Assignment 10:** [Problem Set 10](https://danilofreire.github.io/qtm151/problem-sets/problem-set-10.ipynb).
 
 *Friday, November 08:*
@@ -365,11 +359,11 @@ Weekly suggested readings:
 
 *Monday, November 11:*
 
-- Lecture 20: Time Series Analysis. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/20-time-series-analysis.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/20-time-series-analysis.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/20-time-series-analysis.ipynb).
+- Lecture 20: Time Series Analysis. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-20/20-time-series.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-20/20-time-series.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-20/20-time-series.ipynb).
 
 *Wednesday, November 13:*
 
-- Lecture 21: **Quiz 4: Application 6: Practice SQL Queries (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/21-application-practice-sql.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/21-application-practice-sql.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/21-application-practice-sql.ipynb).
+- Lecture 21: **Quiz 4: Application 6: Practice SQL Queries (6%)**. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-21/21-application-sql-queries.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-21/21-application-sql-queries.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-21/21-application-sql-queries.ipynb).
 
 *Friday, November 15:*
 
@@ -385,7 +379,7 @@ Weekly suggested readings:
 
 *Monday, November 18:*
 
-- Lecture 22: Pivot Tables. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/22-pivot-tables.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/22-pivot-tables.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/22-pivot-tables.ipynb).
+- Lecture 22: Pivot Tables. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/22-pivot-tables/22-pivot-tables.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/22-pivot-tables/22-pivot-tables.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/22-pivot-tables/22-pivot-tables.ipynb).
 
 *Wednesday, November 20:*
 
@@ -403,17 +397,17 @@ Weekly suggested readings:
 
 *Monday, November 25:*
 
-- Lecture 24: Manipulating Text Data. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/24-manipulating-text-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/24-manipulating-text-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/24-manipulating-text-data.ipynb).
+- Lecture 24: Manipulating Text Data. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/24-text-data/24-text-data.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/24-text-data/24-text-data.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/24-text-data/24-text-data.ipynb).
 
 *Wednesday, November 27: Thanksgiving Break (no class)*
 
 *Monday, December 02:*
 
-- Lecture 25: Advanced Plots I. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/25-advanced-plots-i.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/25-advanced-plots-i.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/25-advanced-plots-i.ipynb).
+- Lecture 25: Advanced Plots I. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/25-advanced-plots/25-advanced-plots.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/25-advanced-plots/25-advanced-plots.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/25-advanced-plots/25-advanced-plots.ipynb).
 
 *Wednesday, December 04:*
 
-- Lecture 26: Advanced Plots II. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/26-advanced-plots-ii.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/26-advanced-plots-ii.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/26-advanced-plots-ii.ipynb).
+- Lecture 26: Advanced Plots II. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/26-advanced-plots/26-advanced-plots.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/26-advanced-plots/26-advanced-plots.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/26-advanced-plots/26-advanced-plots.ipynb).
 
 *Monday, December 09:*
 
