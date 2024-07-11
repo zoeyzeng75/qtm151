@@ -4,11 +4,11 @@ This folder contains several tutorials for the QTM151 course. Below you will fin
 
 ## Available Tutorials
 
+- [01 - VSCode and Anaconda Tutorial](01-vscode-anaconda-tutorial.pdf) ([QMD version](01-vscode-anaconda-tutorial.qmd))
+- [02 - Jupyter Notebook and Markdown Tutorial](02-jupyter-markdown-tutorial.pdf) ([QMD version](02-jupyter-markdown-tutorial.qmd))
 - [GitHub Tutorial 01: Getting Started](github-tutorial-01-getting-started.pdf) ([QMD version](github-tutorial-01-getting-started.qmd))
 - [GitHub Tutorial 02: Essentials](github-tutorial-02-essentials.pdf) ([QMD version](github-tutorial-02-essentials.qmd))
 - [GitHub Tutorial 03: Updating Lecture Notes](github-tutorial-03-updating-lecture-notes.pdf) ([QMD version](github-tutorial-03-updating-lecture-notes.qmd))
-- [Jupyter Notebook Tutorial](jupyter-notebook-tutorial.pdf) ([QMD version](jupyter-notebook-tutorial.qmd))
-- [VSCode and Anaconda Tutorial](vscode-anaconda-tutorial.pdf) ([QMD version](vscode-anaconda-tutorial.qmd))
 
 ## File Formats
 
