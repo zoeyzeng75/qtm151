@@ -6,9 +6,7 @@ This folder contains several tutorials for the QTM151 course. Below you will fin
 
 - [01 - VSCode and Anaconda Tutorial](01-vscode-anaconda-tutorial.pdf) ([QMD version](01-vscode-anaconda-tutorial.qmd))
 - [02 - Jupyter Notebook and Markdown Tutorial](02-jupyter-markdown-tutorial.pdf) ([QMD version](02-jupyter-markdown-tutorial.qmd))
-- [GitHub Tutorial 01: Getting Started](github-tutorial-01-getting-started.pdf) ([QMD version](github-tutorial-01-getting-started.qmd))
-- [GitHub Tutorial 02: Essentials](github-tutorial-02-essentials.pdf) ([QMD version](github-tutorial-02-essentials.qmd))
-- [GitHub Tutorial 03: Updating Lecture Notes](github-tutorial-03-updating-lecture-notes.pdf) ([QMD version](github-tutorial-03-updating-lecture-notes.qmd))
+- [02 - GitHub Tutorial](03-github-tutorial.pdf) ([QMD version](03-github-tutorial.qmd))
 
 ## File Formats
 
@@ -24,7 +22,7 @@ You can either read the tutorials directly on GitHub or download them to your co
 ## Additional Resources
 
 - `article-template.latex`: A LaTeX template for articles
-- `references.bib`: A bibliography file for references
+- `testing-ipython`: A Jupyter Notebook for showing Markdown and code cells
 - `testing-anaconda.py`: A Python script for testing Anaconda installation
 - `.gitignore`: Git configuration file to specify intentionally untracked files
 
