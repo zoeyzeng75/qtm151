@@ -51,7 +51,7 @@ We will use GitHub extensively in our course. So it is important that you become
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/github-signup.png}
+\includegraphics[width=0.8\textwidth]{images/github-signup.png}
 \caption{GitHub Signup}
 \end{figure}
 
@@ -59,7 +59,7 @@ We will use GitHub extensively in our course. So it is important that you become
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/github-education.png}
+\includegraphics[width=0.8\textwidth]{images/github-education.png}
 \caption{GitHub Education}
 \end{figure}
 
@@ -67,7 +67,7 @@ We will use GitHub extensively in our course. So it is important that you become
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/github-desktop.png}
+\includegraphics[width=0.8\textwidth]{images/github-desktop.png}
 \caption{GitHub Desktop}
 \end{figure}
 
@@ -75,7 +75,7 @@ After you install GitHub Desktop, you will need to sign in with your GitHub acco
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/github-desktop-signin.png}
+\includegraphics[width=0.8\textwidth]{images/github-desktop-signin.png}
 \caption{GitHub Desktop Sign In}
 \end{figure}
 
@@ -87,13 +87,13 @@ The course materials are available on GitHub at <https://github.com/danilofreire
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/github-fork.png}
+\includegraphics[width=0.8\textwidth]{images/github-fork.png}
 \caption{Fork the Repository}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/github-fork02.png}
+\includegraphics[width=0.8\textwidth]{images/github-fork02.png}
 \caption{Create a Copy of the Repository}
 \end{figure}
 
@@ -114,13 +114,13 @@ Then open GitHub Desktop and click on "File" > "Clone Repository". Paste the URL
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/github-clone02.png}
+\includegraphics[width=0.8\textwidth]{images/github-clone02.png}
 \caption{Clone the Repository}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/github-clone03.png}
+\includegraphics[width=0.8\textwidth]{images/github-clone03.png}
 \caption{Cloning}
 \end{figure}
 
@@ -136,7 +136,7 @@ Then select "To contribute to the parent project" and click on "Continue". This 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/github-open-vscode.png}
+\includegraphics[width=0.7\textwidth]{images/github-open-vscode.png}
 \caption{Open in Visual Studio Code}
 \end{figure}
 
