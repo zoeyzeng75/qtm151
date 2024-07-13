@@ -80,9 +80,9 @@ We will meet every Monday and Wednesday from 16:00 to 16:50 at [XXXXX](https://q
 
 We will mainly use [Python](https://www.python.org) in this course. Python is a free, versatile, and powerful programming language that is widely used in data science, machine learning, and scientific computing. You can download Python from the [official website](https://www.python.org/). I recommend using the [Anaconda distribution](https://www.anaconda.com/products/individual) as it comes with all the necessary libraries for data analysis, such as [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/), and [Matplotlib](https://matplotlib.org/).
 
-You can write your Python code in any text editor, but I recommend [VSCode](https://code.visualstudio.com/) with the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python). [Pycharm](https://www.jetbrains.com/pycharm/) is also well-regarded by developers. If you are feeling adventurous, you can also use [Neovim](https://neovim.io/) with the [coc-pyright](https://github.com/fannheyward/coc-pyright) plugin. That is, if [you can exit the editor](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/). :)
+You can write your Python code in any text editor, but I recommend [VS Code](https://code.visualstudio.com/) with the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python). [Pycharm](https://www.jetbrains.com/pycharm/) is also well-regarded by developers. If you are feeling adventurous, you can also use [Neovim](https://neovim.io/) with the [coc-pyright](https://github.com/fannheyward/coc-pyright) plugin. That is, if [you can exit the editor](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/). :)
 
-We will use [PostgreSQL](https://www.postgresql.org/) for database management. PostgreSQL is a powerful, open-source relational database system that is widely used in data science and software development. You can download PostgreSQL from the [official website](https://www.postgresql.org/). Please install the [VSCode extension](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres) for PostgreSQL to interact with the database.
+We will use [PostgreSQL](https://www.postgresql.org/) for database management. PostgreSQL is a powerful, open-source relational database system that is widely used in data science and software development. You can download PostgreSQL from the [official website](https://www.postgresql.org/). Please install the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres) for PostgreSQL to interact with the database.
 
 We will also use [Jupyter Notebooks](https://jupyter.org/) in class. To help you get started with Jupyter, I have prepared [a tutorial](http://danilofreire.github.io/qtm151/tutorials). Please review the tutorial and install the VSCode [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter&ssr=false). Jupyter itself comes pre-installed with Anaconda. We will have a hands-on session to learn how to use Jupyter effectively.
 
@@ -159,7 +159,7 @@ Required readings:
 
 Weekly suggested readings:
 
-- [Microsoft: Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+- [Microsoft: Jupyter Notebooks in VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
 - VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Chapter 01: IPython: Beyond Normal Python](https://jakevdp.github.io/PythonDataScienceHandbook/index.html).
 - McKinney, W. (2022). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O'Reilly Media. [Chapter 02: Python Language Basics, IPython, and Jupyter Notebooks](https://wesmckinney.com/book/python-basics).
 - [Corey Schafer: Jupyter Notebook Tutorial - Introduction, Setup, and Walkthrough](https://www.youtube.com/watch?v=HW29067qVWk). (Note: Corey Schafer is a great Python instructor on YouTube. Check out his other videos as well.)

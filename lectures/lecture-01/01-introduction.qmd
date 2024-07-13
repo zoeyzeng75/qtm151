@@ -71,7 +71,7 @@ Please remember to check the course website regularly for updates and announceme
 
 :::: {.columns}
 ::: {.column}
-<img src="../images/profile.jpg" alt="Danilo Freire" width="200" height="200" align="center"/>
+<img src="figures/profile.jpg" alt="Danilo Freire" width="200" height="200" align="center"/>
 
 ::: {style="font-size: 26px;"}
 `r fa('envelope')` [danilo.freire@emory.edu](mailto:danilo.freire@emory.edu)
@@ -93,19 +93,19 @@ Please remember to check the course website regularly for updates and announceme
 :::
 ::::
 
-## {background-image="../images/neymar.jpg" background-size="100%"}
+## {background-image="figures/neymar.jpg" background-size="100%"}
 
-## {background-image="../images/carnaval.jpg" background-size="100%"}
+## {background-image="figures/carnaval.jpg" background-size="100%"}
 
-## {background-image="../images/montblanc.jpg" background-size="100%"}
+## {background-image="figures/montblanc.jpg" background-size="100%"}
 
-## {background-image="../images/buzz.webp" background-size="100%"}
+## {background-image="figures/buzz.webp" background-size="100%"}
 
-## {background-image="../images/moonwatch.jpg" background-size="100%"}
+## {background-image="figures/moonwatch.jpg" background-size="100%"}
 
-## {background-image="../images/moonwatch-movement.jpg" background-size="100%"}
+## {background-image="figures/moonwatch-movement.jpg" background-size="100%"}
 
-## {background-image="../images/sp.jpg" background-size="100%"}
+## {background-image="figures/sp.jpg" background-size="100%"}
 
 ## What about you? (time permitting!)
 
@@ -157,7 +157,7 @@ Please introduce yourself, tell us your name, your major, one thing you really l
 :::
 
 ::: {.column width=30%}
-![](../images/stupid-questions.jpg)
+![](figures/stupid-questions.jpg)
 :::
 ::::
 
@@ -167,9 +167,9 @@ Please introduce yourself, tell us your name, your major, one thing you really l
 ### The world's most popular programming language
 
 ::: {layout-ncol=2}
-![](../images/career.jpg)
+![](figures/career.jpg)
 
-![](../images/popularity.jpg)
+![](figures/popularity.jpg)
 :::
 
 ## Why Python
@@ -180,7 +180,7 @@ Please introduce yourself, tell us your name, your major, one thing you really l
 There are thousands of Python user groups worldwide 
 
 The Python community is very active and welcoming!
-![](../images/python-meetup.png)
+![](figures/python-meetup.png)
 :::
 
 ::: {.column width=57%}
@@ -207,7 +207,7 @@ print("Welcome to QTM151!")
 ## Why Python
 ### Salaries are good!
 
-![](../images/salary.png)
+![](figures/salary.png)
 
 ## Why SQL
 ### The world's most popular database language
@@ -223,15 +223,15 @@ print("Welcome to QTM151!")
 :::
 
 ::: {.column width=50%}
-![](../images/sql.png){width=400px}
-![](../images/postgresql.webp){width=400px}
+![](figures/sql.png){width=400px}
+![](figures/postgresql.webp){width=400px}
 :::
 ::::
 
 ## Why SQL
 ### Salaries are good too!
 
-![](../images/sql-salary.png)
+![](figures/sql-salary.png)
 
 # Course Logistics {background-color="#2d4563"}
 
@@ -280,7 +280,7 @@ print("Welcome to QTM151!")
 
 ## Our Class in a Nutshell
 
-![](../images/nutshell.png)
+![](figures/nutshell.png)
 
 ## Installing Python using Anaconda
 ### Anaconda has all the libraries we need
@@ -293,16 +293,16 @@ print("Welcome to QTM151!")
 - Questions?
 :::
 
-## Installing VS Code and Connecting Anaconda​
+## Installing VSCode and Connecting Anaconda​
 
 - Follow the instructions [Installing Visual Studio Code and Connecting it with Anaconda](https://github.com/danilofreire/qtm151/tutorials) from GitHub
 - For now: know that "base" is the Anaconda virtual environment that comes by default with the installation​
-- The next step is to check if the connection between VS code and Anaconda worked -> [the Python: Select Interpreter option should include Python ("base")​]{.alert}
-- Next step: we will create a new folder for the QTM151 course and download our virtual GitHub folder and opening it in VS Code
+- The next step is to check if the connection between VSCode and Anaconda worked -> [the Python: Select Interpreter option should include Python ("base")​]{.alert}
+- Next step: we will create a new folder for the QTM151 course and download our virtual GitHub folder and opening it in VSCode
 
-## {background-image="../images/github01.png" background-size="100%"}
+## {background-image="figures/github01.png" background-size="100%"}
 
-## {background-image="../images/github02.png" background-size="100%"}
+## {background-image="figures/github02.png" background-size="100%"}
 
 ## Jupyter Notebooks
 
@@ -317,7 +317,7 @@ print("Welcome to QTM151!")
 :::
 
 ::: {.column width=70%}
-![](../images/jupyter.png)
+![](figures/jupyter.png)
 :::
 ::::
 
@@ -326,7 +326,7 @@ print("Welcome to QTM151!")
 ::: {style="font-size: 28px;"}
 - Don't worry if you are not able to follow along with the installation instructions. We will have time to do this next class
 - We will start with the basics of Python, Jupyter Notebooks, and Quarto
-- We will also cover the basics of Anaconda and VS Code
+- We will also cover the basics of Anaconda and VSCode
 - Please remember to check the course website: <https://danilofreire.github.io/qtm151>
 - And please don't forget:
   - Coding ability can be developed
