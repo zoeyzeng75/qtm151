@@ -6,7 +6,8 @@ This folder contains several tutorials for the QTM151 course. Below you will fin
 
 - [01 - VSCode and Anaconda Tutorial](01-vscode-anaconda-tutorial.pdf) ([QMD version](01-vscode-anaconda-tutorial.qmd))
 - [02 - Jupyter Notebook and Markdown Tutorial](02-jupyter-markdown-tutorial.pdf) ([QMD version](02-jupyter-markdown-tutorial.qmd))
-- [02 - GitHub Tutorial](03-github-tutorial.pdf) ([QMD version](03-github-tutorial.qmd))
+- [03 - GitHub Tutorial](03-github-tutorial.pdf) ([QMD version](03-github-tutorial.qmd))
+- [04 - PostgreSQL Tutorial](04-postgresql-tutorial.pdf) ([QMD version](04-postgresql-tutorial.qmd))
 
 ## File Formats
 
