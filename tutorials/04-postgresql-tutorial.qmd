@@ -39,7 +39,9 @@ Here we will learn how to use [PostgreSQL](https://www.postgresql.org/), a power
 
 # Why PostgreSQL?
 
-PostgreSQL is an interface for interacting with databases. It is free, open-source, and widely used in both academia and industry. PostgreSQL has been maintained for [more than 35 years](https://www.postgresql.org/docs/current/history.html), and it supports [many data types](https://www.postgresql.org/docs/current/datatype.html), such as integers, text, dates, currencies, and arrays. It also supports [advanced features](https://dev.to/arctype/advanced-postgresql-features-a-guide-5dl0) like full-text search, JSON, XML data types, and geospatial data types.
+PostgreSQL is an interface for interacting with databases[^database]. It is free, open-source, and widely used in both academia and industry. PostgreSQL has been maintained for [more than 35 years](https://www.postgresql.org/docs/current/history.html), and it supports [many data types](https://www.postgresql.org/docs/current/datatype.html), such as integers, text, dates, currencies, and arrays. It also supports [advanced features](https://dev.to/arctype/advanced-postgresql-features-a-guide-5dl0) like full-text search, JSON, XML data types, and geospatial data types.
+
+[^database]: In SQL, a database is a system that stores and organises multiple sets of related data. It typically contains several tables, each of which is a structured collection of data arranged in rows and columns. For instance, a 'School' database might contain separate tables for 'Students', 'Teachers', and 'Classes'. Each table would store specific information: the 'Students' table might have columns for student ID, name, and year group, with each row representing an individual student's details. Databases can also contain objects other than tables, such as views (virtual tables used for data retrieval), indexes (optimised data structures for faster data retrieval), and stored procedures (predefined SQL queries that can be reused). While databases are managed by Database Management Systems (DBMS), such as PostgreSQL, and handle overall data organisation and integrity, tables are manipulated using SQL commands for specific data operations within their structure, as we will see below. 
 
 One of the key advantages of PostgreSQL is its extensibility. Developers can define custom data types and functions, and [even write code in different programming languages](https://www.postgresql.org/about/) without needing to recompile the database. This makes it easy to integrate with [Python](https://www.freecodecamp.org/news/postgresql-in-python/) or [R](https://cran.r-project.org/web/packages/RPostgreSQL/index.html), which is particularly useful for data analysis and machine learning tasks.
 
@@ -297,9 +299,11 @@ You can run these queries in the query window in pgAdmin to see the results. The
 
 We will learn how to write SQL queries throughout the course, so do not worry if you are not familiar with them yet. The key is to practice and experiment with different queries to see how they work. You can also find many tutorials and resources online to help you learn SQL. My suggestions are [W3Schools](https://www.w3schools.com/sql/), [SQLZoo](https://sqlzoo.net/), and [Khan Academy](https://www.khanacademy.org/computing/computer-programming/sql). However, feel free to find YouTube videos, online courses, or books that suit your learning style.
 
-# Integrating PostgreSQL with Python
+# Integrating PostgreSQL with Python with `psycopg2`
 
-Finally, let us see how to integrate PostgreSQL with Python using the `psycopg2` library. First, you need to install the library using `conda`:
+In this tutorial, I will show you two ways to integrate PostgreSQL with Python. The first method is using the `psycopg2` library, which is a PostgreSQL adapter for Python. The second method, which I find more convenient, is using the `sqlalchemy` library to convert the results of a PostgreSQL query to a `pandas DataFrame`.
+
+Let us start with the `psycopg2` library. First, you need to install the library using `conda`:
 
 ```bash
 conda install psycopg2
@@ -348,6 +352,44 @@ conn.close()
 
 This code connects to the `tutorial` database on `localhost` using the `psycopg2` library. It runs a query to select all rows from the `students` table and prints the results. You can run this code in a Python script or a Jupyter notebook to interact with the database from Python. You can find a Jupyter Notebook with this code in the [GitHub repository](https://github.com/danilofreire/qtm151/tree/main/tutorials). 
 
+# Converting PostgreSQL Data to a `pandas DataFrame`
+
+[Pandas](https://pandas.pydata.org/) is the go-to library for data manipulation in Python, and it is extensively used in data science and machine learning projects. So it is important to know how to convert the results of a PostgreSQL query to a Pandas DataFrame. Fortunately, `pandas` already has a method to do this, and you can use it in conjunction with the `sqlalchemy` library. 
+
+You need to install the `pandas` and `sqlalchemy` libraries using `conda`, then connect to the database using the `create_engine` function from `sqlalchemy`. The format of the connection string, in general, is `postgresql://username:password@host:port/database`. In our case, the username is `postgres`, the password is the one you set during the installation process (as I did not set any, the field is empty), the host is `localhost`, the port is `5432`, and the database is `tutorial`. 
+
+After connecting to the database, you can run a query using the `read_sql_query` function from `pandas` to convert the results to a Pandas DataFrame. This is how the code looks like:
+
+```python
+# Install the required packages
+# conda install pandas sqlalchemy
+
+# Import the required libraries
+import pandas as pd
+from sqlalchemy import create_engine
+
+# Connect to the database
+# The syntax is 'postgresql://username:password@host:port/database'
+# In our case, the username is postgres, password is blank, host is localhost, 
+# port is 5432 and database is tutorial
+engine = create_engine('postgresql://postgres:@localhost:5432/tutorial')
+
+# Run a query and convert the results to a Pandas DataFrame
+# This query selects all rows from the students table
+df = pd.read_sql_query('SELECT * FROM students', con=engine)
+
+# Print the DataFrame
+print(df)
+```
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{images/postgresql-pandas-jupyter.png}
+\caption{Converting PostgreSQL data to a Pandas DataFrame in Jupyter Notebook.}
+\end{figure}
+
+Now you can perform all sorts of data manipulation and analysis on the `DataFrame` using `pandas`!
+
 And that is it! You have learned how to install PostgreSQL, create a database and a table, write SQL queries, and integrate PostgreSQL with Python. Please remember that this tutorial covers topics that you will learn throughout the course, so please do not be discouraged if you do not understand everything right away. We have plenty of time to practice and learn together!
 
-I hope you enjoyed this tutorial and found it useful. If you have any questions or feedback, please let me know. I am always happy to help. Thank you for reading!
+I hope you enjoyed this tutorial and found it useful. If you have any questions or feedback, please let me know. Thank you for reading! :)

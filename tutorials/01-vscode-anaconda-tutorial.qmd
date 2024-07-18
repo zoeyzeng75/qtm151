@@ -132,26 +132,6 @@ With that said, let us start the installation process.
 
 - Follow the distribution-specific instructions provided on the [VS Code website](https://code.visualstudio.com/Download).
 
-## VS Code for the Web and GitHub Codespaces
-
-Microsoft has just released **VS Code for the Web**, a web-based version of the editor that runs in the browser. You can access it at <https://vscode.dev/>. However, the web version does not have all the features of the desktop version, such as access to a terminal to run Python code. 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{images/vscode-web.png}
-    \caption{VS Code for the Web}
-    \label{fig:vscode-web}
-\end{figure}
-
-You can also check [GitHub Codespaces](https://github.com/features/codespaces), which allows you to run VS Code in the cloud and access it from any device. Individual users get 60 hours of free usage per month.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{images/github-codespaces.png}
-    \caption{GitHub Codespaces}
-    \label{fig:github-codespaces}
-\end{figure}
-
 ## Launch VS Code
 
 - After installation, launch VS Code.
@@ -247,13 +227,20 @@ Anaconda is a distribution of Python that includes many popular packages for dat
 
 ## Verify Anaconda Installation
 
-- Open a new terminal or command prompt.
+- Open a new terminal or command prompt. On VS Code, you can do it by clicking on "Terminal" > "New Terminal" in the top menu.
 - Type `conda --version` and press Enter. You should see the Conda version number.
 - Type `python --version` and press Enter. You should see the Python version installed by Anaconda.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{images/anaconda-verify.png}
+    \caption{Verify Anaconda Installation}
+    \label{fig:anaconda-verify}
+\end{figure}
+
 # Connecting VS Code with Anaconda
 
-Now that both VS Code and Anaconda are installed, we will connect them to use Anaconda's Python distribution within VS Code.
+Now that both VS Code and Anaconda are installed, we will connect them to use Anaconda's Python distribution within VS Code. If they are connected correctly, you should be able to see the Conda and Python versions again in the VS Code output window.
 
 ## Install the Python and Jupyer Extensions in VS Code:
 
@@ -325,7 +312,7 @@ print(sys.executable)
     \label{fig:vscode-select-interpreter}
 \end{figure}
 
-- Choose the Anaconda Python interpreter from the list. It should be labelled something like "Python 3.x.x ('base': conda)".
+- Choose the Anaconda Python interpreter from the list. It should be labelled something like "Python 3.x.x ('base') Conda".
 
 ## Verify the Connection:
 
@@ -347,42 +334,23 @@ print(sys.executable)
     \label{fig:vscode-output}
 \end{figure}
 
-# Additional VS Code Settings for Python Development
+# Optional: GitHub Copilot
 
-These suggested settings will help you work more efficiently with Python in VS Code.
+[GitHub Copilot](https://github.com/features/copilot) is an AI-powered code completion tool that helps you write code faster and with fewer errors. It is available as an extension for VS Code. Detailed instructions are available on the [03-github-copilot-tutorial](https://github.com/danilofreire/qtm151/blob/main/tutorials/03-github-tutorial.pdf) tutorial in the course repository, but I will provide a brief overview here. Please also refer to <https://code.visualstudio.com/docs/copilot/getting-started-chat> for further instructions.
 
-## Enable Auto Save:
+To install GitHub Copilot, follow these steps:
 
-- Go to File > Auto Save to automatically save your work.
+- First, sign up for a free educational license at <https://github.com/education/students>. This will give you access to GitHub Copilot and other GitHub features.
 
-## Configure Python Formatting:
+- On the website, click on "Join GitHub Education" and follow the instructions to verify your student status. You will need to provide proof of enrollment, such as a school email address or a document from your institution. The educational license is valid for two years.
 
-- Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).
+- Once you have verified your student status, you can install GitHub Copilot in VS Code. Go to the Extensions view in VS Code (the square icon on the left sidebar) and search for [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot). Click on "Install". VS Code will install two extensions, GitHub Copilot and GitHub Copilot Chat.
 
-- Type "Preferences: Open Settings (JSON)" and select it.
+- After installing the extensions, you will need to sign in to your GitHub account in VS Code. Click on the GitHub icon in the left sidebar and follow the prompts to sign in.
 
-- Add the following settings:
+- Once you have signed in, you can start using GitHub Copilot. It will provide code suggestions as you type, based on the context of your code. You can accept the suggestions by pressing `Tab` or `Enter`. You can also use the Chat tab (the speech bubble icon) to ask questions in natural language, like you do with ChatGPT or other chatbots, and Copilot will provide code snippets in response.
 
-```{json}
-{
-    "python.formatting.provider": "autopep8",
-    "editor.formatOnSave": true,
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true
-}
-```
-
-## Install Useful Python Extensions:
-
-- [Python Snippets 3](https://marketplace.visualstudio.com/items?itemName=EricSia.pythonsnippets3).
-
-- [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring).
-
-- [Python Test Explorer for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter).
-
-- [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent).
-
-- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) and [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) (optional). Please sign up for a free educational license at <https://github.com/education/students>.
+GitHub Copilot can be very helpful for writing code and answering questions, but it also makes mistakes. It is important to review the code suggestions and ensure they are correct before using them in your projects.
 
 # Conclusion
 

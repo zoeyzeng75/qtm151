@@ -104,7 +104,7 @@ The results of the code will be displayed below the code cell. In this case, the
 \caption{Output of the code cell.}
 \end{figure}
 
-To create a text cell click on "+ Text." You will get an empty white box where you can type text. You can format the text using Markdown. We will cover Markdown in more detail in the next section. But for now, you can type the following text in the text cell:
+To create a text cell click on "+ Markdown." You will get an empty white box where you can type text. We will cover Markdown in more detail in the next section. But for now, you can type the following text in the Markdown cell:
 
 ```{markdown}
 # Welcome to QTM 151!
@@ -127,7 +127,7 @@ You can run the text cell by clicking the "Run" button on the left side of the b
 
 ## Why Use Markdown?
 
-You can use Markdown to create headings, lists, tables, equations, and figures. Here are some examples of how to format your text using Markdown:
+Markdown is a great way to format text because it is simple, easy to learn, and widely supported. You can use Markdown to create headings, lists, tables, equations, and figures in your documents. Markdown is used in many different applications, including Jupyter Notebook, GitHub, and Slack. Learning Markdown will help you create well-formatted documents that are easy to read and share.
 
 ## Headings
 
@@ -191,17 +191,17 @@ The `:` symbols in the second row of the table determine the alignment of the te
 
 ## Creating Markdown Tables from Pandas DataFrames in Jupyter Notebooks
 
-When working with pandas DataFrames, you can convert them into Markdown tables for better presentation. Here is how to do it:
+When working with pandas DataFrames, you can convert them into Markdown tables for better presentation. The method is also relatively simple. Here is how to do it:
 
 ### Prerequisites
 
 Ensure you have the following installed:
 
 1. Jupyter Notebook
-2. pandas
-3. tabulate (for enhanced table formatting)
+2. `pandas`
+3. `tabulate` (for enhanced table formatting)
 
-You can install tabulate using conda:
+Jupyter Notebook and `pandas` are included in the Anaconda distribution. You can install `tabulate` using `conda install` in your terminal. If you are using VS Code, you can open a terminal by clicking on "Terminal" > "New Terminal" in the top menu. Then run the following command:
 
 ```{markdown}
 conda install tabulate
@@ -216,8 +216,14 @@ conda install tabulate
 ```{python}
 #| output: false
 #| eval: false
+# If necessary, install pandas and tabulate 
+# You should have pandas installed if you installed Anaconda, 
+# but if you do not, you can install both with the following terminal command:
+# conda install pandas tabulate
+
 # Import pandas
 import pandas as pd
+from tabulate import tabulate
 
 # Create a sample DataFrame
 data = {
@@ -226,6 +232,10 @@ data = {
     "City": ["New York", "London", "Paris"]
 }
 df = pd.DataFrame(data)
+
+# Print the DataFrame as Markdown, no index (row numbers)
+markdown_table = df.to_markdown(index=False)
+print(markdown_table)
 ```
 
 #### Step 2: Convert DataFrame to Markdown
@@ -257,7 +267,13 @@ To display the Markdown table in a Jupyter Notebook cell, use the `display()` fu
 ```{python}
 #| output: false
 #| eval: false 
-# Import display and Markdown
+
+# You should also have the IPython package installed if you installed Anaconda
+# If not, you can install it with
+# conda install ipython
+
+# Import the Markdown display class. 
+# This is what allows us to display Markdown in Jupyter Notebooks 
 from IPython.display import display, Markdown
 
 # Display the Markdown table
@@ -268,7 +284,7 @@ This will render a nicely formatted table in your notebook:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/markdown-table.png}
+\includegraphics[width=0.8\textwidth]{images/markdown-table.png}
 \caption{Markdown table in a Jupyter Notebook.}
 \end{figure}
 
@@ -279,6 +295,7 @@ You can customise the Markdown table using various parameters of `to_markdown()`
 ```{python}
 #| output: false
 #| eval: false
+# Customising the Markdown table using the to_markdown() method
 markdown_table = df.to_markdown(
     index=False,  # Don't include index
     tablefmt="pipe",  # Use pipe format
@@ -321,6 +338,7 @@ Here is a more comprehensive example incorporating various best practices:
 ```{python}
 #| output: false
 #| eval: false 
+# Import necessary packages
 import pandas as pd
 from IPython.display import display, Markdown
 from tabulate import tabulate
@@ -338,11 +356,11 @@ df = pd.DataFrame(data)
 markdown_table = tabulate(
     df,
     headers=["Product Name", "Price ($)", "Stock Quantity", "Customer Rating"],
-    tablefmt="pipe",
+    tablefmt="pipe", # Format as Markdown table
     floatfmt=(".2f", ".2f", "d", ".1f"),
-    showindex=False,
-    numalign="right",
-    stralign="center"
+    showindex=False, # Don't show the index (row numbers)
+    numalign="right", # Align numbers to the right
+    stralign="left" # Align strings (text, first column) to the left
 )
 
 # Display the table in the notebook
@@ -372,7 +390,7 @@ $$
 \sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}}
 $$ {#eq-stddev} 
 
-You can also create equations inline by using the `$` symbol. For example, `$\alpha = \beta + \gamma$` will render as $\alpha = \beta + \gamma$. To learn more about how to write equations in \LaTeX \hspace{.001cm} using Markdown, you can refer to the [Overleaf documentation](https://www.overleaf.com/learn/latex/Mathematical_expressions).
+You can also create equations inline by using the `$` symbol. For example, `$\alpha = \beta + \gamma$` will render as $\alpha = \beta + \gamma$. To learn more about how to write equations in \LaTeX \hspace{.001cm} using Markdown, you can refer to the [Overleaf documentation](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols).
 
 ## Figures
 
@@ -396,3 +414,7 @@ Jupyter and Markdown support inline footnotes[^inline]. To create a footnote, si
 
 [^inline]: This is an inline footnote.
 [^content]: You can also include multiple paragraphs in a footnote by indenting the subsequent paragraphs.
+
+# Conclusion
+
+I hope you find this tutorial helpful and that you can use Jupyter Notebook and Markdown to create beautiful documents. If you have any questions or feedback, please feel free to reach out to me. Happy coding! :)

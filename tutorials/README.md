@@ -12,7 +12,7 @@ This folder contains several tutorials for the QTM151 course. Below you will fin
 ## File Formats
 
 - **PDF files**: These contain the final version of the tutorials with images and complete output. They are ideal for reading and following along.
-- **QMD files**: These include the source code used to write the tutorials. They are provided for those who are curious about the tutorial creation process or wish to examine the underlying code.
+- **QMD files**: These include the source code used to write the tutorials. They are [Quarto](https://quarto.org/) files, a Markdown-based document format that allows for code cells and other features. They are provided for those who want to learn more about the Markdown syntax and how to create similar documents for their own projects.
 
 ## How to Read the PDF Files on GitHub
 
@@ -23,6 +23,7 @@ You can either read the tutorials directly on GitHub or download them to your co
 ## Additional Resources
 
 - `article-template.latex`: A LaTeX template for articles
+- `python-postgresql-example.ipynb`: A Jupyter Notebook with a PostgreSQL example
 - `testing-ipython`: A Jupyter Notebook for showing Markdown and code cells
 - `testing-anaconda.py`: A Python script for testing Anaconda installation
 - `.gitignore`: Git configuration file to specify intentionally untracked files
