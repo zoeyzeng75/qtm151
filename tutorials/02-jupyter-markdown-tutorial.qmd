@@ -35,7 +35,7 @@ editor:
 
 # Introduction
 
-This tutorial will introduce you to [Jupyter Notebook](https://jupyter.org/documentation) and [Markdown](https://www.markdownguide.org/). Jupyter Notebook is a web-based interactive computing platform that allows users to create and share documents that contain live code, equations, visualisations, and narrative text. Markdown is a lightweight markup language that is used to format text, and can be used for everything - websites, documents, notes, books, presentations, email messages, and technical documentation. Even WhatsApp and Facebook Messenger use Markdown to format messages. So if you have already italicised a word or made a text bold on WhatsApp, you have used Markdown! 
+This tutorial will introduce you to [Jupyter Notebook](https://jupyter.org/documentation) and [Markdown](https://www.markdownguide.org/). Jupyter Notebook is an interactive computing platform that allows users to create and share documents that contain live code, equations, visualisations, and narrative text. Markdown is a lightweight markup language that is used to format text, and can be used for everything - websites, documents, notes, books, presentations, email messages, and technical documentation. Even WhatsApp and Facebook Messenger use Markdown to format messages. So if you have already italicised a word or made a text bold on WhatsApp, you have used Markdown! 
 
 This tutorial is divided into two parts. The first part will introduce you to Jupyter Notebook and show you how to create a new notebook, run code cells, and format text cells using Markdown. The second part will provide a more in-depth look at Markdown and show you how to create headings, lists, links, images, and tables in Markdown.
 
@@ -211,7 +211,9 @@ conda install tabulate
 
 `pandas` provides a built-in method `to_markdown()` for converting DataFrames to Markdown tables.
 
-#### Step 1: Import pandas and create a DataFrame
+#### Step 1: Import pandas and create a DataFrame 
+
+You can create a dataframe by passing a dictionary to the `pd.DataFrame()` constructor:
 
 ```{python}
 #| output: false
@@ -232,13 +234,11 @@ data = {
     "City": ["New York", "London", "Paris"]
 }
 df = pd.DataFrame(data)
-
-# Print the DataFrame as Markdown, no index (row numbers)
-markdown_table = df.to_markdown(index=False)
-print(markdown_table)
 ```
 
 #### Step 2: Convert DataFrame to Markdown
+
+Then you just need to call the `to_markdown()` method on the DataFrame:
 
 ```{python}
 #| output: false
@@ -262,7 +262,7 @@ This will output:
 
 #### Step 3: Display in Jupyter Notebook
 
-To display the Markdown table in a Jupyter Notebook cell, use the `display()` function:
+To display the Markdown table in a Jupyter Notebook cell, use the `display()` function from the `IPython.display` module:
 
 ```{python}
 #| output: false
@@ -308,7 +308,7 @@ display(Markdown(markdown_table))
 
 ### Using tabulate for Enhanced Formatting
 
-The `tabulate` library offers more formatting options:
+The `tabulate` library offers even more formatting options. While they are not necessary for basic tables, they can be useful for more complex tables. In our course, you will probably not need them, but I will show you how to use them for your reference. Please check their [documentation](https://pypi.org/project/tabulate/) for more information.
 
 ```{python}
 #| output: false
@@ -321,7 +321,7 @@ display(Markdown(markdown_table))
 
 ### Best Practices
 
-1. **Index**: Consider whether you need the index in your table. Often, i's cleaner to exclude it using `index=False`.
+1. **Index**: Consider whether you need the index in your table. Often, it is cleaner to exclude it using `index=False`.
 
 2. **Formatting**: Use `floatfmt` to control decimal places for numerical data.
 
@@ -400,7 +400,7 @@ You can include figures in your document using the `![Caption](path/to/image.png
 ![This is a figure caption.](path/to/image.png){#fig-label}
 ```
 
-This will include the image `path/to/image.png` in your document with the caption "This is a figure caption." You can refer to the figure using the label `fig-label`.
+This will include the image `path/to/image.png` in your document with the caption "This is a figure caption." You can refer to the figure using the label `fig-label`, but this is optional.
 
 If you are creating plots on Jupyter Notebook, the graphs will appear after the code cell that generates them.
 
