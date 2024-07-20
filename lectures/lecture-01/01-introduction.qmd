@@ -42,6 +42,8 @@ lapply(packages, install_if_missing)
 
 ## Lecture Overview
 
+<br>
+
 - Introduction
 - Motivation
 - Class Logistics
@@ -56,7 +58,7 @@ lapply(packages, install_if_missing)
 
 `r fa('github')` Course repository: <https://github.com/danilofreire/qtm151>
 
-This course is hosted on GitHub, where you will find lecture materials, code samples, assignments, and final project instructions. Canvas will be used for course management, including assignment submissions, grades, and announcements. Please familiarise yourself with both platforms, and reach out if you have any questions.
+This course is hosted on GitHub, where you will find lecture materials, code samples, our discussion space, assignments, and final project instructions. Canvas will be used for course management, including assignment submissions, grades, and announcements. Please familiarise yourself with both platforms, and reach out if you have any questions.
 
 ::: {.callout-note}
 Please remember to check the course website regularly for updates and announcements.
@@ -97,28 +99,18 @@ Please remember to check the course website regularly for updates and announceme
 
 ## {background-image="figures/carnaval.jpg" background-size="100%"}
 
+## {background-image="figures/sp.jpg" background-size="100%"}
+
 ## {background-image="figures/montblanc.jpg" background-size="100%"}
 
 ## {background-image="figures/buzz.webp" background-size="100%"}
 
 ## {background-image="figures/moonwatch.jpg" background-size="100%"}
 
-## {background-image="figures/moonwatch-movement.jpg" background-size="100%"}
-
-## {background-image="figures/sp.jpg" background-size="100%"}
-
-## What about you? (time permitting!)
-
-<br>
-
-Now it's your turn! `r emo::ji('wave')`
-
-<br>
-
-Please introduce yourself, tell us your name, your major, one thing you really like, and something we don't know about your city or country! `r emo::ji('smiling_face_with_smiling_eyes')`
-
 ## My teaching philosophy
 ### What you can expect from me
+
+<br>
 
 - I love teaching and aim to make learning fun 
 - Classes where students participate are the best
@@ -128,12 +120,19 @@ Please introduce yourself, tell us your name, your major, one thing you really l
 
 ## Teaching assistants
 
-- The teaching assistants for this course are:
-  - [TBA](mailto:)
+<br>
 
-- They will be answering questions during our lectures and holding office hours (see Canvas for office hours information)
+- The teaching assistants for this course will be confirmed soon
+
+- They will be answering questions during our lectures and holding office hours (see Canvas or the course website for office hours information)
+
+- They will also be grading your assignments and quizzes (with my oversight)
+
+- We are all here to help you! So feel free to ask questions during class, office hours, or via email `r emo::ji('smiling_face_with_smiling_eyes')`
 
 ## Office hours: What for and what not for
+
+<br>
 
 - What office hours are meant for:
   - Applying tools in practice
@@ -263,12 +262,13 @@ print("Welcome to QTM151!")
 
 - Midsemester Survey: [+0.5% (Extra)]{.alert}
 
-- All materials will be available on the course website​ and GitHub​ repository
+- End of semester Survey: [+0.5% (Extra)]{.alert}
 :::
 :::
 
 ::: {.column width=50%}
 ::: {style="font-size: 28px;"}
+- All materials will be available on the course website​ and GitHub​ repository
 - Late assignments will automatically be graded for half-credit​
 - To account for unforeseen circumstances, we will drop the worst assignment and the worst quiz​
 - Watch out for the assignments to install software. You will need these to be able to use the lectures notes
@@ -283,9 +283,9 @@ print("Welcome to QTM151!")
 ![](figures/nutshell.png)
 
 ## Installing Python using Anaconda
-### Anaconda has all the libraries we need
+### Anaconda has (almost) all the libraries we need
 
-- Follow the instructions [Installing Python Using Anaconda](https://github.com/danilofreire/qtm151/tutorials) from GitHub
+- Follow the instructions [Installing Python Using Anaconda](https://github.com/danilofreire/qtm151/tutorials) from our GitHub repository
 - We are using Anaconda virtual environments for this class (I will cover this in more detail next class)​
 - For now: Anaconda comes with a Python installation​
 
@@ -312,7 +312,7 @@ print("Welcome to QTM151!")
 - We will use Jupyter Notebooks for our classes
 - Jupyter Notebooks are a great way to combine code, text, and visualisations
 - It is encouraged that you bring your laptop to class
-- Lecture notes are designed to be follow-along. There will be "try it yourself" exercises throughout the lecture
+- Lecture notes are designed to be follow-along. There will be many "try it yourself" exercises throughout the lectures!
 :::
 :::
 
@@ -325,10 +325,10 @@ print("Welcome to QTM151!")
 
 ::: {style="font-size: 28px;"}
 - Don't worry if you are not able to follow along with the installation instructions. We will have time to do this next class
-- We will start with the basics of Python, Jupyter Notebooks, and Quarto
+- We will start with the basics of Jupyter Notebooks
 - We will also cover the basics of Anaconda and VSCode
-- Please remember to check the course website: <https://danilofreire.github.io/qtm151>
-- And please don't forget:
+- Please remember to check the course repository and/or website, mainly the tutorials: <https://github.com/danilofreire/qtm151> and <https://danilofreire.github.io/qtm151>
+- And please do not forget:
   - Coding ability can be developed
   - Academic skills and abilities are acquired through hard work, mistakes, and perseverance. Coding is no different
   - My only goal here is that you learn the material. Please ask me questions! `{r} emo::ji('smiling_face_with_smiling_eyes')`

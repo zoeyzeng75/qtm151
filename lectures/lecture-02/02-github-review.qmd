@@ -1,7 +1,7 @@
 ---
 title: GitHub Review
-subtitle: Further details on GitHub if you need them
-date: 2024-08-28
+subtitle: Further details on GitHub and Anaconda
+date: 2024-09-04
 date-format: "DD MMMM, YYYY"
 author:
   - name: Danilo Freire
@@ -19,7 +19,7 @@ editor:
   render-on-save: true
 ---
 
-# Overview of GitHub functions {background-color="#2d4563"}
+# Lecture Overview {background-color="#2d4563"}
 
 ## Learning Objectives
 ### By the end of this lecture, you will be able to:
@@ -30,12 +30,30 @@ editor:
 2. Learn how to remove cloned repos​
 3. Understand the GitHub workflow: change, commit, push, fetch, pull​
 4. Learn how to keep a forked repository updated​
-5. Understand what a virtual environment is and how to create one if needed​
+5. Understand what a virtual environment in Anaconda is and how to create one if needed​
+
+## Software Installation
+### What we will use in this course
+
+::: {style="font-size: 26px;"}
+- First, please remember to create a GitHub account if you do not have one yet: <https://education.github.com/pack>. Use your Emory email address to get the GitHub Student Developer Pack for free. Then install the following software:
+
+- [Anaconda](https://www.anaconda.com/products/individual) (Python distribution)
+- [GitHub Desktop](https://desktop.github.com/) (Git user interface)
+- [Visual Studio Code](https://code.visualstudio.com/) (Code editor)
+
+- Also, please check the tutorials on the course repository: <https://github.com/danilofreire/qtm151/tutorials>. They will help you with the installation and setup of the software. 
+- If you have any questions, please let us know!
+:::
+
+# GitHub Review {background-color="#2d4563"}
 
 ## How to access and edit a remote repository
 
-- **Access**: download a remote GitHub repository to your local computer to work on it​
-- **Edit**: make local changes to the repository and update them to the cloud​
+<br>
+
+- [Access]{.alert}: download a remote GitHub repository to your local computer to work on it​
+- [Edit]{.alert}: make local changes to the repository and update them to the cloud​
 
 There are two ways to access a repository:​
 
@@ -46,9 +64,9 @@ There are two ways to access a repository:​
 
 :::: {.columns}
 ::: {.column width=50%}
-- Makes a [local copy]{.alert} of a repository, not your own copy
+- Makes a [local copy]{.alert} of a repository
 - Think of it as [downloading a repository]{.alert} onto your local computer
-- Unlike forks, clones reference the original repository: you can't push changes to it unless you have permissions from the owner
+- Unlike forks, [clones reference the original repository]{.alert}: you cannot push changes to it unless you have permissions from the owner
 - If you do have permissions, you can [overwrite]{.alert} the content of the remote repository
 :::
 
@@ -171,5 +189,5 @@ There are two ways to access a repository:​
 
 # Questions about forking? {background-color="#2d4563"}
 
-# Thank you! {background-color="#2d4563"}
+# Great! Now let us see what Jupyter Notebooks are! {background-color="#2d4563"}
 
