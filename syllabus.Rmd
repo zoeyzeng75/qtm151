@@ -135,8 +135,6 @@ The lecture notes cover all the necessary material for the course, and the weekl
 
 *Wednesday, August 28:*
 
-Required readings:
-
 - Syllabus and course repository: <https://github.com/danilofreire/qtm151>.
 - Lecture 01: [Welcome to QTM 151 - Introduction](https://danilofreire.github.io/qtm151/lectures/lecture-01/01-introduction.html).
 - [Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub](https://github.com/danilofreire/qtm151/tutorials).
@@ -154,8 +152,6 @@ Weekly suggested readings:
 
 *Wednesday, September 04:*
 
-Required readings:
-
 - Lecture 02: [GitHub Review](https://danilofreire.github.io/qtm151/lectures/lecture-02/02-github-review.html) and [Introduction to Jupyter Notebooks](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-02/02-jupyter.ipynb).
 - **Assignment 01:** [Problem Set 01](https://github.com/danilofreire/qtm151/blob/main/assignments/01-assignment.ipynb).
 
@@ -172,8 +168,6 @@ Weekly suggested readings:
 **Week 03: Python Basics**
 
 *Monday, September 09:*
-
-Required readings:
 
 - Lecture 03: [Variables and Lists](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-03/03-variables-lists.ipynb).
 
@@ -275,11 +269,9 @@ Weekly suggested readings:
 - **Assignment 06 due (5%).**
 - **Assignment 07:** [Problem Set 07](https://github.com/danilofreire/qtm151/blob/main/assignments/07-assignment.ipynb).
 
-
 *Monday, October 21:*
 
 - Lecture 14: [**Quiz 2: Application 4: Random Assignment (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-14/14-random-assignment.ipynb).
-
 
 *Wednesday, October 23:*
 
@@ -300,15 +292,12 @@ Weekly suggested readings:
 
 - Lecture 16: [Merging Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-16/16-merging-data.ipynb).
 
-
 *Wednesday, October 30:*
 
 - Lecture 17: [Introduction to SQL](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-17/17-introduction-sql.ipynb).
 - **Assignment 08 due (5%).**
 - **Assignment 09:** [Problem Set 09](https://github.com/danilofreire/qtm151/blob/main/assignments/09-assignment.ipynb).
 - **Instructions for the Final Project:** [Final Project](https://github.com/danilofreire/qtm151/blob/main/final-project).
-
-
 
 Weekly suggested readings:
 
@@ -322,19 +311,13 @@ Weekly suggested readings:
 
 *Monday, November 04:*
 
-- Lecture 18: [**Quiz 3: Application 5: SQL Queries (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-18/18-sql-queries.ipynb).
+- Lecture 18: [**Quiz 3: Application 5: Practicing Chaining (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-18/18-chaining.ipynb).
 
 *Wednesday, November 06:*
 
-- Lecture 19: [Merging Tables in SQL](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-19/19-merging-tables.ipynb).
-
-
-[Import SQL Data into Python](https://danilofreire.github.io/qtm151/lectures/lecture-19/19-import-sql-data.ipynb).
-- **Assignment 10:** [Problem Set 10](https://danilofreire.github.io/qtm151/problem-sets/problem-set-10.ipynb).
-
-*Friday, November 08:*
-
+- Lecture 19: [Import SQL Data into Python](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-19/19-sql-python.ipynb).
 - **Assignment 09 due (5%).**
+- **Assignment 10:** [Problem Set 10](https://github.com/danilofreire/qtm151/blob/main/assignments/10-assignment.ipynb).
 
 Weekly suggested readings:
 
@@ -347,14 +330,11 @@ Weekly suggested readings:
 
 *Monday, November 11:*
 
-- Lecture 20: [Time Series Analysis](https://danilofreire.github.io/qtm151/lectures/lecture-20/20-time-series.ipynb).
+- Lecture 20: [Merging Tables in SQL](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-20/20-sql-merging.ipynb).
 
 *Wednesday, November 13:*
 
-- Lecture 21: [**Quiz 4: Application 6: Practice SQL Queries (6%)**](https://danilofreire.github.io/qtm151/lectures/lecture-21/21-application-sql-queries.ipynb).
-
-*Friday, November 15:*
-
+- Lecture 21: [Time Series Analysis](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-21/21-time-series.ipynb).
 - **Assignment 10 due (5%).**
 
 Weekly suggested readings:
@@ -367,11 +347,12 @@ Weekly suggested readings:
 
 *Monday, November 18:*
 
-- Lecture 22: [Pivot Tables](https://danilofreire.github.io/qtm151/lectures/22-pivot-tables/22-pivot-tables.ipynb).
+- Lecture 22: [**Quiz 4: Application 6: Practice SQL Queries (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-22/22-sql-queries.ipynb).
 
 *Wednesday, November 20:*
 
-- Lecture 23: [**Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)**](https://danilofreire.github.io/qtm151/lectures/23-application-time-panel-plots.ipynb).
+- Lecture 23: [Pivot Tables](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-23/23-pivot-tables.ipynb).
+
 
 Weekly suggested readings:
 
@@ -385,17 +366,17 @@ Weekly suggested readings:
 
 *Monday, November 25:*
 
-- Lecture 24: [Manipulating Text Data](https://danilofreire.github.io/qtm151/lectures/24-text-data/24-text-data.ipynb).
+- Lecture 24: [**Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-24/24-time-panel-plots.ipynb).
 
 *Wednesday, November 27: Thanksgiving Break (no class)*
 
 *Monday, December 02:*
 
-- Lecture 25: [Advanced Plots I](https://danilofreire.github.io/qtm151/lectures/25-advanced-plots/25-advanced-plots.ipynb).
+- Lecture 25: [Manipulating Text Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-25/25-text-data.ipynb).
 
 *Wednesday, December 04:*
 
-- Lecture 26: [Advanced Plots II](https://danilofreire.github.io/qtm151/lectures/26-advanced-plots/26-advanced-plots.ipynb).
+- Lecture 26: [Advanced Plots](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-26/26-advanced-plots.ipynb).
 
 *Monday, December 09:*
 
