@@ -7,7 +7,6 @@ output:
     fig_caption: yes
     latex_engine: pdflatex
     template: syllabus-template.latex
-  word_document: default
 email: danilo.freire@emory.edu
 fontsize: 12pt
 geometry: margin=1in
@@ -16,16 +15,16 @@ office: "[36 Eagle Row, 5th Floor, room XXX](https://maps.app.goo.gl/bGHKwasQyp5
 officehours: Mon-Fri Afternoon
 classroom: XXX 
 classhours: Mon/Wed, 16:00-16:50 
-web: danilofreire.github.io/qtm151
+web: github.com/danilofreire/qtm151
 ---
 
 # Course Description
 
-Welcome to [QTM 151](https://danilofreire.github.io/qtm151)! This is an introductory course designed to equip students with essential skills in data analysis and statistical computing using Python and SQL. It is tailored for students with little to no prior programming experience who are eager to develop computational proficiency for data-driven decision making. 
+Welcome to [QTM 151](https://github.com/danilofreire/qtm151)! This is an introductory course designed to equip students with essential skills in data analysis and statistical computing using Python and SQL. It is tailored for students with little to no prior programming experience who are eager to develop computational proficiency for data-driven decision making. 
 
 Throughout the semester, we will cover version control for collaborative coding, Jupyter Notebooks for reproducible research, Python programming fundamentals, data wrangling and merging in SQL, data visualisation, and introductions to linear modelling and time series analysis.
 
-By working with real-world datasets and problems, students will gain hands-on experience using these tools and methods to extract meaningful insights from data. The course develops technical skills and critical thinking needed to solve complex data challenges. Upon completion, students will be prepared for advanced coursework in quantitative methods and data science.
+By working with real-world datasets and problems, students will gain hands-on experience using these tools and methods to extract insights from data. This course will develop technical skills and critical thinking needed to solve complex data challenges. Upon completion, students will be prepared for advanced coursework in quantitative methods and data science.
 
 # Learning Objectives
 
@@ -67,24 +66,26 @@ This course is designed to be self-contained, providing all the necessary resour
 
 - [Python Documentation](https://docs.python.org/3/)
 - [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
-- [SQL Documentation](https://www.postgresql.org/docs/)
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 - [SQLBolt](https://sqlbolt.com/)
 - [DataLemur for SQL interview practice](https://datalemur.com)
 - [Github Guides](https://guides.github.com/)
 
 # Course Information
 
-We will meet every Monday and Wednesday from 16:00 to 16:50 at [XXXXX](https://quantitative.emory.edu). It is important that you read the materials before class. All information about the course is available at <http://danilofreire.github.io/qtm151> and on the course's GitHub repository <https://github.com/danilofreire/qtm151>. While I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change in the semester. Again, please visit [the course website](https://danilofreire.github.io/qtm151) regularly to check for updates. I will also announce any changes in class and via email.
+We will meet every Monday and Wednesday from 16:00 to 16:50 at [XXXXX](https://quantitative.emory.edu). It is important that you read the materials before class. All information about the course is available on the course's GitHub repository at <https://github.com/danilofreire/qtm151>. While I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change in the semester. Again, please check [the course repository](https://github.com/danilofreire/qtm151) regularly to check for updates. I will also announce any changes in class and via email.
 
 # Software
 
-We will mainly use [Python](https://www.python.org) in this course. Python is a free, versatile, and powerful programming language that is widely used in data science, machine learning, and scientific computing. You can download Python from the [official website](https://www.python.org/). I recommend using the [Anaconda distribution](https://www.anaconda.com/products/individual) as it comes with all the necessary libraries for data analysis, such as [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/), and [Matplotlib](https://matplotlib.org/).
+We will mainly use [Python](https://www.python.org) in this course. Python is a free, versatile, and powerful programming language that is widely used in data science, machine learning, and scientific computing. I recommend using the [Anaconda distribution](https://www.anaconda.com/products/individual) as it comes with many necessary Python libraries for data analysis, such as [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/), and [Jupyter](https://jupyter.org/). 
 
 You can write your Python code in any text editor, but I recommend [VS Code](https://code.visualstudio.com/) with the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python). [Pycharm](https://www.jetbrains.com/pycharm/) is also well-regarded by developers. If you are feeling adventurous, you can also use [Neovim](https://neovim.io/) with the [coc-pyright](https://github.com/fannheyward/coc-pyright) plugin. That is, if [you can exit the editor](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/). :)
 
-We will use [PostgreSQL](https://www.postgresql.org/) for database management. PostgreSQL is a powerful, open-source relational database system that is widely used in data science and software development. You can download PostgreSQL from the [official website](https://www.postgresql.org/). Please install the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres) for PostgreSQL to interact with the database.
+We will use [PostgreSQL](https://www.postgresql.org/) for database management. You can download PostgreSQL from the [official website](https://www.postgresql.org/). Please also install [pgAdmin](https://www.pgadmin.org/) and the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres) for PostgreSQL to interact with the database.
 
-We will also use [Jupyter Notebooks](https://jupyter.org/) in class. To help you get started with Jupyter, I have prepared [a tutorial](http://danilofreire.github.io/qtm151/tutorials). Please review the tutorial and install the VSCode [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter&ssr=false). Jupyter itself comes pre-installed with Anaconda. We will have a hands-on session to learn how to use Jupyter effectively.
+We will also use [Jupyter Notebooks](https://jupyter.org/) in class. Jupyter itself comes pre-installed with Anaconda, but please install the [Jupyter extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter&ssr=false) as well. We will have a hands-on session to learn how to use Jupyter effectively.
+
+To help you get started, I have prepared [a series of tutorials](https://github.com/danilofreire/qtm151/tree/main/tutorials) on how to install Anaconda, Jupyter, PostgreSQL, VS Code, and open a free educational account on GitHub. Please follow these tutorials as soon as possible to ensure that you have all the necessary tools for the course.
 
 # Office Hours
 
@@ -96,7 +97,7 @@ Upon every individual who is a part of Emory University falls the responsibility
 
 # Artificial Intelligence
 
-Students have to submit a series of problem sets and complete one group project. You are allowed to use AI to assist with your assignments, as learning to use AI is a valuable and emerging skill. I recommend using [GitHub Copilot](https://copilot.github.com/) to generate code snippets, as it is free for students and provides good suggestions and explanations. [Claude](https://claude.ai), [ChatGPT](https://chat.openai.com), and [Perplexity AI](https://perplexity.ai) are also good tools. I am available to provide support and assistance with these tools during office hours or by appointment. However, please note that any errors or omissions resulting from the use of AI tools are your responsibility. Do not rely solely on AI to complete your assignments; you must always double-check your work. Remember to cite all sources used in your problem sets and projects, including AI tools. Please include a note at the end of any document indicating that AI was used in its development.
+Students have to submit ten assignments and complete one group project for this course. You are allowed to use AI to assist with your assignments, as learning to use AI is a valuable and emerging skill. I recommend using [GitHub Copilot](https://copilot.github.com/) to generate code snippets, as it is free for students and provides good suggestions and explanations. [Claude](https://claude.ai), [ChatGPT](https://chat.openai.com), and [Perplexity AI](https://perplexity.ai) are also good tools. I am available to provide support and assistance with these tools during office hours or by appointment. However, please note that any errors or omissions resulting from the use of AI tools are your responsibility. Do not rely solely on AI to complete your assignments; you must always double-check your work. Remember to cite all sources used in your problem sets and projects, including AI tools. Please include a note at the end of any document indicating that AI was used in its development.
 
 # Special Needs and Accessibility Services
 
@@ -108,11 +109,13 @@ Emory University welcomes students from around the country and the world, and th
 
 # Assignments and Grading Policy
 
-**Problem Sets (50%).** There will be 6 problem sets throughout the course, each focusing on different aspects of experimental design and analysis. These assignments are designed to reinforce concepts covered in lectures and readings, and to provide hands-on practice with experimental design techniques. Problem sets will include a mix of theoretical questions and practical applications. They will be assigned regularly and must be completed individually. You may discuss your work with other colleagues as long as you do not copy entire sentences, just changing a few words. If you worked with other students, please write down their names on your problem set. Please also acknowledge any sources you used in your work, including textbooks, articles, and AI resources. *Any assignment submitted after the due date/time will automatically be graded for half points*. To accommodate unexpected circumstances, your lowest homework grade will be automatically dropped at the end of the semester. *The same applies to in-class quizzes*. Please submit all assignments in PDF format via Canvas. 
+**Problem Sets (50%).** There will be 10 problem sets throughout the course. These assignments are designed to reinforce concepts covered in lectures and readings, and to provide hands-on practice with statistical programming. Problem sets will include a mix of theoretical questions and practical applications. They will be assigned regularly and must be completed individually. You may discuss your work with other colleagues as long as you do not copy entire sentences, just changing a few words. If you worked with other students, please write down their names on your assignment. Please also acknowledge any sources you used in your work, including textbooks, articles, and AI resources. *Any assignment submitted after the due date/time will automatically be graded for half points*. To accommodate unexpected circumstances, your lowest assignment grade will be automatically dropped at the end of the semester. *The same applies to in-class quizzes*. Please submit all assignments in Jupyter Notebook format (`.ipynb`) via Canvas until midnight on the due date.
 
-**Class Quizzes (30%).** Students will also take five in-class quizzes throughout the semester. These quizzes will be based on the readings and lectures from the previous weeks. They will be designed to test your understanding of the material and your ability to apply the concepts to new problems. Quizzes will be open-book and open-notes, and students have 50 minutes to complete them. They are individual assessments, and students are not allowed to discuss the questions with their colleagues. 
+**Class Quizzes (30%).** Students will also take five in-class quizzes throughout the semester. These quizzes will be based on the lectures from the previous weeks. They will be designed to test your understanding of the material and your ability to apply the concepts to new problems. Quizzes will be open-book and open-notes, and students have 50 minutes to complete them. They are individual assessments, and students are not allowed to discuss the questions with their colleagues in class. 
 
-**Final Project (20%).** The final project will consist of a short report, created using Jupyter and using one of the datasets shared on the course [GitHub repository](https://github.com/danilofreire/qtm151/final-project). Further instructions will be provided in class. The final project will be due on the last day of class.
+**Final Project (20%).** The final project will consist of a short report, created using Jupyter and using one of the datasets shared on the course [GitHub repository](https://github.com/danilofreire/qtm151/tree/main/final-project). Further instructions will be provided in class. The final project will be due on the last day of class.
+
+**Mid-Semester and End-of-Semester Evaluations (0.5% each, bonus).** Students will be asked to complete a mid-semester and end-of-semester evaluation of the course. These evaluations are anonymous and will be used to improve the course in future semesters. Students who complete both evaluations will receive a 1% bonus on their final grade.
 
 # Grading Scale
 
@@ -124,7 +127,7 @@ Each student's final grade will be based on the following after rounding up to t
 
 # Course Outline and Suggested Readings
 
-The weekly suggested readings are optional and recommended for those who want to deepen their understanding of the course topics. 
+The lecture notes cover all the necessary material for the course, and the weekly suggested readings are recommended for those who want to deepen their understanding of the course topics. As mentioned above, the course outline is subject to change, and I will update the syllabus if needed. Please remember to check the course [GitHub repository](https://github.com/danilofreire/qtm151) regularly.
 
 ## Module 01: Introduction to Python, Jupyter, and GitHub
 
@@ -134,13 +137,12 @@ The weekly suggested readings are optional and recommended for those who want to
 
 Required readings:
 
-- Syllabus and course website: <http://danilofreire.github.io/qtm151>.
-- GitHub repository: <https://github.com/danilofreire/qtm151>.
+- Syllabus and course repository: <https://github.com/danilofreire/qtm151>.
 - Lecture 01: [Welcome to QTM 151 - Introduction](https://danilofreire.github.io/qtm151/lectures/lecture-01/01-introduction.html).
+- [Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub](https://github.com/danilofreire/qtm151/tutorials).
 
 Weekly suggested readings:
 
-- [Course Tutorials: How to Install Python, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub](https://danilofreire.github.io/qtm151/tutorials).
 - [DataCamp: SQL vs Python: Which Should You Learn?](https://www.datacamp.com/blog/sql-vs-python-which-to-learn) (Note: *both!*)
 - Cao, L. (2017). [Data Science: A Comprehensive Overview](https://dl.acm.org/doi/pdf/10.1145/3076253). ACM Computing Surveys (CSUR), 50(3), 1-42.
 - Brady, H. E. (2019). [The Challenge of Big Data and Data Science](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-090216-023229). Annual Review of Political Science, 22(1), 297-323.
@@ -154,8 +156,8 @@ Weekly suggested readings:
 
 Required readings:
 
-- Lecture 02: [GitHub Review](https://danilofreire.github.io/qtm151/lectures/lecture-02/02-github-review.html) and [Introduction to Jupyter Notebooks](https://danilofreire.github.io/qtm151/lectures/lecture-02/02-jupyter.ipynb).
-- **Assignment 01:** [Problem Set 01](https://danilofreire.github.io/qtm151/problem-sets/problem-set-01.ipynb).
+- Lecture 02: [GitHub Review](https://danilofreire.github.io/qtm151/lectures/lecture-02/02-github-review.html) and [Introduction to Jupyter Notebooks](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-02/02-jupyter.ipynb).
+- **Assignment 01:** [Problem Set 01](https://github.com/danilofreire/qtm151/blob/main/assignments/01-assignment.ipynb).
 
 Weekly suggested readings:
 
@@ -173,78 +175,68 @@ Weekly suggested readings:
 
 Required readings:
 
-- Lecture 03: [Mathematical Operations, Arrays, and Random Numbers](https://danilofreire.github.io/qtm151/lectures/lecture-03/03-maths-arrays-random.ipynb).
+- Lecture 03: [Variables and Lists](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-03/03-variables-lists.ipynb).
 
 *Wednesday, September 11:*
 
-- Lecture 04: Boolean Variables and If/Else Statements. [HTML Slides](https://danilofreire.github.io/qtm151/lectures/lecture-04/04-boolean-if-else.html), [PDF Slides](https://danilofreire.github.io/qtm151/lectures/lecture-04/04-boolean-if-else.pdf), and [IPython Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-04/04-boolean-if-else.ipynb).
-- **Assignment 02:** [Problem Set 02](https://danilofreire.github.io/qtm151/problem-sets/problem-set-02.ipynb).
-
-*Friday, September 13:*
-
+- Lecture 04: [Mathematical Operations, Arrays, and Random Numbers](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-04/04-maths-arrays-random.ipynb).
 - **Assignment 01 due (5%).**
+- **Assignment 02:** [Problem Set 02](https://github.com/danilofreire/qtm151/blob/main/assignments/02-assignment.ipynb).
 
 Weekly suggested readings:
 
 - [Real Python: Python Data Types](https://realpython.com/python-data-types/).
-- [Real Python: Conditional Statements in Python](https://realpython.com/python-conditional-statements/).
-- [Python Official Documentation: An Informal introduction to Python and More Control Flow Tools (Chapters 3-4)](https://docs.python.org/3/tutorial/index.html).
 - Matthes, E. (2019). Python Crash Course: A Hands-On, Project-Based Introduction to Programming (2nd ed.). No Starch Press. [Chapter 02](https://nostarch.com/download/PCC3e_ch2sample_8.17.22.pdf).
-- Severance, C. (2016). Python for Everybody: Exploring Data in Python 3. CreateSpace Independent Publishing Platform. [Chapters 3-11](https://www.py4e.com/lessons).
+- Severance, C. (2016). Python for Everybody: Exploring Data in Python 3. CreateSpace Independent Publishing Platform. [Chapters 3-11](https://www.py4e.com/lessons) (Note: Read only the chapters which interest you).
 
-**Week 04: Loops - While, For, Break, Continue**
+**Week 04: Boolean Variables and Loops**
 
 *Monday, September 16:*
 
-- Lecture 05: [While Loops and For Loops](https://danilofreire.github.io/qtm151/lectures/lecture-05/05-while-for.ipynb).
+- Lecture 05: [Boolean Variables and If/Else Statements](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-05/05-boolean-if-else.ipynb).
 
 *Wednesday, September 18:*
 
-- Lecture 06: [Applications 1: Simulation Studies](https://danilofreire.github.io/qtm151/lectures/lecture-06/06-simulation-studies.ipynb).
-- **Assignment 03:** [Problem Set 03](https://danilofreire.github.io/qtm151/problem-sets/problem-set-03.ipynb).
-
-*Friday, September 20:*
-
+- Lecture 06: [While Loops and For Loops](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-06/06-while-for.ipynb).
 - **Assignment 02 due (5%).**
+- **Assignment 03:** [Problem Set 03](https://github.com/danilofreire/qtm151/blob/main/assignments/03-assignment.ipynb).
 
 Weekly suggested readings:
 
+- [Real Python: Conditional Statements in Python](https://realpython.com/python-conditional-statements/).
+- [Python Official Documentation: An Informal introduction to Python and More Control Flow Tools (Chapters 3-4)](https://docs.python.org/3/tutorial/index.html).
 - [Python Official Documentation: Compound Statements](https://docs.python.org/3/reference/compound_stmts.html).
 - [Real Python: Python 'while' Loops (Indefinite Iteration)](https://realpython.com/python-while-loop/). 
 - [Real Python: Python 'for' Loops (Definite Iteration)](https://realpython.com/python-for-loop/).
 - [W3Schools: Python While Loops](https://www.w3schools.com/python/python_while_loops.asp).
-- Programiz: [Python For Loop](https://www.programiz.com/python-programming/for-loop), [Python While Loop](https://www.programiz.com/python-programming/while-loop), and [Python Break and Continue](https://www.programiz.com/python-programming/break-continue).
 - Sweigart, A. (2019). Automate the Boring Stuff with Python: Practical Programming for Total Beginners (2nd ed.). No Starch Press. [Chapter 02: Flow Control](https://automatetheboringstuff.com/2e/chapter2/).
 
 ## Module 03: Writing and Running Functions
 
-**Week 05: Functions and Global/Local Variables**
+**Week 05: Applications and Functions**
 
 *Monday, September 23:*
 
-- Lecture 07: [Functions and Arguments](https://danilofreire.github.io/qtm151/lectures/lecture-07/07-functions-arguments.ipynb).
+- Lecture 07: [Applications 1: Simulation Studies](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-07/07-applications-simulation.ipynb).
 
 *Wednesday, September 25:*
 
-- Lecture 08: [Global and Local Variables](https://danilofreire.github.io/qtm151/lectures/lecture-08/08-global-local.ipynb).
-- **Assignment 04:** [Problem Set 04](https://danilofreire.github.io/qtm151/problem-sets/problem-set-04.ipynb).
-
-*Friday, September 27:*
-
+- Lecture 08: [Functions and Arguments](https://danilofreire.github.io/qtm151/lectures/lecture-08/08-functions-arguments.ipynb).
 - **Assignment 03 due (5%).**
+- **Assignment 04:** [Problem Set 04](https://github.com/danilofreire/qtm151/blob/main/assignments/04-assignment.ipynb).
 
-**Week 06: Applications and Subsetting Data**
+**Week 06: Global and Local Variables, Quiz 01**
 
 *Monday, September 30:*
 
-- Lecture 09: [**Quiz 01: Application 02 - Operations over Multiple Datasets (6%)**](https://danilofreire.github.io/qtm151/lectures/lecture-09/09-application-operations.ipynb).
+- Lecture 09: [Global and Local Variables](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-09/09-global-local.ipynb).
 
 *Wednesday, October 02:*
 
-- Lecture 10: [Subsetting Data](https://danilofreire.github.io/qtm151/lectures/lecture-10/10-subsetting-data.ipynb).
-- **Assignment 05:** [Problem Set 05](https://danilofreire.github.io/qtm151/problem-sets/problem-set-05.ipynb).
+- Lecture 10: [**Quiz 01: Application 02 - Operations over Multiple Datasets (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-10/10-operations-multiple-datasets.ipynb).
+- **Assignment 05:** [Problem Set 05](https://github.com/danilofreire/qtm151/blob/main/assignments/05-assignment.ipynb).
 
-*Friday, October 04:*
+*Friday, October 04: (exceptionally)*
 
 - **Assignment 04 due (5%).**
 
@@ -259,7 +251,7 @@ Weekly suggested readings:
 
 *Monday, October 07:*
 
-- Lecture 11: [Application 03: Linear Models](https://danilofreire.github.io/qtm151/lectures/lecture-11/11-application-linear-models.ipynb). 
+- Lecture 11: [Subsetting Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-11/11-subsetting-data.ipynb).
 
 Weekly suggested readings:
 
@@ -271,36 +263,29 @@ Weekly suggested readings:
 
 *Wednesday, October 09:*
 
-- Lecture 12: [Creating and Replacing Variables](https://danilofreire.github.io/qtm151/lectures/lecture-12/12-creating-replacing.ipynb).
-- **Assignment 06:** [Problem Set 06](https://danilofreire.github.io/qtm151/problem-sets/problem-set-06.ipynb).
-
-*Friday, October 11:*
-
+- Lecture 12: [Application 03: Linear Models](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-12/12-linear-models.ipynb). 
 - **Assignment 05 due (5%).**
+- **Assignment 06:** [Problem Set 06](https://github.com/danilofreire/qtm151/blob/main/assignments/06-assignment.ipynb).
 
 *Monday, October 14: Fall Break (no class)*
 
 *Wednesday, October 16:*
 
-- Lecture 13: [**Quiz 2: Application 4: Random Assignment (6%)**](https://danilofreire.github.io/qtm151/lectures/lecture-13/13-application-random-assignment.ipynb).
-- **Assignment 07:** [Problem Set 07](https://danilofreire.github.io/qtm151/problem-sets/problem-set-07.ipynb).
-
-*Friday, October 18:*
-
+- Lecture 13: [Creating and Replacing Variables](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-13/13-creating-replacing-variables.ipynb).
 - **Assignment 06 due (5%).**
+- **Assignment 07:** [Problem Set 07](https://github.com/danilofreire/qtm151/blob/main/assignments/07-assignment.ipynb).
+
 
 *Monday, October 21:*
 
-- Lecture 14: [Aggregating Data](https://danilofreire.github.io/qtm151/lectures/lecture-14/14-aggregating-data.ipynb).
+- Lecture 14: [**Quiz 2: Application 4: Random Assignment (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-14/14-random-assignment.ipynb).
+
 
 *Wednesday, October 23:*
 
-- Lecture 15: [Merging Data](https://danilofreire.github.io/qtm151/lectures/lecture-15/15-merging-data.ipynb).
-- **Assignment 08:** [Problem Set 08](https://danilofreire.github.io/qtm151/problem-sets/problem-set-08.ipynb).
-
-*Friday, October 25:*
-
+- Lecture 15: [Aggregating Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-15/15-aggregating-data.ipynb)
 - **Assignment 07 due (5%).**
+- **Assignment 08:** [Problem Set 08](https://github.com/danilofreire/qtm151/blob/main/assignments/08-assignment.ipynb).
 
 Weekly suggested readings:
 
@@ -313,17 +298,17 @@ Weekly suggested readings:
 
 *Monday, October 28:*
 
-- Lecture 16: [Introduction to SQL](https://danilofreire.github.io/qtm151/lectures/lecture-16/16-introduction-sql.ipynb).
+- Lecture 16: [Merging Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-16/16-merging-data.ipynb).
+
 
 *Wednesday, October 30:*
 
-- Lecture 17: [**Quiz 3: Application 5: SQL Queries (6%)**](https://danilofreire.github.io/qtm151/lectures/lecture-17/17-application-sql-queries.ipynb).
-- **Assignment 09:** [Problem Set 09](https://danilofreire.github.io/qtm151/problem-sets/problem-set-09.ipynb).
-- **Instructions for the Final Project:** [Final Project](https://danilofreire.github.io/qtm151/final-project).
-
-*Friday, November 01:*
-
+- Lecture 17: [Introduction to SQL](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-17/17-introduction-sql.ipynb).
 - **Assignment 08 due (5%).**
+- **Assignment 09:** [Problem Set 09](https://github.com/danilofreire/qtm151/blob/main/assignments/09-assignment.ipynb).
+- **Instructions for the Final Project:** [Final Project](https://github.com/danilofreire/qtm151/blob/main/final-project).
+
+
 
 Weekly suggested readings:
 
@@ -337,11 +322,14 @@ Weekly suggested readings:
 
 *Monday, November 04:*
 
-- Lecture 18: [Merging Tables in SQL](https://danilofreire.github.io/qtm151/lectures/lecture-18/18-merging-tables.ipynb).
+- Lecture 18: [**Quiz 3: Application 5: SQL Queries (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-18/18-sql-queries.ipynb).
 
 *Wednesday, November 06:*
 
-- Lecture 19: [Import SQL Data into Python](https://danilofreire.github.io/qtm151/lectures/lecture-19/19-import-sql-data.ipynb).
+- Lecture 19: [Merging Tables in SQL](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-19/19-merging-tables.ipynb).
+
+
+[Import SQL Data into Python](https://danilofreire.github.io/qtm151/lectures/lecture-19/19-import-sql-data.ipynb).
 - **Assignment 10:** [Problem Set 10](https://danilofreire.github.io/qtm151/problem-sets/problem-set-10.ipynb).
 
 *Friday, November 08:*

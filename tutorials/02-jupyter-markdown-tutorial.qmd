@@ -37,7 +37,7 @@ editor:
 
 This tutorial will introduce you to [Jupyter Notebook](https://jupyter.org/documentation) and [Markdown](https://www.markdownguide.org/). Jupyter Notebook is an interactive computing platform that allows users to create and share documents that contain live code, equations, visualisations, and narrative text. Markdown is a lightweight markup language that is used to format text, and can be used for everything - websites, documents, notes, books, presentations, email messages, and technical documentation. Even WhatsApp and Facebook Messenger use Markdown to format messages. So if you have already italicised a word or made a text bold on WhatsApp, you have used Markdown! 
 
-This tutorial is divided into two parts. The first part will introduce you to Jupyter Notebook and show you how to create a new notebook, run code cells, and format text cells using Markdown. The second part will provide a more in-depth look at Markdown and show you how to create headings, lists, links, images, and tables in Markdown.
+This tutorial is divided into two parts. The first part will introduce you to Jupyter Notebook and show you how to create a new notebook, run code cells, and format text cells using Markdown. The second part will provide a more in-depth look at Markdown and show you how to create headings, lists, links, images, and tables.
 
 # Introduction to Jupyter Notebook
 
@@ -110,7 +110,7 @@ To create a text cell click on "+ Markdown." You will get an empty white box whe
 # Welcome to QTM 151!
 
 This is a Jupyter Notebook. You can write *text*, **equations**, and `code` 
-in [this notebook](https://github.com/danilofreire/qtm151/tutorials). 
+in [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/testing-ipython.ipynb). 
 ```
 
 The text will be displayed in the text cell like this:
