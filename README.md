@@ -105,10 +105,33 @@ file in the repository root.
 
 ## Suggested Resources
 
+To supplement your learning, you may find the following resources helpful:
+
+### Books
+
+- [Python for Data Analysis](https://wesmckinney.com/book/) by Wes McKinney
+- [Elements of Data Science](https://allendowney.github.io/ElementsOfDataScience/README.html) by Allen Downey
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com) by Al Sweigart
+- [Python for Everybody](https://www.py4e.com/book.php) by Charles Severance
+- [SQL for Data Scientists](https://sqlfordatascientists.com/) by Renee M. P. Teate
+
+## Online Courses
+
+- [Coursera: Python for Everybody Specialisation](https://www.coursera.org/specializations/python)
+- [edX: Python Basics for Data Science](https://www.edx.org/learn/python/ibm-python-basics-for-data-science)
+- [Codecademy: Learn Python](https://www.codecademy.com/learn/learn-python-3)
+- [DataCamp: Introduction to SQL](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
+- [Coursera: SQL for Data Science](https://www.coursera.org/learn/sql-for-data-science)
+
+### Documentation
+
 - [Official Python Documentation](https://docs.python.org/3/)
+- [NumPy Documentation](https://numpy.org/doc/)
 - [Pandas Documentation](https://pandas.pydata.org/docs/)
-- [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
+- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+
+The syllabus also includes a list of additional readings and resources for each week.
 
 ## Contact Information
 
