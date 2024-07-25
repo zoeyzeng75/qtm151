@@ -1,0 +1,47 @@
+project:
+  type: website
+  render: 
+   - "README.md"
+   - "tutorials/README.md"
+   - "tutorials/LICENSE.md"
+   - "tutorials/images/*.*"
+   - "lectures/README.md"
+   - "lectures/LICENSE.md"
+   - "LICENSE.md"
+   - "*.Rmd"
+   - "*.qmd"
+   - "*.ipynb"
+
+website:
+  title: "QTM 151"
+  page-navigation: true
+  back-to-top-navigation: true
+  reader-mode: true
+  repo-url: https://github.com/danilofreire/qtm151
+  repo-actions: [source, issue]
+  navbar:
+    pinned: true
+    tools:
+      - icon: github
+        href: https://github.com/danilofreire/qtm151
+    left:
+      - href: syllabus.Rmd
+        text: Syllabus
+      - href: lectures/README.md
+        text: Lectures
+      - href: tutorials/README.md
+        text: Tutorials
+      - href: LICENSE.md
+        text: " "
+  page-footer: 
+    left: "Copyright 2024, Danilo Freire. The content of this site is licensed under the [MIT License](LICENSE.md)." 
+    right: 
+      - icon: github
+        href: https://github.com/danilofreire/qtm151
+
+format:
+  html:
+    theme: lumen
+    css: styles.css
+    toc: true
+
