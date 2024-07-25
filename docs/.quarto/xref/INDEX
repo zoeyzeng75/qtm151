@@ -40,5 +40,23 @@
   },
   "lectures/LICENSE.md": {
     "LICENSE.html": "d6d7b581"
+  },
+  "LICENSE.qmd": {
+    "LICENSE.html": "e40b1b6e"
+  },
+  "lectures/LICENSE.qmd": {
+    "LICENSE.html": "019e99ae"
+  },
+  "tutorials/LICENSE.qmd": {
+    "LICENSE.html": "8f8b7044"
+  },
+  "syllabus.qmd": {
+    "syllabus.html": "b30b1140"
+  },
+  "tutorials/tutorials.qmd": {
+    "tutorials.html": "faf5351b"
+  },
+  "lectures/lectures.qmd": {
+    "lectures.html": "865d8fdb"
   }
 }

@@ -1,16 +1,5 @@
 project:
   type: website
-  render: 
-   - "README.md"
-   - "tutorials/README.md"
-   - "tutorials/LICENSE.md"
-   - "tutorials/images/*.*"
-   - "lectures/README.md"
-   - "lectures/LICENSE.md"
-   - "LICENSE.md"
-   - "*.Rmd"
-   - "*.qmd"
-   - "*.ipynb"
 
 website:
   title: "QTM 151"
@@ -25,16 +14,16 @@ website:
       - icon: github
         href: https://github.com/danilofreire/qtm151
     left:
-      - href: syllabus.Rmd
+      - href: syllabus.qmd
         text: Syllabus
-      - href: lectures/README.md
+      - href: lectures/lectures.qmd
         text: Lectures
-      - href: tutorials/README.md
+      - href: tutorials/tutorials.qmd
         text: Tutorials
-      - href: LICENSE.md
+      - href: LICENSE.html
         text: " "
   page-footer: 
-    left: "Copyright 2024, Danilo Freire. The content of this site is licensed under the [MIT License](LICENSE.md)." 
+    left: "Copyright 2024, Danilo Freire. The content of this site is licensed under the [MIT License](LICENSE.qmd)." 
     right: 
       - icon: github
         href: https://github.com/danilofreire/qtm151

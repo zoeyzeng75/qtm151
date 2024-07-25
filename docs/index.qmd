@@ -188,7 +188,7 @@ possible.
 
 ## License
 
-This repository is licensed under the [MIT License](LICENSE.md). You are
+This repository is licensed under the [MIT License](LICENSE.qmd). You are
 free to use, modify, and distribute the materials as needed, with appropriate
 attribution to the original source.
 
