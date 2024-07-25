@@ -115,7 +115,7 @@ To supplement your learning, you may find the following resources helpful:
 - [Python for Everybody](https://www.py4e.com/book.php) by Charles Severance
 - [SQL for Data Scientists](https://sqlfordatascientists.com/) by Renee M. P. Teate
 
-## Online Courses
+### Online Courses
 
 - [Coursera: Python for Everybody Specialisation](https://www.coursera.org/specializations/python)
 - [edX: Python Basics for Data Science](https://www.edx.org/learn/python/ibm-python-basics-for-data-science)
