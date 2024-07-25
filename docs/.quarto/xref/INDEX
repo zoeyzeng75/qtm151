@@ -1,62 +1,41 @@
 {
-  "README.md": {
-    "README.html": "826f5ebf"
-  },
-  "tutorials/README.md": {
-    "README.html": "bb03c5b8"
-  },
-  "lectures/README.md": {
-    "README.html": "1c0ef742"
-  },
-  "syllabus.Rmd": {
-    "syllabus.html": "2829d90f"
+  "index.qmd": {
+    "index.html": "805265d3"
   },
   "tutorials/python-postgresql-example.ipynb": {
-    "python-postgresql-example.html": "311710cb"
-  },
-  "tutorials/testing-ipython.ipynb": {
-    "testing-ipython.html": "275b6dd6"
-  },
-  "index.qmd": {
-    "index.html": "7f1059c8"
-  },
-  "tutorials/03-github-tutorial.qmd": {
-    "03-github-tutorial.html": "90a131f7"
-  },
-  "tutorials/04-postgresql-tutorial.qmd": {
-    "04-postgresql-tutorial.html": "ee6f5dbc"
+    "python-postgresql-example.html": "75684579"
   },
   "tutorials/01-vscode-anaconda-tutorial.qmd": {
-    "01-vscode-anaconda-tutorial.html": "3b4f1f1e"
+    "01-vscode-anaconda-tutorial.html": "5c26a924"
   },
   "tutorials/02-jupyter-markdown-tutorial.qmd": {
-    "02-jupyter-markdown-tutorial.html": "b447ee84"
+    "02-jupyter-markdown-tutorial.html": "139705bb"
   },
-  "LICENSE.md": {
-    "LICENSE.html": "51a4e7ef"
+  "tutorials/testing-ipython.ipynb": {
+    "testing-ipython.html": "2d6cd731"
   },
-  "tutorials/LICENSE.md": {
-    "LICENSE.html": "ea78fe72"
+  "tutorials/03-github-tutorial.qmd": {
+    "03-github-tutorial.html": "4d5e03d2"
   },
-  "lectures/LICENSE.md": {
-    "LICENSE.html": "d6d7b581"
-  },
-  "LICENSE.qmd": {
-    "LICENSE.html": "e40b1b6e"
-  },
-  "lectures/LICENSE.qmd": {
-    "LICENSE.html": "019e99ae"
+  "tutorials/04-postgresql-tutorial.qmd": {
+    "04-postgresql-tutorial.html": "ca7e7011"
   },
   "tutorials/LICENSE.qmd": {
-    "LICENSE.html": "8f8b7044"
+    "LICENSE.html": "1abfd8f4"
   },
   "syllabus.qmd": {
-    "syllabus.html": "b30b1140"
-  },
-  "tutorials/tutorials.qmd": {
-    "tutorials.html": "faf5351b"
+    "syllabus.html": "e4a8ca25"
   },
   "lectures/lectures.qmd": {
-    "lectures.html": "865d8fdb"
+    "lectures.html": "3587f918"
+  },
+  "lectures/LICENSE.qmd": {
+    "LICENSE.html": "27e23aad"
+  },
+  "tutorials/tutorials.qmd": {
+    "tutorials.html": "93f41792"
+  },
+  "LICENSE.qmd": {
+    "LICENSE.html": "b857e270"
   }
 }
