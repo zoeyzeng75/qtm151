@@ -231,6 +231,13 @@
     "text": "MIT License\nCopyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
   },
   {
+    "objectID": "lectures/README.html",
+    "href": "lectures/README.html",
+    "title": "Lectures",
+    "section": "",
+    "text": "Lectures\nPlease find the links for the lecture files below. These links will take you to the course’s GitHub repository, where you can find the slides and Jupyter Notebooks we will use in class. I encourage you to view and download the files below directly in the repository.\nWhile I intend to follow this schedule, the lectures are subject to change depending on your needs. Please remember to visit the repository often.\n\nLecture 01: Welcome to QTM 151 - Introduction\nLecture 02: GitHub Review and Introduction to Jupyter Notebooks\nLecture 03: Variables and Lists\nLecture 04: Mathematical Operations, Arrays, and Random Numbers\nLecture 05: Boolean Variables and If/Else Statements\nLecture 06: While Loops and For Loops\nLecture 07: Applications 1: Simulation Studies\nLecture 08: Functions and Arguments\nLecture 09: Global and Local Variables\nLecture 10: Quiz 01: Application 02 - Operations over Multiple Datasets (6%)\nLecture 11: Subsetting Data\nLecture 12: Application 03: Linear Models\nLecture 13: Creating and Replacing Variables\nLecture 14: Quiz 2: Application 4: Random Assignment (6%)\nLecture 15: Aggregating Data\nLecture 16: Merging Data\nLecture 17: Introduction to SQL\nLecture 18: Quiz 3: Application 5: Practicing Chaining (6%)\nLecture 19: Import SQL Data into Python\nLecture 20: Merging Tables in SQL\nLecture 21: Time Series Analysis\nLecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)\nLecture 23: Pivot Tables\nLecture 24: Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)\nLecture 25: Manipulating Text Data\nLecture 26: Advanced Plots\n\nEach lecture folder contains a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture.\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "tutorials/README.html",
     "href": "tutorials/README.html",
     "title": "QTM151 Tutorials",
@@ -385,11 +392,18 @@
     "text": "This repository is licensed under the MIT License. You are free to use, modify, and distribute the materials as needed, with appropriate attribution to the original source.\n\nWe look forward to an engaging and productive semester! Good luck, and happy coding! :smiley:"
   },
   {
-    "objectID": "lectures/README.html",
-    "href": "lectures/README.html",
-    "title": "Lectures",
+    "objectID": "tutorials/LICENSE.html",
+    "href": "tutorials/LICENSE.html",
+    "title": "QTM 151",
     "section": "",
-    "text": "Lectures\nPlease find the links for the lecture files below. These links will take you to the course’s GitHub repository, where you can find the slides and Jupyter Notebooks we will use in class. I encourage you to view and download the files below directly in the repository.\nWhile I intend to follow this schedule, the lectures are subject to change depending on your needs. Please remember to visit the repository often.\n\nLecture 01: Welcome to QTM 151 - Introduction\nLecture 02: GitHub Review and Introduction to Jupyter Notebooks\nLecture 03: Variables and Lists\nLecture 04: Mathematical Operations, Arrays, and Random Numbers\nLecture 05: Boolean Variables and If/Else Statements\nLecture 06: While Loops and For Loops\nLecture 07: Applications 1: Simulation Studies\nLecture 08: Functions and Arguments\nLecture 09: Global and Local Variables\nLecture 10: Quiz 01: Application 02 - Operations over Multiple Datasets (6%)\nLecture 11: Subsetting Data\nLecture 12: Application 03: Linear Models\nLecture 13: Creating and Replacing Variables\nLecture 14: Quiz 2: Application 4: Random Assignment (6%)\nLecture 15: Aggregating Data\nLecture 16: Merging Data\nLecture 17: Introduction to SQL\nLecture 18: Quiz 3: Application 5: Practicing Chaining (6%)\nLecture 19: Import SQL Data into Python\nLecture 20: Merging Tables in SQL\nLecture 21: Time Series Analysis\nLecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)\nLecture 23: Pivot Tables\nLecture 24: Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)\nLecture 25: Manipulating Text Data\nLecture 26: Advanced Plots\n\nEach lecture folder contains a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture.\n\n\n\n\n Back to top"
+    "text": "MIT License\nCopyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "lectures/LICENSE.html",
+    "href": "lectures/LICENSE.html",
+    "title": "QTM 151",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
   },
   {
     "objectID": "syllabus.html",
@@ -593,19 +607,5 @@
     "title": "Installing VS Code and Connecting it with Anaconda",
     "section": "5.3 Verify the Connection:",
     "text": "5.3 Verify the Connection:\n\nPlease click on the “Run” button at the top right corner of the editor to execute the code in your .py file. Select “Run Current File in Dedicated Terminal”\n\n\n\n\nRun Python File in VS Code\n\n\n\nThe output should show the Anaconda Python version and its location.\n\n\n\n\nPython Output in VS Code"
-  },
-  {
-    "objectID": "tutorials/LICENSE.html",
-    "href": "tutorials/LICENSE.html",
-    "title": "QTM 151",
-    "section": "",
-    "text": "MIT License\nCopyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "lectures/LICENSE.html",
-    "href": "lectures/LICENSE.html",
-    "title": "QTM 151",
-    "section": "",
-    "text": "MIT License\nCopyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
   }
 ]
