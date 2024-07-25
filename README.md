@@ -31,8 +31,6 @@ The course covers the following main topics, with corresponding lecture
 materials available in the [lectures
 folder](https://github.com/danilofreire/qtm151/tree/main/lectures):
 
-## Lectures
-
 1. Lecture 01: [Welcome to QTM 151 - Introduction](https://danilofreire.github.io/qtm151/lectures/lecture-01/01-introduction.html)
 2. Lecture 02: [GitHub Review](https://danilofreire.github.io/qtm151/lectures/lecture-02/02-github-review.html) and [Introduction to Jupyter Notebooks](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-02/02-jupyter.ipynb)
 3. Lecture 03: [Variables and Lists](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-03/03-variables-lists.ipynb)
@@ -64,7 +62,7 @@ Each lecture folder contains a Jupyter notebook (.ipynb) with code examples and
 explanations, along with any additional resources or datasets used in the
 lecture.
 
-## Assignments and Quizzes
+### Assignments and Quizzes
 
 Throughout the course, students will complete various assignments and quizzes
 to reinforce their learning. These will be posted in the respective
