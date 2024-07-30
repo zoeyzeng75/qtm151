@@ -1264,5 +1264,11 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Quarto website files
+_site/
+_quarto/
+/.quarto/
+/_site/
+
 # End of https://www.toptal.com/developers/gitignore/api/latex,linux,macos,python,r,vim,windows
 
