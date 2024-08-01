@@ -31,7 +31,7 @@ The course covers the following topics, with corresponding lecture
 materials available in the [lectures
 folder](https://github.com/danilofreire/qtm151/tree/main/lectures):
 
-- Wednesday, August 28: [Lecture 01: Welcome to QTM 151 - Introduction](https://danilofreire.github.io/qtm151/lectures/lecture-01/01-introduction.html). [Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub](https://github.com/danilofreire/qtm151/tutorials).
+- Wednesday, August 28: [Lecture 01: Welcome to QTM 151 - Introduction](https://danilofreire.github.io/qtm151/lectures/lecture-01/01-introduction.html). [Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub](https://danilofreire.github.io/qtm151/tutorials/tutorials.html).
 
 - Monday, September 02: Labour Day (no class)
 
