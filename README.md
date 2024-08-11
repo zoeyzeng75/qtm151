@@ -145,7 +145,6 @@ the course. These include:
 - Assignments: 50%
 - Class Quizzes: 30%
 - Final Project: 20%
-- Mid-semester and end-of-semester evaluations: 0.5% each, bonus
 
 ## Course Policies and Expectations
 
