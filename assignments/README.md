@@ -1,6 +1,4 @@
----
-title: "Assignments"
----
+# Assignments
 
 The course assessment consists of ten assignments, five in-class quizzes, and a final project. Each assignment is worth 5% of your final grade (50%), while each quiz contributes 6% (30%). The final project accounts for the remaining 20% of your grade. All assignments for the course can be found in this section.
 
