@@ -11,7 +11,7 @@ author:
 format:
   clean-revealjs:
     self-contained: true
-    footer: "[Variables and Lists](https://rawcdn.githack.com/danilofreire/qtm151/4c85d539a1a386e76a2e105625b780d44830dc2d/lectures/lecture-03/03-variables-lists.html)"
+    footer: "[Variables and Lists](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-03/03-variables-lists.html)"
 bibliography: references.bib
 transition: slide
 transition-speed: default

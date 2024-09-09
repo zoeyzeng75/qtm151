@@ -11,7 +11,7 @@ author:
 format:
   clean-revealjs:
     self-contained: true
-    footer: "[Maths with NumPy](https://rawcdn.githack.com/danilofreire/qtm151/c972c0e31ff8b65cdc8b59f510d2831eaf13ef41/lectures/lecture-04/04-maths-arrays-random.html)"
+    footer: "[Maths with NumPy](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-04/04-maths-arrays-random.html)"
 transition: slide
 transition-speed: default
 scrollable: true
