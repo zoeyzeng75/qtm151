@@ -11,7 +11,7 @@ author:
 format:
   clean-revealjs:
     self-contained: true
-    footer: "[Variables and Lists](https://danilofreire.github.io/qtm151/lectures/lecture-03/03-variables-lists.html)"
+    footer: "[Variables and Lists](https://rawcdn.githack.com/danilofreire/qtm151/4c85d539a1a386e76a2e105625b780d44830dc2d/lectures/lecture-03/03-variables-lists.html)"
 bibliography: references.bib
 transition: slide
 transition-speed: default
@@ -23,7 +23,7 @@ editor:
 
 # Nice to see you all again! 😊 {background-color="#2d4563"}
 
-# Brief Recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#2d4563"}
 
 ## In the last lecture, we learned:
 
@@ -47,7 +47,7 @@ editor:
 
 # Questions? Please let us know! {background-color="#2d4563"}
 
-## Today's Agenda 
+## Today's agenda 
 ### Installing packages and working with variables and lists
 
 :::{style="margin-top: 30px; font-size: 26px;"}
@@ -67,7 +67,7 @@ editor:
 :::
 :::
 
-# Any questions about installing Anaconda and Jupyter? 🐍 {background-color="#2d4563"}
+# Questions about installing Anaconda and Jupyter? 🐍 {background-color="#2d4563"}
 
 ## Installing Packages
 
@@ -90,7 +90,8 @@ editor:
   - [matplotlib]{.alert}: for data visualisation
 
 :::{.fragment .fade-in}
-- Try to install these packages on your computer! 
+- You should have them installed already, as they come with the base Anaconda installation
+- If not, please try to install them using the Anaconda Navigator
 :::
 :::
 :::
