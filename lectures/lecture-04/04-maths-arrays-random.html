@@ -1316,7 +1316,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <li>You can check a list of NumPy functions <a href="https://numpy.org/doc/stable/reference/routines.math.html">here</a> (there are many!)</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<div id="9bbee719" class="cell" data-execution_count="1">
+<div id="929395ef" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href></a><span class="co"># Importing packages</span></span>
 <span id="cb1-2"><a href></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -1358,12 +1358,12 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <ul>
 <li>Don’t forget how to exponentiate in Python 😉</li>
 </ul>
-<div id="a5b5796a" class="cell" data-execution_count="2">
+<div id="88820f5f" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href></a>x <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb3-2"><a href></a>x <span class="op">**</span> <span class="dv">5</span></span>
 <span id="cb3-3"><a href></a></span>
 <span id="cb3-4"><a href></a><span class="co"># Not x^5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>100000</code></pre>
 </div>
 </div>
@@ -1398,7 +1398,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <li><p><span class="math inline">\(d = \begin{pmatrix} 4 \\ 2 \end{pmatrix}\)</span></p></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<div id="07b26263" class="cell" data-execution_count="3">
+<div id="691a46ec" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href></a>vec_a  <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>])</span>
 <span id="cb5-2"><a href></a>vec_b  <span class="op">=</span> np.array([<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">0</span>])</span>
 <span id="cb5-3"><a href></a>vec_c  <span class="op">=</span> np.array([<span class="dv">10</span>,<span class="dv">100</span>,<span class="dv">1000</span>,<span class="dv">2000</span>,<span class="dv">5000</span>])</span>
@@ -1416,7 +1416,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <li><p>Remember that Python is zero-indexed</p></li>
 <li><p>Access the first and the third element of <span class="math inline">\(a\)</span></p></li>
 </ul>
-<div id="aefae07d" class="cell" data-execution_count="4">
+<div id="f8ad9386" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href></a><span class="bu">print</span>(vec_a)</span>
 <span id="cb6-2"><a href></a><span class="bu">print</span>(vec_a[<span class="dv">0</span>])</span>
 <span id="cb6-3"><a href></a><span class="bu">print</span>(vec_a[<span class="dv">2</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1443,7 +1443,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <li><span class="math inline">\(a + 2 = \begin{pmatrix} a_1 + 2 \\ a_2 + 2 \\ a_3 + 2 \end{pmatrix}\)</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<div id="a7f35b3a" class="cell" data-execution_count="5">
+<div id="df081f79" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href></a><span class="co"># Print the original array</span></span>
 <span id="cb8-2"><a href></a><span class="bu">print</span>(vec_a)</span>
 <span id="cb8-3"><a href></a></span>
@@ -1458,7 +1458,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <li>A scalar refers to either an int or float</li>
 <li>We can do many common operations with</li>
 </ul>
-<div id="08233962" class="cell" data-execution_count="6">
+<div id="430920c4" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href></a><span class="bu">print</span>(vec_a <span class="op">*</span> <span class="dv">2</span>)</span>
 <span id="cb10-2"><a href></a><span class="bu">print</span>(vec_a <span class="op">/</span> <span class="dv">2</span>)</span>
 <span id="cb10-3"><a href></a><span class="bu">print</span>(vec_a <span class="op">+</span> <span class="dv">2</span>)</span>
@@ -1481,7 +1481,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <div class="column" style="width:50%;">
 <p><span class="math inline">\(a + b = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} +\)</span> <span class="math inline">\(\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix} =\)</span> <span class="math inline">\(\begin{pmatrix} a_1 + b_1 \\ a_2 + b_2 \\ a_3 + b_3 \end{pmatrix}\)</span></p>
 </div><div class="column" style="width:50%;">
-<div id="fcffdf33" class="cell" data-execution_count="7">
+<div id="b4682920" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href></a><span class="bu">print</span>(vec_a)</span>
 <span id="cb12-2"><a href></a><span class="bu">print</span>(vec_b)</span>
 <span id="cb12-3"><a href></a></span>
@@ -1505,7 +1505,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <div class="column" style="width:50%;">
 <p><span class="math inline">\(a * b = \begin{pmatrix} a_1 * b_1 \\ a_2 * b_2 \\ a_3 * b_3 \end{pmatrix}\)</span></p>
 </div><div class="column" style="width:50%;">
-<div id="f8591b10" class="cell" data-execution_count="8">
+<div id="34549c12" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href></a><span class="bu">print</span>(vec_a)</span>
 <span id="cb14-2"><a href></a><span class="bu">print</span>(vec_b)</span>
 <span id="cb14-3"><a href></a></span>
@@ -1545,7 +1545,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <li>We can also compute the sum, product, and cumulative sum</li>
 </ul>
 <p><br></p>
-<div id="8a255812" class="cell" data-execution_count="9">
+<div id="868e3e6d" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href></a><span class="bu">print</span>(np.mean(vec_a))</span>
 <span id="cb16-2"><a href></a><span class="bu">print</span>(np.std(vec_a))</span>
 <span id="cb16-3"><a href></a><span class="bu">print</span>(np.<span class="bu">min</span>(vec_a))</span>
@@ -1573,7 +1573,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <h2>Common pitfall</h2>
 <h3 id="make-sure-that-the-arrays-are-of-the-same-size">Make sure that the arrays are of the same size!</h3>
 <div style="margin-top: 40px; font-size: 26px;">
-<div id="b7b7831d" class="cell" data-execution_count="10">
+<div id="38941173" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href></a><span class="bu">print</span>(vec_a)</span>
 <span id="cb18-2"><a href></a><span class="bu">print</span>(vec_c)</span>
 <span id="cb18-3"><a href></a></span>
@@ -1587,7 +1587,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 (5,)</code></pre>
 </div>
 </div>
-<div id="6c890b8a" class="cell" data-execution_count="11">
+<div id="87bbf328" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href></a><span class="co"># When you add two arrays of different sizes,</span></span>
 <span id="cb20-2"><a href></a><span class="co"># Python will raise an error</span></span>
 <span id="cb20-3"><a href></a><span class="bu">print</span>(vec_a <span class="op">+</span> vec_c)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1625,14 +1625,14 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <li>It has the mean “loc” (location) and standard deviation “scale”</li>
 <li>The number of distinct variabels is “size”</li>
 </ul>
-<div id="b8ad8b68" class="cell" data-execution_count="12">
+<div id="d6246b01" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href></a><span class="co"># Generate 10 random variables from a normal distribution</span></span>
 <span id="cb21-2"><a href></a><span class="co"># with mean 0 and standard deviation 1</span></span>
 <span id="cb21-3"><a href></a>randomvar_a <span class="op">=</span> np.random.normal(loc<span class="op">=</span><span class="dv">0</span>, scale<span class="op">=</span><span class="dv">1</span>, size<span class="op">=</span><span class="dv">10</span>)</span>
 <span id="cb21-4"><a href></a><span class="bu">print</span>(randomvar_a)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[-0.50949097 -0.29991083  1.9951245  -0.50285657 -1.53947883  0.17785325
- -0.57405932 -0.48579672 -2.12777207  1.0841557 ]</code></pre>
+<pre><code>[-1.3823323   0.69158767  0.80203002  0.29099632 -2.29902304  0.74139819
+ -0.17087196  0.2132853  -0.243135   -1.01824831]</code></pre>
 </div>
 </div>
 </div>
@@ -1647,7 +1647,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <li>This is called a seed, and it is set using <code>np.random.seed()</code></li>
 <li>This allows for <a href="https://en.wikipedia.org/wiki/Reproducibility">reproducibility</a> of results</li>
 </ul>
-<div id="bda43480" class="cell" data-execution_count="13">
+<div id="9152fc30" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href></a>np.random.seed(<span class="dv">151</span>)</span>
 <span id="cb23-2"><a href></a></span>
 <span id="cb23-3"><a href></a>random_var_b <span class="op">=</span> np.random.normal(loc<span class="op">=</span><span class="dv">0</span>, scale<span class="op">=</span><span class="dv">1</span>, size<span class="op">=</span><span class="dv">10</span>)</span>
@@ -1665,7 +1665,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <ul>
 <li>We can use the <code>plt.hist()</code> function to compute a histogram</li>
 </ul>
-<div id="e8689686" class="cell" data-execution_count="14">
+<div id="7bcb143e" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href></a><span class="co"># Create a histogram of the random variable</span></span>
 <span id="cb25-2"><a href></a>randomvar_x <span class="op">=</span> np.random.normal(loc<span class="op">=</span><span class="dv">0</span>, scale<span class="op">=</span><span class="dv">1</span>, size<span class="op">=</span><span class="dv">1000</span>)</span>
 <span id="cb25-3"><a href></a></span>
@@ -1746,7 +1746,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <li>Compute <span class="math inline">\(\pi x^2\)</span></li>
 <li>Compute <span class="math inline">\(\frac{1}{\sqrt{2\pi}}e^{-x^2}\)</span></li>
 </ul>
-<div id="b93541fb" class="cell" data-execution_count="15">
+<div id="eb86eb57" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href></a>x <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb26-2"><a href></a><span class="bu">print</span>(np.pi <span class="op">*</span> x <span class="op">**</span> <span class="dv">2</span>)</span>
 <span id="cb26-3"><a href></a><span class="bu">print</span>(<span class="dv">1</span> <span class="op">/</span> np.sqrt(<span class="dv">2</span> <span class="op">*</span> np.pi) <span class="op">*</span> np.exp(<span class="op">-</span>x <span class="op">**</span> <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1765,7 +1765,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <li>Compute the mean of</li>
 <li><span class="math inline">\(e = \begin{pmatrix} 10 \\ 8 \\ 15 \\ 0 \\ 24 \end{pmatrix}\)</span></li>
 </ul>
-<div id="dfe2dc7c" class="cell" data-execution_count="16">
+<div id="e8630a66" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href></a>vec_e <span class="op">=</span> np.array([<span class="dv">10</span>, <span class="dv">8</span>, <span class="dv">15</span>, <span class="dv">0</span>, <span class="dv">24</span>])</span>
 <span id="cb28-2"><a href></a><span class="bu">print</span>(np.mean(vec_e))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -1783,7 +1783,7 @@ Danilo Freire <a href="https://orcid.org/0000-0002-4712-6810" class="quarto-titl
 <li>Create a histogram of the random variable</li>
 <li>Try this again with <span class="math inline">\(size = 100, 1000, 10000\)</span> and see how the histogram changes</li>
 </ul>
-<div id="f2c6c30c" class="cell" data-execution_count="17">
+<div id="76e41466" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href></a><span class="co"># Create a histogram of the random variable</span></span>
 <span id="cb30-2"><a href></a>randomvar_x <span class="op">=</span> np.random.normal(loc<span class="op">=</span><span class="dv">0</span>, scale<span class="op">=</span><span class="dv">1</span>, size<span class="op">=</span><span class="dv">100</span>)</span>
 <span id="cb30-3"><a href></a></span>
