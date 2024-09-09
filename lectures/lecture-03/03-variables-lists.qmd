@@ -487,7 +487,7 @@ plt.show()
 :::
 
 :::{.column width="50%"}
-- Next time, we will learn how to:
+- In our next lecture, we will learn how to:
   - Solve mathematical problems using `numpy`
   - Generate random numbers
   - (Maybe) do some matrix operations
@@ -495,7 +495,9 @@ plt.show()
 :::
 :::
 
-# Any questions? 🤔 {background-color="#2d4563"}
+# Questions? 🤔 {background-color="#2d4563"}
+
+# See you next time! 🚀 {background-color="#2d4563"}
 
 ## Appendix 01 {#sec-appendix01}
 ### Create a variable with your favourite movie 
