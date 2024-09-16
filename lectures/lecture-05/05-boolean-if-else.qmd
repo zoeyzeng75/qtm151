@@ -702,7 +702,10 @@ Whether age (`age = 31`) is strictly less than 20, or greater than 30
 age = 31
 
 (age < 20) | (age > 30) 
-
+```
+```{python}
+#| echo: true
+#| eval: true
 (age < 25) & (age > 27)
 ```
 
