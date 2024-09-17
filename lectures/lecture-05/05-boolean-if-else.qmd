@@ -11,7 +11,7 @@ author:
 format:
   clean-revealjs:
     self-contained: true
-    footer: "[Conditional Statements]()"
+    footer: "[Conditional Statements](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-05/05-boolean-if-else.html)"
 transition: slide
 transition-speed: default
 scrollable: true
