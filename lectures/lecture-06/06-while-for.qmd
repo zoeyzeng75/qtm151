@@ -467,6 +467,8 @@ for id in list_ids:
 
 :::{style="margin-top: 30px; font-size: 24px;"}
 ```{python}
+#| echo: true
+#| eval: true
 for i in range(len(list_ids)):
     print("Dear customer, your position is " + str(i+1) + " on the waitlist" +
            " and your car brand is " + list_ids[i])
