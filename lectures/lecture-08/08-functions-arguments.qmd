@@ -409,6 +409,10 @@ print(result)
 - [[Appendix 05]{.button}](#sec:appendix05)
 :::
 
+# And that's it for today! 🎉 {background-color="#2d4563"}
+
+# Have a great day! 😊 {background-color="#2d4563"}
+
 ## Appendix 01: Compound Interest Equation {#sec:appendix01}
 
 :::{style="margin-top: 30px; font-size: 24px;"}
