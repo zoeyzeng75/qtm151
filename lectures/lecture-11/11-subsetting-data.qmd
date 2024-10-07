@@ -22,11 +22,6 @@ editor:
 
 # I hope you all had a very nice weekend! 😊 {background-color="#2d4563"}
 
-# Some comments about Quiz 01 📚 {background-color="#2d4563"}
-
-## Quiz 01
-
-
 ## Today's lecture
 
 :::{style="margin-top: 30px; font-size: 22px;"}
