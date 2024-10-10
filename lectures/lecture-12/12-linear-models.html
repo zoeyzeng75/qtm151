@@ -1258,7 +1258,7 @@ Danilo Freire
 </ul>
 </div><div class="column" style="width:50%;">
 <div style="text-align: center;">
-<div id="e5f1ef51" class="cell" data-execution_count="1">
+<div id="dad63a4a" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href></a><span class="co"># Import libraries</span></span>
@@ -1310,7 +1310,7 @@ Danilo Freire
 <ul>
 <li>First, let’s import the libraries we have seen so far</li>
 </ul>
-<div id="1daf6a30" class="cell" data-execution_count="2">
+<div id="8101b0e6" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb2-2"><a href></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb2-3"><a href></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1350,13 +1350,13 @@ Danilo Freire
 <li>Let’s generate some simulated data to illustrate how linear models work 😊📈</li>
 <li>First, let’s create an empty DataFrame</li>
 </ul>
-<div id="ecaf07a1" class="cell" data-execution_count="3">
+<div id="86c96fbb" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href></a>dataset <span class="op">=</span> pd.DataFrame()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Now, let’s create two random variables of size 50</li>
 </ul>
-<div id="107c7e59" class="cell" data-execution_count="4">
+<div id="766be29e" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href></a>n <span class="op">=</span> <span class="dv">50</span></span>
 <span id="cb5-2"><a href></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb5-3"><a href></a>dataset[<span class="st">&quot;x&quot;</span>] <span class="op">=</span> np.random.normal(loc <span class="op">=</span> <span class="dv">0</span>,scale <span class="op">=</span> <span class="dv">1</span>, size <span class="op">=</span> n)</span>
@@ -1388,7 +1388,7 @@ Danilo Freire
 <li><p><span class="math inline">\(b_0\)</span> is the intercept, <span class="math inline">\(b_1\)</span> is the slope, and <span class="math inline">\(e\)</span> is the error term</p></li>
 <li><p>Let’s create the dependent variable <code>y</code> using the formula above</p></li>
 </ul>
-<div id="e9037375" class="cell" data-execution_count="5">
+<div id="61903cf2" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href></a><span class="co"># Create the dependent variable</span></span>
 <span id="cb6-2"><a href></a><span class="co"># y = 1 + 2*x + e</span></span>
 <span id="cb6-3"><a href></a>b0 <span class="op">=</span> <span class="dv">1</span></span>
@@ -1399,11 +1399,11 @@ Danilo Freire
 <ul>
 <li>Then, let’s compute the line of best fit</li>
 </ul>
-<div id="48824213" class="cell" data-execution_count="6">
+<div id="469d2314" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href></a><span class="co"># Line of best fit </span></span>
 <span id="cb7-2"><a href></a>dataset[<span class="st">&quot;p&quot;</span>] <span class="op">=</span> b0 <span class="op">+</span> b1<span class="op">*</span>dataset[<span class="st">&quot;x&quot;</span>]</span>
 <span id="cb7-3"><a href></a>dataset.head(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="217">
+<div class="cell-output cell-output-display" data-execution_count="21">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -1463,7 +1463,7 @@ text-align: right;
 <ul>
 <li>Now, let’s plot the data and the line of best fit</li>
 </ul>
-<div id="790ab68d" class="cell" data-execution_count="7">
+<div id="b6f6b6be" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href></a><span class="co"># Plot the data</span></span>
 <span id="cb8-2"><a href></a>plt.scatter(x <span class="op">=</span> dataset[<span class="st">&quot;x&quot;</span>], y <span class="op">=</span> dataset[<span class="st">&quot;y&quot;</span>])</span>
 <span id="cb8-3"><a href></a>plt.plot(dataset[<span class="st">&quot;x&quot;</span>], dataset[<span class="st">&quot;p&quot;</span>], color <span class="op">=</span> <span class="st">&#39;green&#39;</span>)</span>
@@ -1515,7 +1515,7 @@ text-align: right;
 </div>
 </section></section>
 <section>
-<section id="estimate-the-line-of-best-fit" class="title-slide slide level1 center">
+<section id="estimate-the-line-of-best-fit" class="title-slide slide level1 center" data-background-color="#2d4563">
 <h1>Estimate the line of best fit 📈</h1>
 
 </section>
@@ -1541,7 +1541,7 @@ text-align: right;
 </ul></li>
 <li>First, let’s load the packages</li>
 </ul>
-<div id="05645d1c" class="cell" data-execution_count="8">
+<div id="74572878" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href></a><span class="co"># Import the library</span></span>
 <span id="cb9-2"><a href></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm </span>
 <span id="cb9-3"><a href></a><span class="im">import</span> statsmodels.formula.api <span class="im">as</span> smf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1549,7 +1549,7 @@ text-align: right;
 <ul>
 <li>Now let’s run the model</li>
 </ul>
-<div id="d00a710f" class="cell" data-execution_count="9">
+<div id="58b34512" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href></a>model <span class="op">=</span> smf.ols(formula <span class="op">=</span> <span class="st">&#39;y ~ x&#39;</span>, data <span class="op">=</span> dataset)</span>
 <span id="cb10-2"><a href></a>results <span class="op">=</span> model.fit()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -1559,7 +1559,7 @@ text-align: right;
 <section id="estimate-the-line-of-best-fit-2" class="slide level2">
 <h2>Estimate the line of best fit</h2>
 <div style="margin-top: 30px; font-size: 22px;">
-<div id="c9f23001" class="cell" data-execution_count="10">
+<div id="a9726107" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href></a><span class="im">from</span> stargazer.stargazer <span class="im">import</span> Stargazer</span>
@@ -1571,7 +1571,7 @@ text-align: right;
 <span id="cb11-7"><a href></a>table <span class="op">=</span> Stargazer([results])</span>
 <span id="cb11-8"><a href></a>table</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="220">
+<div class="cell-output cell-output-display" data-execution_count="24">
 <table style="text-align:center"><tbody><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
 <tr><td style="text-align:left"></td><td colspan="1"><em>Dependent variable: y</em></td></tr><tr><td style="text-align:left"></td></tr><tr><td style="text-align:left"></td><td>(1)</td></tr>
 <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
@@ -1594,7 +1594,7 @@ text-align: right;
 <ul>
 <li>We will use <code>.params</code> to get the attribute “parameters from the results”</li>
 </ul>
-<div id="934d7e5d" class="cell" data-execution_count="11">
+<div id="e3173ba5" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href></a>b_list <span class="op">=</span> results.params</span>
 <span id="cb12-2"><a href></a><span class="bu">print</span>(b_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -1606,7 +1606,7 @@ dtype: float64</code></pre>
 <ul>
 <li>We can then compute the <code>estimated</code> best fit lines by extracting the intercept and slop from <code>b_list</code></li>
 </ul>
-<div id="061103a4" class="cell" data-execution_count="12">
+<div id="2b44a6b4" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href></a>dataset[<span class="st">&quot;p_estimated&quot;</span>] <span class="op">=</span> b_list[<span class="dv">0</span>] <span class="op">+</span> b_list[<span class="dv">1</span>]  <span class="op">*</span> dataset[<span class="st">&quot;x&quot;</span>]</span>
 <span id="cb14-2"><a href></a><span class="bu">print</span>(dataset[[<span class="st">&quot;p&quot;</span>, <span class="st">&quot;p_estimated&quot;</span>]].head(<span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -1637,7 +1637,7 @@ dtype: float64</code></pre>
 <li>The second line plots the estimated best fit line</li>
 <li>The <code>legend</code> command creates a box with the color labels</li>
 </ul>
-<div id="b29b5c71" class="cell" data-execution_count="13">
+<div id="e30e415f" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href></a>plt.scatter(x <span class="op">=</span> dataset[<span class="st">&quot;x&quot;</span>], y <span class="op">=</span> dataset[<span class="st">&quot;y&quot;</span>])</span>
 <span id="cb16-2"><a href></a>plt.plot(dataset[<span class="st">&quot;x&quot;</span>], dataset[<span class="st">&quot;p_estimated&quot;</span>], color <span class="op">=</span> <span class="st">&#39;green&#39;</span>)</span>
 <span id="cb16-3"><a href></a></span>
@@ -1686,13 +1686,13 @@ dtype: float64</code></pre>
 </ul>
 </div>
 </section></section>
-<section id="thats-all-for-today" class="title-slide slide level1 center">
+<section id="thats-all-for-today" class="title-slide slide level1 center" data-background-color="#2d4563">
 <h1>That’s all for today! 🎉</h1>
 
 </section>
 
 <section>
-<section id="enjoy-the-fall-break" class="title-slide slide level1 center">
+<section id="enjoy-the-fall-break" class="title-slide slide level1 center" data-background-color="#2d4563">
 <h1>Enjoy the fall break! 🍂</h1>
 
 </section>
@@ -1706,7 +1706,7 @@ dtype: float64</code></pre>
 <li>Count the subsetted rows: <code>len(subset_above2)</code></li>
 <li>Compute the proportion of subsetted observations</li>
 </ul>
-<div id="ecba03ed" class="cell" data-execution_count="14">
+<div id="b7b0690f" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href></a><span class="co"># Create the new dataset</span></span>
 <span id="cb17-2"><a href></a>subset_above2 <span class="op">=</span> pd.DataFrame()</span>
 <span id="cb17-3"><a href></a></span>
@@ -1722,7 +1722,7 @@ dtype: float64</code></pre>
 <span id="cb17-13"><a href></a><span class="co"># Compute the proportion of subsetted observations</span></span>
 <span id="cb17-14"><a href></a>proportion <span class="op">=</span> subsetted_rows <span class="op">/</span> original_rows</span>
 <span id="cb17-15"><a href></a>proportion</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="224">
+<div class="cell-output cell-output-display" data-execution_count="28">
 <pre><code>0.3</code></pre>
 </div>
 </div>
@@ -1739,7 +1739,7 @@ dtype: float64</code></pre>
 <li>HINT: Use <code>.mean()</code> and <code>.std()</code></li>
 <li>HINT: Use the globals <code>@xbar</code>, <code>@stdv_sample</code></li>
 </ul>
-<div id="92d891ed" class="cell" data-execution_count="15">
+<div id="3844d4e0" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href></a><span class="co"># Store the sample mean of y as ybar</span></span>
 <span id="cb19-2"><a href></a>ybar <span class="op">=</span> dataset[<span class="st">&quot;y&quot;</span>].mean()</span>
 <span id="cb19-3"><a href></a></span>
@@ -1751,7 +1751,7 @@ dtype: float64</code></pre>
 <span id="cb19-9"><a href></a></span>
 <span id="cb19-10"><a href></a><span class="co"># Count the subsetted rows</span></span>
 <span id="cb19-11"><a href></a><span class="bu">len</span>(subset_within_stdv)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="225">
+<div class="cell-output cell-output-display" data-execution_count="29">
 <pre><code>33</code></pre>
 </div>
 </div>
@@ -1767,7 +1767,7 @@ dtype: float64</code></pre>
 <li><span class="math inline">\((x \text{ }\)</span> vs <span class="math inline">\(\text{ } p)\)</span> and <span class="math inline">\((p_{estimated} \text{ }\)</span> vs <span class="math inline">\(\text{ } p_{estimated})\)</span></li>
 <li>Create a legend to label each plot</li>
 </ul>
-<div id="2e0d5438" class="cell" data-execution_count="16">
+<div id="f122e227" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href></a>plt.plot(dataset[<span class="st">&quot;x&quot;</span>], dataset[<span class="st">&quot;p&quot;</span>], color <span class="op">=</span> <span class="st">&#39;blue&#39;</span>)</span>
 <span id="cb21-2"><a href></a>plt.plot(dataset[<span class="st">&quot;x&quot;</span>], dataset[<span class="st">&quot;p_estimated&quot;</span>], color <span class="op">=</span> <span class="st">&#39;green&#39;</span>)</span>
 <span id="cb21-3"><a href></a></span>
@@ -1792,7 +1792,7 @@ dtype: float64</code></pre>
 <li>Create a <code>lambda</code> function <code>fn_positive_error = lambda error: error &gt;= 0</code></li>
 <li>Compute a column for whether the error is positive using <code>.apply()</code></li>
 </ul>
-<div id="0146df18" class="cell" data-execution_count="17">
+<div id="bf572a3f" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href></a><span class="co"># Compute a column with the formula sample_error = y - p_estimated</span></span>
 <span id="cb22-2"><a href></a>dataset[<span class="st">&quot;sample_error&quot;</span>] <span class="op">=</span> dataset[<span class="st">&quot;y&quot;</span>] <span class="op">-</span> dataset[<span class="st">&quot;p_estimated&quot;</span>]</span>
 <span id="cb22-3"><a href></a></span>
@@ -1802,7 +1802,7 @@ dtype: float64</code></pre>
 <span id="cb22-7"><a href></a><span class="co"># Compute a column for whether the error is positive using .apply()</span></span>
 <span id="cb22-8"><a href></a>dataset[<span class="st">&quot;positive_error&quot;</span>] <span class="op">=</span> dataset[<span class="st">&quot;sample_error&quot;</span>].<span class="bu">apply</span>(fn_positive_error)</span>
 <span id="cb22-9"><a href></a>dataset.head(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="227">
+<div class="cell-output cell-output-display" data-execution_count="31">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -1876,14 +1876,14 @@ text-align: right;
 <li>Compute a new column <code>error_sqr = sample_error ** 2</code></li>
 <li>Calculate the mean of <code>error_sqr</code></li>
 </ul>
-<div id="7c2eef7e" class="cell" data-execution_count="18">
+<div id="7acad3b8" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href></a><span class="co"># Compute a new column error_sqr = sample_error ** 2</span></span>
 <span id="cb23-2"><a href></a>dataset[<span class="st">&quot;error_sqr&quot;</span>] <span class="op">=</span> dataset[<span class="st">&quot;sample_error&quot;</span>] <span class="op">**</span> <span class="dv">2</span></span>
 <span id="cb23-3"><a href></a></span>
 <span id="cb23-4"><a href></a><span class="co"># Calculate the mean of error_sqr</span></span>
 <span id="cb23-5"><a href></a>mean_error_sqr <span class="op">=</span> dataset[<span class="st">&quot;error_sqr&quot;</span>].mean()</span>
 <span id="cb23-6"><a href></a>mean_error_sqr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="228">
+<div class="cell-output cell-output-display" data-execution_count="32">
 <pre><code>0.7400786858214785</code></pre>
 </div>
 </div>
