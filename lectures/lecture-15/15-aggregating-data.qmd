@@ -1,6 +1,6 @@
 ---
 title: QTM 151 - Intro to Stats Computing II
-subtitle: Aggregating Data
+subtitle: Lecture 15 - Aggregating Data
 date: 2024-10-23
 date-format: "DD MMMM, YYYY"
 author:
@@ -366,8 +366,8 @@ teamrace_agg.round(2)
 ## Try it yourself! 🤓 {#sec:exercise02}
 
 :::{style="margin-top: 30px; font-size: 28px;"}
-- Create a new dataset by chaining groups by `constructorId` (the team) then computes the average number of `points`
-- Add a chain `.sort_values(...,ascending = False)` to sort by team points in desceding order
+- Create a new dataset by chaining groups by `constructorId` (the team) then compute the average number of `points`
+- Add a chain `.sort_values(...,ascending = False)` to sort by team points in descending order
 - [[Appendix 02]{.button}](#sec:appendix02)
 :::
 
@@ -513,7 +513,7 @@ results.resultId.nunique()
 ```{python}
 #| echo: true
 #| eval: true
-results.resultId.nunique()
+results.raceId.nunique()
 ```
 
 ```{python}
@@ -537,7 +537,7 @@ results.resultId.value_counts()
 ```{python}
 #| echo: true
 #| eval: true
-results.resultId.value_counts()
+results.raceId.value_counts()
 ```
 
 ```{python}
