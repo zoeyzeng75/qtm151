@@ -383,7 +383,7 @@ teamrace_agg.round(2)
 - We can use the `.merge()` method to merge the data
 
 :::{style="text-align: center;"}
-![](figures/merge_stats.png){width="50%"}
+![](figures/merge_stats.png){width="95%"}
 :::
 :::
 
