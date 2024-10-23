@@ -414,6 +414,8 @@ results.agg({'points': 'mean',
 - Let's see an example. We'll use the `drivers_agg` data frame we created before and merge it with the original `results` data frame
 
 ```{python}
+#| echo: true
+#| eval: true
 drivers_agg.round(2)
 ```
 :::
@@ -428,6 +430,8 @@ drivers_agg.round(2)
 - And here is the `results` data frame
 
 ```{python}
+#| echo: true
+#| eval: true
 results.head()
 ```
 :::
