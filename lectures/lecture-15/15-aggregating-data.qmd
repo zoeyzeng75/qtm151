@@ -371,6 +371,29 @@ teamrace_agg.round(2)
 - [[Appendix 02]{.button}](#sec:appendix02)
 :::
 
+## Different functions for different columns
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+- You can use different functions for different columns too!
+- You should specify the column name and the function for each column in a dictionary
+- If you want to add more than one function for a column, you can use a list with `['function1', 'function2']`
+- The syntax is `df.agg({'column1': 'function1', 'column2': 'function2'})`
+
+```{python}
+#| echo: true
+#| eval: true
+results.agg({'laps': ['min', 'max', len]}).round(2) # one variable
+```
+
+```{python}
+#| echo: true
+#| eval: true
+results.agg({'points': 'mean',
+             'positionOrder': 'max',
+             'laps': ['min', 'max', len]}).round(2) # multiple variables
+```
+:::
+
 # Relative statistics within group 📊 {background-color="#2d4563"}
 
 ## Relative statistics within group
@@ -500,6 +523,18 @@ results.driverId.nunique()
 
 :::{style="margin-top: 30px; font-size: 25px;"}
 - You could also used `value_counts()` to get the same information
+
+```{python}
+#| echo: true
+#| eval: true
+results.resultId.value_counts()
+```
+
+```{python}
+#| echo: true
+#| eval: true
+results.resultId.value_counts()
+```
 
 ```{python}
 #| echo: true

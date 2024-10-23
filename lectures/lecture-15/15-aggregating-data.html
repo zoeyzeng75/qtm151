@@ -1747,7 +1747,7 @@ Danilo Freire
 <ul>
 <li>As usual, let’s start by importing the libraries we need</li>
 </ul>
-<div id="ec9e1b0a" class="cell" data-execution_count="1">
+<div id="ab69a21b" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb2-2"><a href></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb2-3"><a href></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1755,7 +1755,7 @@ Danilo Freire
 <ul>
 <li>And load the dataset we will use today</li>
 </ul>
-<div id="e7574a96" class="cell" data-execution_count="2">
+<div id="20517e14" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href></a>results <span class="op">=</span> pd.read_csv(<span class="st">&quot;data_raw/results.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
@@ -1787,9 +1787,9 @@ Danilo Freire
 <section id="display-the-first-few-rows" class="slide level2">
 <h2>Display the first few rows</h2>
 <div style="margin-top: 30px; font-size: 21px;">
-<div id="d2607b6d" class="cell" data-execution_count="3">
+<div id="3cb25e8f" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href></a>results.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="63">
+<div class="cell-output cell-output-display" data-execution_count="379">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -1942,9 +1942,9 @@ text-align: right;
 <ul>
 <li>See a random sample of the data using <code>sample</code></li>
 </ul>
-<div id="be3557de" class="cell" data-execution_count="4">
+<div id="e39735bf" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href></a>results.sample(<span class="dv">5</span>).sort_values(<span class="st">&quot;resultId&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="64">
+<div class="cell-output cell-output-display" data-execution_count="380">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -1984,109 +1984,109 @@ text-align: right;
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">7767</td>
-<td>7768</td>
-<td>11</td>
-<td>154</td>
-<td>4</td>
-<td>8</td>
-<td>14</td>
-<td>15</td>
-<td>15</td>
-<td>15</td>
-<td>0.0</td>
-<td>57</td>
-<td>+1:31.774</td>
-<td>5843063</td>
-<td>41</td>
-<td>9</td>
-<td>1:39.428</td>
-<td>196.206</td>
+<td data-quarto-table-cell-role="th">2363</td>
+<td>2364</td>
+<td>131</td>
+<td>31</td>
+<td>3</td>
+<td>6</td>
 <td>1</td>
+<td>\N</td>
+<td>R</td>
+<td>16</td>
+<td>0.0</td>
+<td>56</td>
+<td>\N</td>
+<td>\N</td>
+<td>\N</td>
+<td>\N</td>
+<td>\N</td>
+<td>\N</td>
+<td>5</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">14136</td>
-<td>14137</td>
-<td>575</td>
-<td>221</td>
-<td>25</td>
-<td>4</td>
-<td>13</td>
+<td data-quarto-table-cell-role="th">3590</td>
+<td>3591</td>
+<td>188</td>
+<td>15</td>
+<td>20</td>
+<td>19</td>
+<td>10</td>
 <td>2</td>
 <td>2</td>
 <td>2</td>
 <td>6.0</td>
-<td>72</td>
+<td>66</td>
+<td>+22.619</td>
+<td>6136933</td>
 <td>\N</td>
 <td>\N</td>
 <td>\N</td>
 <td>\N</td>
-<td>\N</td>
-<td>\N</td>
-<td>11</td>
+<td>1</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">18854</td>
-<td>18855</td>
-<td>782</td>
-<td>356</td>
-<td>87</td>
-<td>24</td>
-<td>16</td>
-<td>7</td>
-<td>7</td>
-<td>7</td>
+<td data-quarto-table-cell-role="th">5101</td>
+<td>5102</td>
+<td>255</td>
+<td>89</td>
+<td>29</td>
+<td>10</td>
+<td>18</td>
+<td>12</td>
+<td>12</td>
+<td>12</td>
 <td>0.0</td>
-<td>15</td>
+<td>51</td>
 <td>\N</td>
 <td>\N</td>
 <td>\N</td>
 <td>\N</td>
 <td>\N</td>
 <td>\N</td>
-<td>13</td>
+<td>12</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">20388</td>
-<td>20391</td>
-<td>339</td>
-<td>30</td>
-<td>131</td>
-<td>3</td>
-<td>8</td>
+<td data-quarto-table-cell-role="th">12182</td>
+<td>12183</td>
+<td>504</td>
+<td>209</td>
+<td>58</td>
+<td>17</td>
+<td>0</td>
 <td>\N</td>
-<td>R</td>
-<td>21</td>
+<td>F</td>
+<td>25</td>
 <td>0.0</td>
-<td>9</td>
+<td>0</td>
 <td>\N</td>
 <td>\N</td>
-<td>9</td>
-<td>15</td>
-<td>1:42.084</td>
-<td>195.474</td>
-<td>36</td>
+<td>\N</td>
+<td>\N</td>
+<td>\N</td>
+<td>\N</td>
+<td>81</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">21600</td>
-<td>21603</td>
-<td>875</td>
-<td>814</td>
-<td>10</td>
-<td>11</td>
-<td>14</td>
-<td>12</td>
-<td>12</td>
-<td>12</td>
+<td data-quarto-table-cell-role="th">13757</td>
+<td>13758</td>
+<td>561</td>
+<td>221</td>
+<td>25</td>
+<td>4</td>
+<td>6</td>
+<td>9</td>
+<td>9</td>
+<td>9</td>
 <td>0.0</td>
-<td>55</td>
-<td>+84.448</td>
-<td>5873099</td>
-<td>48</td>
-<td>15</td>
-<td>1:43.517</td>
-<td>195.272</td>
-<td>1</td>
+<td>77</td>
+<td>\N</td>
+<td>\N</td>
+<td>\N</td>
+<td>\N</td>
+<td>\N</td>
+<td>\N</td>
+<td>11</td>
 </tr>
 </tbody>
 </table>
@@ -2102,9 +2102,9 @@ text-align: right;
 <ul>
 <li>We can get the column names and types using <code>dtypes</code></li>
 </ul>
-<div id="1915f154" class="cell" data-execution_count="5">
+<div id="50fd048f" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href></a>results.dtypes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="65">
+<div class="cell-output cell-output-display" data-execution_count="381">
 <pre><code>resultId             int64
 raceId               int64
 driverId             int64
@@ -2129,9 +2129,9 @@ dtype: object</code></pre>
 <ul>
 <li>We can also get the column names using <code>columns</code></li>
 </ul>
-<div id="c8f5a414" class="cell" data-execution_count="6">
+<div id="9d0f04ef" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href></a>results.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="66">
+<div class="cell-output cell-output-display" data-execution_count="382">
 <pre><code>Index([&#39;resultId&#39;, &#39;raceId&#39;, &#39;driverId&#39;, &#39;constructorId&#39;, &#39;number&#39;, &#39;grid&#39;,
        &#39;position&#39;, &#39;positionText&#39;, &#39;positionOrder&#39;, &#39;points&#39;, &#39;laps&#39;, &#39;time&#39;,
        &#39;milliseconds&#39;, &#39;fastestLap&#39;, &#39;rank&#39;, &#39;fastestLapTime&#39;,
@@ -2169,11 +2169,11 @@ dtype: object</code></pre>
 <li>You can split your code into multiple lines to make it easier to read</li>
 <li>You just need to wrap the code in parentheses <code>()</code></li>
 </ul>
-<div id="4f9e76b2" class="cell" data-execution_count="7">
+<div id="1969d670" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href></a>descriptives_multiline <span class="op">=</span> (results[<span class="st">&quot;points&quot;</span>]</span>
 <span id="cb10-2"><a href></a>                          .describe())</span>
 <span id="cb10-3"><a href></a>descriptives_multiline</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="67">
+<div class="cell-output cell-output-display" data-execution_count="383">
 <pre><code>count    25840.000000
 mean         1.877053
 std          4.169849
@@ -2188,10 +2188,10 @@ Name: points, dtype: float64</code></pre>
 <ul>
 <li>This is the same as writing</li>
 </ul>
-<div id="f4438164" class="cell" data-execution_count="8">
+<div id="dc48b6d5" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href></a>descriptives_singleline <span class="op">=</span> results[<span class="st">&quot;points&quot;</span>].describe()</span>
 <span id="cb12-2"><a href></a>descriptives_singleline</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="68">
+<div class="cell-output cell-output-display" data-execution_count="384">
 <pre><code>count    25840.000000
 mean         1.877053
 std          4.169849
@@ -2215,7 +2215,7 @@ Name: points, dtype: float64</code></pre>
 <li>The second argument is the function_name</li>
 <li>The command works with single quotations ‘…’ or double “…”</li>
 </ul>
-<div id="6284f9c7" class="cell" data-execution_count="9">
+<div id="3762cd74" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href></a><span class="co"># The functions in quotes are pandas functions.  len is not in quotes because it is a Python function</span></span>
 <span id="cb14-2"><a href></a><span class="co"># If you were to use &#39;len&#39; (a string), pandas would look for a method named len in the DataFrame, </span></span>
 <span id="cb14-3"><a href></a><span class="co"># which does not exist.</span></span>
@@ -2287,7 +2287,7 @@ text-align: right;
 <li>The syntax is <code>df.groupby(&#39;column_name&#39;).agg(...)</code></li>
 <li>Let’s see one example</li>
 </ul>
-<div id="124848a7" class="cell" data-execution_count="10">
+<div id="f96e7f25" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href></a>drivers_agg <span class="op">=</span> (results.groupby(<span class="st">&quot;driverId&quot;</span>)</span>
 <span id="cb15-2"><a href></a>                      .agg(mean_points <span class="op">=</span> (<span class="st">&#39;points&#39;</span>,<span class="st">&#39;mean&#39;</span>),</span>
 <span id="cb15-3"><a href></a>                           sd_points <span class="op">=</span>   (<span class="st">&#39;points&#39;</span>,<span class="st">&#39;std&#39;</span>),</span>
@@ -2296,9 +2296,9 @@ text-align: right;
 <span id="cb15-6"><a href></a>                           count_obs   <span class="op">=</span> (<span class="st">&#39;points&#39;</span>,<span class="bu">len</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:45%;">
-<div id="ed4a6bb1" class="cell" data-execution_count="11">
+<div id="9ca5d385" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href></a>drivers_agg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="71">
+<div class="cell-output cell-output-display" data-execution_count="387">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -2456,7 +2456,7 @@ text-align: right;
 <li><code>df.groupby([&#39;column1&#39;, &#39;column2&#39;]).agg(...)</code></li>
 <li><code>constructorId</code> is the team identifier</li>
 </ul>
-<div id="0a70c6a3" class="cell" data-execution_count="12">
+<div id="5f0c599a" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href></a>teamrace_agg <span class="op">=</span> (results.groupby([<span class="st">&quot;raceId&quot;</span>,<span class="st">&quot;constructorId&quot;</span>])</span>
 <span id="cb17-2"><a href></a>                       .agg(mean_points <span class="op">=</span> (<span class="st">&#39;points&#39;</span>,<span class="st">&#39;mean&#39;</span>),</span>
 <span id="cb17-3"><a href></a>                            sd_points <span class="op">=</span>   (<span class="st">&#39;points&#39;</span>,<span class="st">&#39;std&#39;</span>),</span>
@@ -2465,9 +2465,9 @@ text-align: right;
 <span id="cb17-6"><a href></a>                            count_obs   <span class="op">=</span> (<span class="st">&#39;points&#39;</span>,<span class="bu">len</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:45%;">
-<div id="5a0e514e" class="cell" data-execution_count="13">
+<div id="af85406a" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href></a>teamrace_agg.<span class="bu">round</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="73">
+<div class="cell-output cell-output-display" data-execution_count="389">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -2618,7 +2618,7 @@ text-align: right;
 <li>The <code>.query()</code> method filters the data, as you know well by now</li>
 <li>We can combine <code>.query()</code> with <code>.groupby()</code> and <code>.agg()</code> to filter, group, and aggregate data in one step</li>
 </ul>
-<div id="e1b0801e" class="cell" data-execution_count="14">
+<div id="1b80bf88" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href></a>teamrace_agg <span class="op">=</span> (results.query(<span class="st">&quot;raceId &gt;= 500&quot;</span>)</span>
 <span id="cb19-2"><a href></a>                       .groupby([<span class="st">&quot;raceId&quot;</span>,<span class="st">&quot;constructorId&quot;</span>])</span>
 <span id="cb19-3"><a href></a>                        .agg(mean_points <span class="op">=</span> (<span class="st">&#39;points&#39;</span>,<span class="st">&#39;mean&#39;</span>),</span>
@@ -2628,9 +2628,9 @@ text-align: right;
 <span id="cb19-7"><a href></a>                             count_obs   <span class="op">=</span> (<span class="st">&#39;points&#39;</span>,<span class="bu">len</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:43%;">
-<div id="baec0ea9" class="cell" data-execution_count="15">
+<div id="695b8402" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href></a>teamrace_agg.<span class="bu">round</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="75">
+<div class="cell-output cell-output-display" data-execution_count="391">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -2776,6 +2776,117 @@ text-align: right;
 <li><a href="#/sec:appendix02"><span class="button">Appendix 02</span></a></li>
 </ul>
 </div>
+</section>
+<section id="different-functions-for-different-columns" class="slide level2">
+<h2>Different functions for different columns</h2>
+<div style="margin-top: 30px; font-size: 21px;">
+<ul>
+<li>You can use different functions for different columns too!</li>
+<li>You should specify the column name and the function for each column in a dictionary</li>
+<li>If you want to add more than one function for a column, you can use a list with <code>[&#39;function1&#39;, &#39;function2&#39;]</code></li>
+<li>The syntax is <code>df.agg({&#39;column1&#39;: &#39;function1&#39;, &#39;column2&#39;: &#39;function2&#39;})</code></li>
+</ul>
+<div id="911a9ec7" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href></a>results.agg({<span class="st">&#39;laps&#39;</span>: [<span class="st">&#39;min&#39;</span>, <span class="st">&#39;max&#39;</span>, <span class="bu">len</span>]}).<span class="bu">round</span>(<span class="dv">2</span>) <span class="co"># one variable</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="392">
+<div>
+<style scoped>
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+.dataframe tbody tr th {
+vertical-align: top;
+}
+.dataframe thead th {
+text-align: right;
+}
+</style>
+
+<table class="dataframe caption-top" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">laps</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">min</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>200</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">len</td>
+<td>25840</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="d43ad8fd" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href></a>results.agg({<span class="st">&#39;points&#39;</span>: <span class="st">&#39;mean&#39;</span>,</span>
+<span id="cb22-2"><a href></a>             <span class="st">&#39;positionOrder&#39;</span>: <span class="st">&#39;max&#39;</span>,</span>
+<span id="cb22-3"><a href></a>             <span class="st">&#39;laps&#39;</span>: [<span class="st">&#39;min&#39;</span>, <span class="st">&#39;max&#39;</span>, <span class="bu">len</span>]}).<span class="bu">round</span>(<span class="dv">2</span>) <span class="co"># multiple variables</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="393">
+<div>
+<style scoped>
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+.dataframe tbody tr th {
+vertical-align: top;
+}
+.dataframe thead th {
+text-align: right;
+}
+</style>
+
+<table class="dataframe caption-top" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">points</th>
+<th data-quarto-table-cell-role="th">positionOrder</th>
+<th data-quarto-table-cell-role="th">laps</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>1.88</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>NaN</td>
+<td>39.0</td>
+<td>200.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">min</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">len</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>25840.0</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
 </section></section>
 <section>
 <section id="relative-statistics-within-group" class="title-slide slide level1 center" data-background-color="#2d4563">
@@ -2799,8 +2910,8 @@ text-align: right;
 <ul>
 <li>Let’s see an example. We’ll use the <code>drivers_agg</code> data frame we created before and merge it with the original <code>results</code> data frame</li>
 </ul>
-<div id="6a1848b4" class="cell" data-execution_count="16">
-<div class="cell-output cell-output-display" data-execution_count="76">
+<div id="c1daebab" class="cell" data-execution_count="18">
+<div class="cell-output cell-output-display" data-execution_count="394">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -2940,8 +3051,8 @@ text-align: right;
 <ul>
 <li>And here is the <code>results</code> data frame</li>
 </ul>
-<div id="1f842d51" class="cell" data-execution_count="17">
-<div class="cell-output cell-output-display" data-execution_count="77">
+<div id="ff0c3a50" class="cell" data-execution_count="19">
+<div class="cell-output cell-output-display" data-execution_count="395">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -3096,11 +3207,11 @@ text-align: right;
 <li>Now we can merge the two data frames using the <code>driverId</code> column</li>
 <li>Why do we use <code>on=&#39;driverId&#39;</code>? Because <code>driverId</code> is the column that identifies the driver in both data frames</li>
 </ul>
-<div id="e3a234ca" class="cell" data-execution_count="18">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href></a>results_merge <span class="op">=</span> pd.merge(results,</span>
-<span id="cb21-2"><a href></a>                         drivers_agg,</span>
-<span id="cb21-3"><a href></a>                         on <span class="op">=</span> <span class="st">&quot;driverId&quot;</span>,</span>
-<span id="cb21-4"><a href></a>                         how <span class="op">=</span> <span class="st">&quot;left&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="c1286337" class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href></a>results_merge <span class="op">=</span> pd.merge(results,</span>
+<span id="cb23-2"><a href></a>                         drivers_agg,</span>
+<span id="cb23-3"><a href></a>                         on <span class="op">=</span> <span class="st">&quot;driverId&quot;</span>,</span>
+<span id="cb23-4"><a href></a>                         how <span class="op">=</span> <span class="st">&quot;left&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>The <code>how = &quot;left&quot;</code> argument keeps all rows from the <code>results</code> data frame and adds the statistics from <code>drivers_agg</code> to it</li>
@@ -3115,9 +3226,9 @@ text-align: right;
 <ul>
 <li>Let’s see the first few rows of the merged data frame</li>
 </ul>
-<div id="0a3a454d" class="cell" data-execution_count="19">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href></a>results_merge.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="79">
+<div id="8118ab2c" class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href></a>results_merge.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="397">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -3289,9 +3400,9 @@ text-align: right;
 <ul>
 <li>We can see that the new columns <code>mean_points</code>, <code>sd_points</code>, <code>min_points</code>, <code>max_points</code>, and <code>count_obs</code> were added to the data frame</li>
 </ul>
-<div id="d8a8652c" class="cell" data-execution_count="20">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href></a>results_merge.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="80">
+<div id="4cb7e8a8" class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href></a>results_merge.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="398">
 <pre><code>Index([&#39;resultId&#39;, &#39;raceId&#39;, &#39;driverId&#39;, &#39;constructorId&#39;, &#39;number&#39;, &#39;grid&#39;,
        &#39;position&#39;, &#39;positionText&#39;, &#39;positionOrder&#39;, &#39;points&#39;, &#39;laps&#39;, &#39;time&#39;,
        &#39;milliseconds&#39;, &#39;fastestLap&#39;, &#39;rank&#39;, &#39;fastestLapTime&#39;,
@@ -3328,30 +3439,30 @@ text-align: right;
 <ul>
 <li>Let’s start by counting the number of rows in the dataset</li>
 </ul>
-<div id="b1684c63" class="cell" data-execution_count="21">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href></a><span class="bu">len</span>(results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="81">
+<div id="76e3c56f" class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href></a><span class="bu">len</span>(results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="399">
 <pre><code>25840</code></pre>
 </div>
 </div>
 <ul>
 <li>Now let’s count the number of unique values for the columns <code>resultId</code>, <code>raceId</code>, and <code>driverId</code></li>
 </ul>
-<div id="f33e0f12" class="cell" data-execution_count="22">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href></a>results.resultId.nunique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="82">
-<pre><code>25840</code></pre>
-</div>
-</div>
-<div id="55d7f22d" class="cell" data-execution_count="23">
+<div id="6ce0955c" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href></a>results.resultId.nunique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="83">
+<div class="cell-output cell-output-display" data-execution_count="400">
 <pre><code>25840</code></pre>
 </div>
 </div>
-<div id="5fbdcbc5" class="cell" data-execution_count="24">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href></a>results.driverId.nunique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="84">
+<div id="920bd4aa" class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href></a>results.resultId.nunique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="401">
+<pre><code>25840</code></pre>
+</div>
+</div>
+<div id="07b46f6b" class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href></a>results.driverId.nunique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="402">
 <pre><code>855</code></pre>
 </div>
 </div>
@@ -3363,9 +3474,45 @@ text-align: right;
 <ul>
 <li>You could also used <code>value_counts()</code> to get the same information</li>
 </ul>
-<div id="9475b52b" class="cell" data-execution_count="25">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href></a>results.driverId.value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="85">
+<div id="b05df2c8" class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href></a>results.resultId.value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="403">
+<pre><code>resultId
+1        1
+17224    1
+17234    1
+17233    1
+17232    1
+        ..
+8611     1
+8610     1
+8609     1
+8608     1
+25845    1
+Name: count, Length: 25840, dtype: int64</code></pre>
+</div>
+</div>
+<div id="72d0c46a" class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href></a>results.resultId.value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="404">
+<pre><code>resultId
+1        1
+17224    1
+17234    1
+17233    1
+17232    1
+        ..
+8611     1
+8610     1
+8609     1
+8608     1
+25845    1
+Name: count, Length: 25840, dtype: int64</code></pre>
+</div>
+</div>
+<div id="52bae760" class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href></a>results.driverId.value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="405">
 <pre><code>driverId
 4      358
 8      352
@@ -3393,17 +3540,17 @@ Name: count, Length: 855, dtype: int64</code></pre>
 <ul>
 <li>Let’s start by grouping the data by <code>constructorId</code> and computing the average number of <code>points</code></li>
 </ul>
-<div id="56b1feb6" class="cell" data-execution_count="26">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href></a>team_agg <span class="op">=</span> (results.groupby(<span class="st">&quot;constructorId&quot;</span>)</span>
-<span id="cb35-2"><a href></a>                   .agg(mean_points <span class="op">=</span> (<span class="st">&#39;points&#39;</span>,<span class="st">&#39;mean&#39;</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cbb006e3" class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href></a>team_agg <span class="op">=</span> (results.groupby(<span class="st">&quot;constructorId&quot;</span>)</span>
+<span id="cb41-2"><a href></a>                   .agg(mean_points <span class="op">=</span> (<span class="st">&#39;points&#39;</span>,<span class="st">&#39;mean&#39;</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Now let’s sort the data by <code>mean_points</code> in descending order</li>
 <li>We can use the <code>sort_values()</code> method</li>
 </ul>
-<div id="3ad79816" class="cell" data-execution_count="27">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href></a>team_agg.sort_values(<span class="st">&quot;mean_points&quot;</span>, ascending <span class="op">=</span> <span class="va">False</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="87">
+<div id="da6ce2bb" class="cell" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href></a>team_agg.sort_values(<span class="st">&quot;mean_points&quot;</span>, ascending <span class="op">=</span> <span class="va">False</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="407">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -3486,13 +3633,13 @@ text-align: right;
 <section id="sec:appendix03" class="slide level2">
 <h2>Appendix 03</h2>
 <div style="margin-top: 30px; font-size: 25px;">
-<div id="d1926793" class="cell" data-execution_count="28">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">6</span>))</span>
-<span id="cb37-2"><a href></a>plt.scatter(results_merge[<span class="st">&quot;mean_points&quot;</span>], results_merge[<span class="st">&quot;points&quot;</span>])</span>
-<span id="cb37-3"><a href></a>plt.xlabel(<span class="st">&quot;Mean Points&quot;</span>)</span>
-<span id="cb37-4"><a href></a>plt.ylabel(<span class="st">&quot;Points&quot;</span>)</span>
-<span id="cb37-5"><a href></a>plt.title(<span class="st">&quot;Points vs Mean Points&quot;</span>)</span>
-<span id="cb37-6"><a href></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="aa41fce3" class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">6</span>))</span>
+<span id="cb43-2"><a href></a>plt.scatter(results_merge[<span class="st">&quot;mean_points&quot;</span>], results_merge[<span class="st">&quot;points&quot;</span>])</span>
+<span id="cb43-3"><a href></a>plt.xlabel(<span class="st">&quot;Mean Points&quot;</span>)</span>
+<span id="cb43-4"><a href></a>plt.ylabel(<span class="st">&quot;Points&quot;</span>)</span>
+<span id="cb43-5"><a href></a>plt.title(<span class="st">&quot;Points vs Mean Points&quot;</span>)</span>
+<span id="cb43-6"><a href></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -3515,13 +3662,13 @@ text-align: right;
 <li>This time use the option: <code>on = [&quot;raceId&quot;,&quot;constructorId&quot;]</code></li>
 <li>Since we filtered the data before (<code>raceId &gt;= 500</code>), we will see some missing cases in the merged data frame</li>
 </ul>
-<div id="eb6becc4" class="cell" data-execution_count="29">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href></a>results_merge <span class="op">=</span> pd.merge(results,</span>
-<span id="cb38-2"><a href></a>                         teamrace_agg,</span>
-<span id="cb38-3"><a href></a>                         on <span class="op">=</span> [<span class="st">&quot;raceId&quot;</span>,<span class="st">&quot;constructorId&quot;</span>],</span>
-<span id="cb38-4"><a href></a>                         how <span class="op">=</span> <span class="st">&quot;left&quot;</span>)</span>
-<span id="cb38-5"><a href></a>results_merge.<span class="bu">round</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="89">
+<div id="9524fba2" class="cell" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href></a>results_merge <span class="op">=</span> pd.merge(results,</span>
+<span id="cb44-2"><a href></a>                         teamrace_agg,</span>
+<span id="cb44-3"><a href></a>                         on <span class="op">=</span> [<span class="st">&quot;raceId&quot;</span>,<span class="st">&quot;constructorId&quot;</span>],</span>
+<span id="cb44-4"><a href></a>                         how <span class="op">=</span> <span class="st">&quot;left&quot;</span>)</span>
+<span id="cb44-5"><a href></a>results_merge.<span class="bu">round</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="409">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -3842,13 +3989,13 @@ text-align: right;
 <ul>
 <li>We can remove the missing cases using the <code>dropna()</code> method</li>
 </ul>
-<div id="1f5ae061" class="cell" data-execution_count="30">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href></a>results_merge <span class="op">=</span> pd.merge(results,</span>
-<span id="cb39-2"><a href></a>                         teamrace_agg,</span>
-<span id="cb39-3"><a href></a>                         on <span class="op">=</span> [<span class="st">&quot;raceId&quot;</span>,<span class="st">&quot;constructorId&quot;</span>],</span>
-<span id="cb39-4"><a href></a>                         how <span class="op">=</span> <span class="st">&quot;left&quot;</span>)</span>
-<span id="cb39-5"><a href></a>results_merge.<span class="bu">round</span>(<span class="dv">2</span>).dropna()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="90">
+<div id="2f595605" class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href></a>results_merge <span class="op">=</span> pd.merge(results,</span>
+<span id="cb45-2"><a href></a>                         teamrace_agg,</span>
+<span id="cb45-3"><a href></a>                         on <span class="op">=</span> [<span class="st">&quot;raceId&quot;</span>,<span class="st">&quot;constructorId&quot;</span>],</span>
+<span id="cb45-4"><a href></a>                         how <span class="op">=</span> <span class="st">&quot;left&quot;</span>)</span>
+<span id="cb45-5"><a href></a>results_merge.<span class="bu">round</span>(<span class="dv">2</span>).dropna()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="410">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
