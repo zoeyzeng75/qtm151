@@ -446,7 +446,7 @@
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Danilo Freire">
-  <title>QTM 151 - Introduction to StatisComputing II</title>
+  <title>QTM 151 - Introduction to Stats Computing II</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -1644,7 +1644,7 @@ margin-right: 0; }
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">QTM 151 - Introduction to StatisComputing II</h1>
+  <h1 class="title">QTM 151 - Introduction to Stats Computing II</h1>
   <p class="subtitle">Lecture 16 - Merging Data</p>
 
 <div class="quarto-title-authors">
@@ -1727,7 +1727,7 @@ Danilo Freire
 <ul>
 <li>First, let’s load the libraries and data we will use today</li>
 </ul>
-<div id="e5b3d292" class="cell" data-execution_count="1">
+<div id="9079a8ad" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href></a></span>
@@ -1783,9 +1783,9 @@ Danilo Freire
 <section id="lets-have-a-look-at-the-data" class="slide level2">
 <h2>Let’s have a look at the data 📊</h2>
 <div style="margin-top: 30px; font-size: 22px;">
-<div id="2d77a468" class="cell" data-execution_count="2">
+<div id="05bb2103" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href></a>results_raw.head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="130">
+<div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -2045,9 +2045,9 @@ text-align: right;
 <section id="lets-have-a-look-at-the-data-1" class="slide level2">
 <h2>Let’s have a look at the data 📊</h2>
 <div style="margin-top: 30px; font-size: 22px;">
-<div id="4e3ac547" class="cell" data-execution_count="3">
+<div id="eea3a57b" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href></a>races_raw.head(<span class="dv">10</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="131">
+<div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -2307,9 +2307,9 @@ text-align: right;
 <section id="lets-have-a-look-at-the-data-2" class="slide level2">
 <h2>Let’s have a look at the data 📊</h2>
 <div style="margin-top: 30px; font-size: 22px;">
-<div id="59d5df1a" class="cell" data-execution_count="4">
+<div id="29bbaf47" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href></a>circuits_raw.head(<span class="dv">10</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="132">
+<div class="cell-output cell-output-display" data-execution_count="4">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -2474,7 +2474,7 @@ text-align: right;
 <li>We extract all the unique values in <code>races_raw[&quot;name&quot;]</code> and <code>circuits_raw[&quot;name&quot;]</code></li>
 <li>We use <code>sort_values()</code> to make it easier to compare the variables</li>
 </ul>
-<div id="4adabfe5" class="cell" data-execution_count="5">
+<div id="613cc231" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href></a>unique_data_races <span class="op">=</span> pd.unique(races_raw[<span class="st">&quot;name&quot;</span>].sort_values())</span>
 <span id="cb5-2"><a href></a><span class="bu">print</span>(unique_data_races)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -2507,7 +2507,7 @@ text-align: right;
 <ul>
 <li>We do the same for the <code>circuits_raw[&quot;name&quot;]</code> variable</li>
 </ul>
-<div id="83ca06e7" class="cell" data-execution_count="6">
+<div id="a973cb83" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href></a>unique_data_circuits <span class="op">=</span> pd.unique(circuits_raw[<span class="st">&quot;name&quot;</span>].sort_values())</span>
 <span id="cb7-2"><a href></a><span class="bu">print</span>(unique_data_circuits)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -2591,21 +2591,21 @@ text-align: right;
 <ul>
 <li>Let’s create a dictionary in Python</li>
 </ul>
-<div id="6a8823b8" class="cell" data-execution_count="7">
+<div id="80e8fe92" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href></a>car_dictionary <span class="op">=</span> {<span class="st">&quot;car_model&quot;</span>: [<span class="st">&quot;Ferrari&quot;</span>,<span class="st">&quot;Tesla&quot;</span>,<span class="st">&quot;BMW&quot;</span>],</span>
 <span id="cb9-2"><a href></a>                  <span class="st">&quot;year&quot;</span>: [<span class="st">&quot;2018&quot;</span>,<span class="st">&quot;2023&quot;</span>,<span class="st">&quot;2022&quot;</span>]}</span>
 <span id="cb9-3"><a href></a>car_dictionary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="135">
+<div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>{&#39;car_model&#39;: [&#39;Ferrari&#39;, &#39;Tesla&#39;, &#39;BMW&#39;], &#39;year&#39;: [&#39;2018&#39;, &#39;2023&#39;, &#39;2022&#39;]}</code></pre>
 </div>
 </div>
 <ul>
 <li>Dictionaries can have any data type as values, including lists or arrays (even other dictionaries!)</li>
 </ul>
-<div id="c5ddfab7" class="cell" data-execution_count="8">
+<div id="b83146c2" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href></a>matrix_dict <span class="op">=</span> {<span class="st">&#39;A&#39;</span>:np.array([[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>], [<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">5</span>]]), <span class="st">&#39;string&#39;</span>: <span class="st">&#39;ABC&#39;</span>}</span>
 <span id="cb11-2"><a href></a>matrix_dict</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="136">
+<div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>{&#39;A&#39;: array([[1, 2, 3],
         [2, 4, 5]]),
  &#39;string&#39;: &#39;ABC&#39;}</code></pre>
@@ -2614,19 +2614,19 @@ text-align: right;
 <ul>
 <li>We can subset a dictionary using the key</li>
 </ul>
-<div id="10285b29" class="cell" data-execution_count="9">
+<div id="9b022b88" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href></a>car_dictionary[<span class="st">&#39;car_model&#39;</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="137">
+<div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>[&#39;Ferrari&#39;, &#39;Tesla&#39;, &#39;BMW&#39;]</code></pre>
 </div>
 </div>
 <ul>
 <li>We can also add new key-value pairs to a dictionary</li>
 </ul>
-<div id="d4dbba58" class="cell" data-execution_count="10">
+<div id="39dc149f" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href></a>car_dictionary[<span class="st">&#39;colour&#39;</span>] <span class="op">=</span> [<span class="st">&quot;red&quot;</span>,<span class="st">&quot;blue&quot;</span>,<span class="st">&quot;black&quot;</span>]</span>
 <span id="cb15-2"><a href></a>car_dictionary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="138">
+<div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>{&#39;car_model&#39;: [&#39;Ferrari&#39;, &#39;Tesla&#39;, &#39;BMW&#39;],
  &#39;year&#39;: [&#39;2018&#39;, &#39;2023&#39;, &#39;2022&#39;],
  &#39;colour&#39;: [&#39;red&#39;, &#39;blue&#39;, &#39;black&#39;]}</code></pre>
@@ -2636,23 +2636,23 @@ text-align: right;
 <ul>
 <li>We can delete key-value pairs using the <code>del</code> keyword</li>
 </ul>
-<div id="56641eb4" class="cell" data-execution_count="11">
+<div id="efedd4df" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href></a><span class="kw">del</span> car_dictionary[<span class="st">&#39;colour&#39;</span>]</span>
 <span id="cb17-2"><a href></a>car_dictionary.keys()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="139">
+<div class="cell-output cell-output-display" data-execution_count="11">
 <pre><code>dict_keys([&#39;car_model&#39;, &#39;year&#39;])</code></pre>
 </div>
 </div>
 <ul>
 <li>To create a Pandas DataFrame from a dictionary, we use the <code>pd.DataFrame()</code> function</li>
 </ul>
-<div id="4499a558" class="cell" data-execution_count="12">
+<div id="0f12821b" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href></a>car_dictionary <span class="op">=</span> {<span class="st">&quot;car_model&quot;</span>: [<span class="st">&quot;Ferrari&quot;</span>,<span class="st">&quot;Tesla&quot;</span>,<span class="st">&quot;BMW&quot;</span>,<span class="st">&quot;Something&quot;</span>],</span>
 <span id="cb19-2"><a href></a>                  <span class="st">&quot;year&quot;</span>: [<span class="st">&quot;2018&quot;</span>,<span class="st">&quot;2023&quot;</span>,<span class="st">&quot;2022&quot;</span>, <span class="st">&quot;1993&quot;</span>]}</span>
 <span id="cb19-3"><a href></a></span>
 <span id="cb19-4"><a href></a>df <span class="op">=</span> pd.DataFrame(car_dictionary)</span>
 <span id="cb19-5"><a href></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="140">
+<div class="cell-output cell-output-display" data-execution_count="12">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -2711,9 +2711,9 @@ text-align: right;
 <li>We rename columns with a dictionary using the <code>{old_name: new_name}</code> format</li>
 <li>We pass the dictionary to the <code>rename()</code> method using the <code>columns</code> argument</li>
 </ul>
-<div id="af60856d" class="cell" data-execution_count="13">
+<div id="8a5784ac" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href></a>circuits_raw.rename(columns<span class="op">=</span>{<span class="st">&#39;name&#39;</span>:<span class="st">&#39;circuit_name&#39;</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="141">
+<div class="cell-output cell-output-display" data-execution_count="13">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -2892,11 +2892,11 @@ text-align: right;
 <ul>
 <li>Let’s save the changes to a new <code>circuits</code> DataFrame</li>
 </ul>
-<div id="dd87594a" class="cell" data-execution_count="14">
+<div id="42ff5fea" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href></a>dict_rename_circuits <span class="op">=</span> {<span class="st">&quot;name&quot;</span>: <span class="st">&quot;circuit_name&quot;</span>}</span>
 <span id="cb21-2"><a href></a>circuits <span class="op">=</span> circuits_raw.rename(columns <span class="op">=</span> dict_rename_circuits)</span>
 <span id="cb21-3"><a href></a>circuits.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="142">
+<div class="cell-output cell-output-display" data-execution_count="14">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -2996,14 +2996,14 @@ text-align: right;
 <ul>
 <li>Let’s see if the columns have been renamed</li>
 </ul>
-<div id="5b5308fd" class="cell" data-execution_count="15">
+<div id="dbdccd02" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href></a><span class="bu">print</span>(circuits_raw.columns.values)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[&#39;circuitId&#39; &#39;circuitRef&#39; &#39;name&#39; &#39;location&#39; &#39;country&#39; &#39;lat&#39; &#39;lng&#39; &#39;alt&#39;
  &#39;url&#39;]</code></pre>
 </div>
 </div>
-<div id="0aa7bc54" class="cell" data-execution_count="16">
+<div id="26e8484d" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href></a><span class="bu">print</span>(circuits.columns.values)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[&#39;circuitId&#39; &#39;circuitRef&#39; &#39;circuit_name&#39; &#39;location&#39; &#39;country&#39; &#39;lat&#39; &#39;lng&#39;
@@ -3043,9 +3043,9 @@ text-align: right;
 <li>The <code>on</code> argument specifies the column to merge on</li>
 <li>The <code>how</code> argument specifies the type of join to perform</li>
 </ul>
-<div id="03e6621c" class="cell" data-execution_count="17">
+<div id="1826201d" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href></a>circuits[[<span class="st">&quot;circuitId&quot;</span>,<span class="st">&quot;circuit_name&quot;</span>]].head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="145">
+<div class="cell-output cell-output-display" data-execution_count="17">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -3099,9 +3099,9 @@ text-align: right;
 </div>
 </div>
 </div>
-<div id="8e25c979" class="cell" data-execution_count="18">
+<div id="e3820c83" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href></a>circuits.shape[<span class="dv">0</span>] <span class="co"># rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="146">
+<div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>77</code></pre>
 </div>
 </div>
@@ -3119,7 +3119,7 @@ text-align: right;
 <li>Avoid merging all columns</li>
 <li>Keeping it simple gives you more control over the output</li>
 </ul>
-<div id="94de62d2" class="cell" data-execution_count="19">
+<div id="3a804917" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href></a><span class="co"># The &quot;pd.merge()&quot; command combines the information from both datasets</span></span>
 <span id="cb29-2"><a href></a><span class="co"># The first argument is the &quot;primary&quot; datasets</span></span>
 <span id="cb29-3"><a href></a><span class="co"># The second argument is the &quot;secondary&quot; dataset (must include the &quot;on&quot; column)</span></span>
@@ -3139,9 +3139,9 @@ text-align: right;
 <ul>
 <li>Let’s see the results of the merge</li>
 </ul>
-<div id="d33a7b78" class="cell" data-execution_count="20">
+<div id="8ebc1f36" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href></a>races_merge</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="148">
+<div class="cell-output cell-output-display" data-execution_count="20">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -3272,9 +3272,9 @@ text-align: right;
 <ul>
 <li>We can extract the columns we want to see</li>
 </ul>
-<div id="634b1a40" class="cell" data-execution_count="21">
+<div id="df727459" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href></a>races_merge[[<span class="st">&quot;raceId&quot;</span>,  <span class="st">&quot;circuitId&quot;</span>,<span class="st">&quot;circuit_name&quot;</span>]].sort_values(by <span class="op">=</span> <span class="st">&quot;circuit_name&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="149">
+<div class="cell-output cell-output-display" data-execution_count="21">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -3375,14 +3375,14 @@ text-align: right;
 <ul>
 <li>Another example of a merge</li>
 </ul>
-<div id="2730c1da" class="cell" data-execution_count="22">
+<div id="d2871024" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href></a>results_merge <span class="op">=</span> pd.merge(results_raw,</span>
 <span id="cb32-2"><a href></a>                         races_raw[[<span class="st">&quot;raceId&quot;</span>,<span class="st">&quot;date&quot;</span>]],</span>
 <span id="cb32-3"><a href></a>                         on <span class="op">=</span> <span class="st">&quot;raceId&quot;</span>,</span>
 <span id="cb32-4"><a href></a>                         how <span class="op">=</span> <span class="st">&quot;left&quot;</span>)</span>
 <span id="cb32-5"><a href></a></span>
 <span id="cb32-6"><a href></a>results_merge.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="150">
+<div class="cell-output cell-output-display" data-execution_count="22">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -3552,7 +3552,7 @@ text-align: right;
 <li>It can also lead to errors when merging data</li>
 <li>The following code merges the raw data which has the <code>name</code> column in <code>races_raw</code> and <code>circuits_raw</code></li>
 </ul>
-<div id="2a21ed7a" class="cell" data-execution_count="23">
+<div id="b60695ae" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href></a>races_merge_pitfall <span class="op">=</span> pd.merge(races_raw,</span>
 <span id="cb33-2"><a href></a>                               circuits_raw[[<span class="st">&quot;circuitId&quot;</span>,<span class="st">&quot;name&quot;</span>]],</span>
 <span id="cb33-3"><a href></a>                               on <span class="op">=</span> <span class="st">&quot;circuitId&quot;</span>,</span>
@@ -3562,7 +3562,7 @@ text-align: right;
 <ul>
 <li>Let’s see the results of the merge</li>
 </ul>
-<div id="7e8dfcf7" class="cell" data-execution_count="24">
+<div id="947ce754" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href></a><span class="bu">print</span>(races_merge_pitfall.columns.values)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[&#39;raceId&#39; &#39;year&#39; &#39;round&#39; &#39;circuitId&#39; &#39;name_x&#39; &#39;date&#39; &#39;time&#39; &#39;url&#39;
@@ -3608,9 +3608,9 @@ text-align: right;
 <li><p>There are also other advanced options if they are not, please check <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.concat.html" data-modal-type="iframe">the documentation for more information</a></p></li>
 <li><p>Let’s use <code>.query()</code> to split the data into different parts</p></li>
 </ul>
-<div id="293dc984" class="cell" data-execution_count="25">
+<div id="491847ce" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href></a>circuits[<span class="st">&#39;country&#39;</span>].unique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="153">
+<div class="cell-output cell-output-display" data-execution_count="25">
 <pre><code>array([&#39;Australia&#39;, &#39;Malaysia&#39;, &#39;Bahrain&#39;, &#39;Spain&#39;, &#39;Turkey&#39;, &#39;Monaco&#39;,
        &#39;Canada&#39;, &#39;France&#39;, &#39;UK&#39;, &#39;Germany&#39;, &#39;Hungary&#39;, &#39;Belgium&#39;, &#39;Italy&#39;,
        &#39;Singapore&#39;, &#39;Japan&#39;, &#39;China&#39;, &#39;Brazil&#39;, &#39;USA&#39;, &#39;United States&#39;,
@@ -3620,7 +3620,7 @@ text-align: right;
       dtype=object)</code></pre>
 </div>
 </div>
-<div id="8c212539" class="cell" data-execution_count="26">
+<div id="f1bd9ecd" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href></a>circuits_spain <span class="op">=</span> circuits.query(<span class="st">&#39;country == &quot;Spain&quot;&#39;</span>)</span>
 <span id="cb38-2"><a href></a>circuits_usa <span class="op">=</span> circuits.query(<span class="st">&#39;country == &quot;United States&quot; | country == &quot;USA&quot;&#39;</span>)</span>
 <span id="cb38-3"><a href></a>circuits_malaysia <span class="op">=</span> circuits.query(<span class="st">&#39;country == &quot;Malaysia&quot;&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -3630,10 +3630,10 @@ text-align: right;
 <section id="concatenating-data-in-pandas-1" class="slide level2">
 <h2>Concatenating data in Pandas</h2>
 <div style="margin-top: 30px; font-size: 22px;">
-<div id="6e57d0fe" class="cell" data-execution_count="27">
+<div id="183fd61c" class="cell" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href></a>circuits_concat <span class="op">=</span> pd.concat([circuits_spain, circuits_usa, circuits_malaysia])</span>
 <span id="cb39-2"><a href></a>circuits_concat.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="155">
+<div class="cell-output cell-output-display" data-execution_count="27">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -3737,10 +3737,10 @@ text-align: right;
 <ul>
 <li>If we drop observations from the original dataset, they will be removed from the concatenated dataset (<code>NaN</code> values will be added)</li>
 </ul>
-<div id="11abca9d" class="cell" data-execution_count="28">
+<div id="1b2b27d1" class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href></a>circuits_spain_drop <span class="op">=</span> circuits_spain.drop(columns<span class="op">=</span>[<span class="st">&#39;circuitRef&#39;</span>, <span class="st">&#39;location&#39;</span>])</span>
 <span id="cb40-2"><a href></a>pd.concat([circuits_spain_drop, circuits_usa])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="156">
+<div class="cell-output cell-output-display" data-execution_count="28">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -4016,10 +4016,10 @@ text-align: right;
 <section id="sec:appendix01" class="slide level2">
 <h2>Appendix 01</h2>
 <div style="margin-top: 30px; font-size: 20px;">
-<div id="a648ef48" class="cell" data-execution_count="29">
+<div id="2a170195" class="cell" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href></a>dict_rename <span class="op">=</span> {<span class="st">&quot;name&quot;</span>: <span class="st">&quot;race_name&quot;</span>}</span>
 <span id="cb41-2"><a href></a>races_raw.rename(columns <span class="op">=</span> dict_rename).head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="157">
+<div class="cell-output cell-output-display" data-execution_count="29">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -4169,10 +4169,10 @@ text-align: right;
 </div>
 </div>
 </div>
-<div id="017f8f79" class="cell" data-execution_count="30">
+<div id="dd2ac46f" class="cell" data-execution_count="30">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href></a>races <span class="op">=</span> races_raw.rename(columns <span class="op">=</span> dict_rename)</span>
 <span id="cb42-2"><a href></a>races.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="158">
+<div class="cell-output cell-output-display" data-execution_count="30">
 <pre><code>Index([&#39;raceId&#39;, &#39;year&#39;, &#39;round&#39;, &#39;circuitId&#39;, &#39;race_name&#39;, &#39;date&#39;, &#39;time&#39;,
        &#39;url&#39;, &#39;fp1_date&#39;, &#39;fp1_time&#39;, &#39;fp2_date&#39;, &#39;fp2_time&#39;, &#39;fp3_date&#39;,
        &#39;fp3_time&#39;, &#39;quali_date&#39;, &#39;quali_time&#39;, &#39;sprint_date&#39;, &#39;sprint_time&#39;],
@@ -4185,7 +4185,7 @@ text-align: right;
 <section id="sec:appendix02" class="slide level2">
 <h2>Appendix 02</h2>
 <div style="margin-top: 30px; font-size: 24px;">
-<div id="0bbe3e2c" class="cell" data-execution_count="31">
+<div id="b94aadfe" class="cell" data-execution_count="31">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href></a>rename <span class="op">=</span> {<span class="st">&quot;name_x&quot;</span>: <span class="st">&quot;race_name&quot;</span>, <span class="st">&quot;name_y&quot;</span>: <span class="st">&quot;circuit_name&quot;</span>}</span>
 <span id="cb44-2"><a href></a>races_merge_pitfall.rename(columns <span class="op">=</span> rename).info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -4223,13 +4223,13 @@ memory usage: 163.7+ KB</code></pre>
 <section id="sec:appendix03" class="slide level2">
 <h2>Appendix 03</h2>
 <div style="margin-top: 30px; font-size: 24px;">
-<div id="a989edbd" class="cell" data-execution_count="32">
+<div id="01a933a2" class="cell" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href></a>races02 <span class="op">=</span> pd.merge(races,</span>
 <span id="cb46-2"><a href></a>                   circuits[[<span class="st">&quot;circuitId&quot;</span>,<span class="st">&quot;alt&quot;</span>,<span class="st">&quot;lng&quot;</span>,<span class="st">&quot;lat&quot;</span>]],</span>
 <span id="cb46-3"><a href></a>                   on <span class="op">=</span> <span class="st">&quot;circuitId&quot;</span>,</span>
 <span id="cb46-4"><a href></a>                   how <span class="op">=</span> <span class="st">&quot;left&quot;</span>)</span>
 <span id="cb46-5"><a href></a>races02.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="160">
+<div class="cell-output cell-output-display" data-execution_count="32">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -4404,10 +4404,10 @@ text-align: right;
 <section id="sec:appendix04" class="slide level2">
 <h2>Appendix 04</h2>
 <div style="margin-top: 30px; font-size: 24px;">
-<div id="4911f97e" class="cell" data-execution_count="33">
+<div id="5ee94153" class="cell" data-execution_count="33">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href></a>circuits_usa_malaysia <span class="op">=</span> pd.concat([circuits_usa, circuits_malaysia])</span>
 <span id="cb47-2"><a href></a>circuits_usa_malaysia.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="161">
+<div class="cell-output cell-output-display" data-execution_count="33">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {

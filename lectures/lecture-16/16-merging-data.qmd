@@ -1,5 +1,5 @@
 ---
-title: QTM 151 - Introduction to StatisComputing II
+title: QTM 151 - Introduction to Stats Computing II
 subtitle: Lecture 16 - Merging Data
 date: 2024-10-28
 date-format: "DD MMMM, YYYY"
