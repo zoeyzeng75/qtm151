@@ -22,7 +22,6 @@ format:
           - numpy
           - pandas
           - seaborn
-bibliography: references.bib
 transition: slide
 transition-speed: default
 scrollable: true
@@ -46,5 +45,11 @@ editor:
 :::{.columns}
 :::{.column width="50%"}
 - **Task**: Write a report on a data analysis project based on the Formula 1 datasets
-- **Due date**: December 9th
 - **Groups**: 3-4 students
+- **Due date**: December 9th
+- **Submission**: HTML file from Jupyter Notebook
+- **Resources**: [GitHub repository](https://github.com/danilofreire/qtm151/tree/main/final-project)
+- Final Project Instructions: [HTML format](https://github.com/danilofreire/qtm151/blob/main/final-project/final-project.html){data-modal-type="iframe"} or [PDF format](https://github.com/danilofreire/qtm151/blob/main/final-project/final-project.pdf)
+:::
+:::
+:::
