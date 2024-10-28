@@ -1,0 +1,50 @@
+---
+title: QTM 151 - Introduction to Statistical Computing II
+subtitle: Lecture 17 - Introduction to SQL
+date: 2024-10-30
+date-format: "DD MMMM, YYYY"
+author:
+  - name: Danilo Freire
+    email: danilo.freire@emory.edu
+    affiliations: Emory University
+format:
+  clean-revealjs:
+    self-contained: true
+    code-overflow: wrap
+    footer: "[Introduction to SQL](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-17/17-introduction-sql.html)"
+    drop:
+      button: true
+      engine: pyodide
+      pyodide:
+        packages:
+          - matplotlib
+          - micropip
+          - numpy
+          - pandas
+          - seaborn
+bibliography: references.bib
+transition: slide
+transition-speed: default
+scrollable: true
+engine: jupyter
+revealjs-plugins:
+  - appearance
+  - drop
+  - fontawesome
+  - multimodal
+editor:
+  render-on-save: true
+---
+
+# Hello, everyone! 😊 <br> Nice to see you again! {background-color="#2d4563"}
+
+# Some reminders 🤓 {background-color="#2d4563"}
+
+## Final Project 📖
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- **Task**: Write a report on a data analysis project based on the Formula 1 datasets
+- **Due date**: December 9th
+- **Groups**: 3-4 students
