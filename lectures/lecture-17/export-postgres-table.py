@@ -9,8 +9,11 @@ import psycopg2
 engine = create_engine('postgresql://postgres:postgres@localhost:5432/postgres')
 
 # Query the data
-df = pd.read_sql_query("SELECT * FROM drivers;", engine)
+df = pd.read_sql_query("""
+                       SELECT * FROM drivers
+                       ORDER BY driver_id; 
+                       """, engine)
 
 # Export to CSV, change directory if necessary
 os.getcwd()
-df.to_csv('lectures/lecture-17/drivers.csv', index=False)
+df.to_csv('~/Documents/github/qtm151/lectures/lecture-17/drivers.csv', index=False)
