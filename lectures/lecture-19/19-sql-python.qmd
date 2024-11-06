@@ -25,6 +25,24 @@ editor:
 
 # Hello, everyone! 😊 <br> How are you doing today? {background-color="#2d4563"}
 
+## An announcement 📢
+
+:::{style="margin-top: 50px; font-size: 22px; text-align: center;"}
+![](figures/alumni.png){width="50%"}
+:::
+
+## Another announcement 📢
+### Final project
+
+:::{style="margin-top: 50px; font-size: 24px;"}
+- The project is due on **December 9th**, as we talked about before
+- [Feel free to create your own groups]{.alert} of up to 4 people and [send them to me via email]{.alert}
+- I will also send an announcement on Canvas about that 
+- Students who are not in a group by the end of this week will be assigned to a group at random 
+- So please, make sure you have a group soon 🤓
+- What do you think? Any questions? 😊
+:::
+
 # Brief recap of lecture 17 📚 {background-color="#2d4563"} 
 
 ## Do you still remember what SQL is? 😂
